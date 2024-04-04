@@ -23,7 +23,6 @@ function App() {
           <Route index element={<Layout />} />
           <Route path="login" element={!access_token ? <UserLogin /> : <Navigate to="/dashboard" />} />
           <Route path="Registration" element={<Registration />} />
-          {/* <Route path="reg" element={<Reg />} /> */}
           <Route path="sendpasswordresetemail" element={<SendPasswordResetEmail />} />
           <Route path="api/user/reset/:id/:token" element={<ResetPassword />} />
           <Route path="/dashboard" element={access_token ? <Dashboard /> : <Navigate to="/login" />} />
