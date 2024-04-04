@@ -1,0 +1,397 @@
+.divider {
+    border: 1px solid;
+    border-image: linear-gradient(90deg, #eceff100, #80808080, #eceff100) 1;
+
+}
+
+.client,
+.advantages {
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7F9FC;
+}
+
+.client_text_content,
+.advantages_text_content {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.client_heading span,
+.enterprise_title span,
+.Mentorship_title span,
+.advantages_heading span,
+.contact_title span {
+    font-weight: 700;
+    color: #754FFE;
+}
+
+.secondry_heading h3,
+.enterprise_secondary_title h3,
+.Mentorship_secondary_title h3 {
+    font-size: 2em;
+    color: #192753;
+    font-weight: 600;
+
+}
+
+.contact_secondary_title h3 {
+    color: #4545A2;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+.secondry_heading h3 span,
+.enterprise_secondary_title h3 span,
+.Mentorship_secondary_title h3 span {
+    color: #2651C5;
+}
+
+.client_paragraph,
+.advantages_paragraph {
+    position: relative;
+    width: 60%;
+    max-width: -webkit-fill-available;
+    color: #506690;
+}
+
+.client_images,
+.advantages_images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.client_1 {
+    padding: 7px;
+}
+
+.client_1 img {
+    position: relative;
+    width: 6em;
+    padding: 10px;
+    border: 1px solid #D9E2EF;
+    border-radius: 10px;
+}
+
+.enterprise,
+.Mentorship,
+.contact {
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.enterprise .enterprise_image img,
+.Mentorship_image img,
+.contact_image img {
+    position: relative;
+    width: 43vh;
+}
+
+.enterprise_content,
+.Mentorship_content,
+.contact_content {
+    position: relative;
+    width: 40%;
+    max-width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.enterprise_description,
+.Mentorship_description,
+.contact_description {
+    margin-bottom: 20px;
+}
+
+.enterprise_description p,
+.Mentorship_description p,
+.contact_description p {
+    color: #506690;
+}
+
+.enterprise_button,
+.Mentorship_button,
+.contact_button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.enterprise_button .MuiStack-root .MuiButton-contained {
+    background-color: #ea6f30;
+    border-radius: 20px;
+    width: 18vh;
+    font-size: 12px;
+    height: 7vh;
+}
+
+.enterprise_button .MuiStack-root .MuiButton-outlined {
+    background-color: #ff6c6126;
+    border-radius: 20px;
+    width: 18vh;
+    border: 1px solid #ff955f47;
+    font-size: 12px;
+    height: 7vh;
+}
+
+.Mentorship,
+.contact {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.Mentorship_button .MuiStack-root .MuiButton-contained {
+    background-color: #535C91;
+    border-radius: 20px;
+    width: 18vh;
+    font-size: 12px;
+    height: 7vh;
+}
+
+.Mentorship_button .MuiStack-root .MuiButton-outlined {
+    background-color: #9290c347;
+    border-radius: 20px;
+    width: 18vh;
+    font-size: 12px;
+    height: 7vh;
+}
+
+.advantages_1 {
+    border: 1px solid #D9E2EF;
+    width: min-content;
+}
+
+.advantages_1 {
+    margin: 30px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: center;
+    border-radius: 6px;
+    transition: 0.5s;
+
+}
+
+.advantages_1:hover {
+    box-shadow: 3px 3px 20px 3px gray;
+    border: 1.5px solid darkgrey;
+}
+
+.advantages_1 img {
+    position: relative;
+    width: 35vh;
+    /* padding: 15px; */
+
+}
+
+.advantages_images {
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.advantages_images_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.advantages_images_content h3 {
+    color: #21325A;
+    font-family: sans-serif;
+}
+
+.advantages_images_content span {
+    width: 40vh;
+    color: #506690;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+
+.contact_button .MuiStack-root .MuiButton-contained {
+    background-color: #243762;
+    border-radius: 10px;
+}
+
+.secondary_footer {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid gray;
+
+}
+
+.content_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vh;
+    padding: 15px;
+}
+
+.content_img img {
+    width: 7vh;
+}
+
+.content_title h3 {
+    color: #21325A;
+    font-size: 15px;
+}
+
+.content_description span {
+    color: #506690;
+}
+
+.primary_footer {
+    background-color: #f7f9fc;
+    padding: 30px;
+
+}
+.content_links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contents_titles{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #8080803d;
+
+}
+
+.contents_titles li{
+    margin: 10px;
+    color: #192753;
+    cursor: pointer;
+}
+
+.company_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    padding-bottom: 0;
+}
+
+.copyright_content{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50vh;
+}
+
+.company_social_links{
+    position: relative;
+    width: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.company_social_links svg{
+    padding: 5px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.company_social_links svg:hover{
+    
+    box-shadow: 0px 0px 20px 0px silver;
+}
+/* Styles for screens smaller than 600 pixels */
+@media screen and (max-width: 425px) {
+    .advantages_paragraph {
+        position: relative;
+        width: 100%;
+        color: #506690;
+    }
+
+    .advantages {
+        padding: 3rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Styles for screens smaller than 600 pixels */
+@media screen and (max-width: 600px) {
+
+    /* Your CSS styles here */
+    .secondry_heading h3 {
+        font-size: 1.2em;
+        color: #192753;
+    }
+
+    .client_paragraph {
+        position: relative;
+        width: 100%;
+        max-width: -webkit-fill-available;
+    }
+
+    .enterprise,
+    .Mentorship,
+    .contact {
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .enterprise_content,
+    .Mentorship_content,
+    .contact_content {
+        position: relative;
+        width: auto;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .enterprise .enterprise_image img,
+    .Mentorship_image img,
+    .contact_image img {
+        position: relative;
+        width: 13rem;
+    }
+
+    .advantages_1 img {
+        position: relative;
+        width: 25vh;
+    }
+
+}

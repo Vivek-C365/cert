@@ -1,0 +1,811 @@
+{
+  "pmp": {
+    "heading": [
+      {
+        "heading_title": "Project Management",
+        "title": "PMP Certification",
+        "description": "PMP® Certification pathway from CertScope will help you to understand PMP process groups and Knowledge areas as per updated PMBOK edition and assist in passing the Project Management Professional® exam in the first attempt."
+      }
+    ],
+    "certification_overview": [
+      {
+        "title": "Multiple delivery options",
+
+        "description": "Delivery Options: Self Paced | Instructor-led Live Online | Traditional classroom."
+      },
+      {
+        "title": "Course completion certificate",
+        "description": "35 contact hour certificate will be issued after successful completion of the training."
+      },
+      {
+        "title": "Case studies",
+        "description": "Seven (07) Industry Case Studies with more than 15 industry based scenarios."
+      },
+      {
+        "title": "Hands-on projects and practice tests",
+        "description": "Five (05) hands-on projects and access to five (05) practice tests with 200 questions each."
+      }
+    ],
+
+    "Delivery_Methods": [
+      {
+        "Classroom": {
+          "title": "CLASSROOM",
+          "list": [
+            "Comprehensive Classroom Training",
+            "35 Contact Hour Certificate",
+            "Certified Instructors",
+            "Hard copy of Course Material",
+            "Centralized Venues",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies"
+          ],
+          "timeliness": "On-time training",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Live_online": {
+          "title": "LIVE ONLINE",
+          "list": [
+            "Live Online Instructor-led Training",
+            "35 Contact Hour Certificate",
+            "Certified Instructors",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "Top instructors",
+          "view": "VIEW BATCHES"
+        }
+      }
+    ],
+
+    "know_more_title": [
+      {
+        "title": "Know more about PMP Certification"
+      }
+    ],
+
+    "steps": [
+      {
+        "label": "Qualified mentor equals insightful mentee",
+        "description": "Our PMP training boot camps are delivered by PMP certified professionals with more than 15 years of relevant industry experience. They are experts who know what they teach and preach."
+      },
+      {
+        "label": "Case studies and practical assignments",
+        "description": "Learn the various concepts of A Guide to the Project Management Body of Knowledge (PMBOK® Guide) with the help of practical assignments and industry case studies."
+      },
+      {
+        "label": "Hands on mentor-ship",
+        "description": "The mentor will determine your readiness for the examination and will assess the areas of your strengths and weakness. The trainer will guide you through the simulation examination and assist you in answering the long scenario-based questions. Those questions are based on the standards set by previous examinations."
+      },
+      {
+        "label": "Guidance with examination",
+        "description": "Our training curriculum is based on PMI's latest version of A Guide to the Project Management Body of Knowledge (PMBOK® Guide). This guide includes 14 chapters. On successful completion of the training, our certification team will guide you through the certification process. We do stay till the end to see you succeed."
+      }
+    ],
+    "Enterprise_Solutions": [
+      {
+        "title": "Learning delivery model as per your organisational requirements"
+      },
+      {
+        "title": "Enterprise-grade Learning Management System (LMS), dashboard and tools."
+      },
+      {
+        "title": "Flexible pricing options and models."
+      },
+      {
+        "title": "24x7 learner assistance and support"
+      }
+    ],
+    "faqs": [
+      {
+        "Title": "Introduction: The Project Management Mindset",
+        "list": [
+          "What is PMI®? ",
+          "What is the PMBOK® Guide? ",
+          "Evolution of the Project Management Institute ",
+          "Certifications offered by the PMI® ",
+          "Three simulation practice tests of 200 questions each",
+          "PMI® contact resources "
+        ]
+      },
+      {
+        "Title": "Creating a high performing team",
+        "list": [
+          "Build a team ",
+          "Define team ground rules ",
+          "Negotiate project agreements ",
+          "Empower team members and stakeholders  ",
+          "Train team members and stakeholders ",
+          "Engage and support virtual teams ",
+          "Build shared understanding about a project"
+        ]
+      },
+      {
+        "Title": "Starting the Project",
+        "list": [
+          "Determine appropriate project methodology/methods and practices ",
+          "Plan and manage scope ",
+          "Plan and manage budget and resources",
+          "Plan and manage schedule ",
+          "Plan and manage quality of products and deliverables ",
+          "Integrate project planning activities  ",
+          "Plan and manage procurement ",
+          "Establish project governance structure  ",
+          "Plan and manage project/phase closure"
+        ]
+      },
+      {
+        "Title": "Doing the work",
+        "list": [
+          "Assess and manage risks ",
+          "Execute project to deliver business value ",
+          "Manage communications  ",
+          "Create project artifacts ",
+          "Manage project changes",
+          "Manage project issues ",
+          "Ensure knowledge transfer for project continuity "
+        ]
+      },
+      {
+        "Title": "Keeping the team on track",
+        "list": [
+          "Lead a team",
+          "Support team performance ",
+          "Address and remove impediments, obstacles, and blockers ",
+          "Manage conflict ",
+          "Collaborate with stakeholders ",
+          "Mentor relevant stakeholders  ",
+          "Apply Emotional Intelligence to promote team performance"
+        ]
+      },
+      {
+        "Title": "Keeping the business in mind",
+        "list": [
+          "Manage compliance requirements ",
+          "Evaluate and deliver project benefits and value ",
+          "Evaluate and address internal and external business environment changes ",
+          "Employ continuous process improvement  "
+        ]
+      },
+      {
+        "Title": "PMP® Examination Preparation",
+        "list": [
+          "PMP Exam Preparation ",
+          "Sample Questions ",
+          "Tricky Test Questions  ",
+          "Exam Tips and Tricks "
+        ]
+      }
+    ],
+    "learning_overview_desc": [
+      {
+        "description": "Get an overview of the training structure, modules, and methodology for PMP Certification training by CertScope training solutions."
+      }
+    ],
+    "learning_outcomes": [
+      {
+        "description": [
+          "Project management disciplines",
+          "PMP® application and examination procedure",
+          "Project management tools like project cost estimating, work breakdown structure, Gantt charts, mathematical project scheduling models, resource allocation, cost management and engineering economics",
+          "How to sit through and clear the PMP® certification examination."
+        ]
+      }
+    ],
+    "certificationSteps": [
+      {
+        "title": "Start by choosing the desired delivery method of training",
+        "description": "You can choose from the classroom, Live online or self-paced learning delivery options. Choose which suits your needs the best. Once you enroll, the relevant designated course adviser will guide you on how to get started with the training."
+      },
+      {
+        "title": "Complete the required hours of training",
+        "description": "All the 14 chapters of official PMBOK-6th edition will be covered during the training. At least 35 hours of learning is mandatory as recommended by PMI USA."
+      },
+      {
+        "title": "Download the 35 Contact Hour Certificate",
+        "description": "Once the training is over, you will have to download the 35 contact hour certificate or course completion certificate from the LMS or our 24/7 support team will issue the same. This certificate is mandatory to apply for PMP examination."
+      },
+      {
+        "title": "Submit the application at PMI",
+        "description": "Once you receive the certificate, you will have to start the application process at www.pmi.org, Once you submit the application, it will take 15 days to review the application and receive the eligibility number which is used to schedule an examination."
+      },
+      {
+        "title": "Schedule the exam at nearest prometric centre.",
+        "description": "Once you receive the eligibility number, you will have to sign up at prometric.com, which is a portal to schedule the exam at any of the nearby prometric centers. After the completion of the examination, results will be sent across via email within 15 days."
+      }
+    ],
+    "resources_data": [
+      {
+        "resource_images": [
+          "/images/benefits_1.jpg",
+          "/images/benefits_2.jpg",
+          "/images/benefits_3.jpg",
+          "/images/benefits_4.jpg"
+        ],
+        "resource_title": "Project Management",
+        "resource_desc": [
+          "Benefits of PMP Certification",
+          "The Ultimate Guide to PMP Certification: Tips and Tricks",
+          "How PMP Certification Can Elevate Your Career",
+          "Roadmap to Success: PMP Certification Exam Prep"
+        ]
+      }
+    ]
+  },
+  "ceh": {
+    "heading": [
+      {
+        "heading_title": "Cyber Security",
+        "title": "CEH Certification",
+        "description": "In this Certified Ethical Hacking (CEH) course from CertScope, you'll master advanced network packet analysis and ethical hacking techniques to improve your network knowledge and prevent hackers."
+      }
+    ],
+    "certification_overview": [
+      {
+        "title": "Exam and Certification is part of the course",
+        "description": "After the training, you can appear in the exam through Remote proctored solution"
+      },
+      {
+        "title": "Access to CEHv11 iLabs",
+        "description": "Access to iLabs CEHv11 for six months"
+      },
+      {
+        "title": "Instructor-led online training",
+        "description": "Live instructor-led training by certified trainers"
+      },
+      {
+        "title": "Exam fee included",
+        "description": "Exam and Certification is included in the course fee"
+      }
+    ],
+
+    "Delivery_Methods": [
+      {
+        "Classroom": {
+          "title": "CLASSROOM",
+          "list": [
+            "Comprehensive Classroom Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Hard copy of Course Material",
+            "Centralized Venues",
+            "Access to iLabs for 6 months",
+            "Industry Case Studies"
+          ],
+          "timeliness": "On-time training",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Live_online": {
+          "title": "LIVE ONLINE",
+          "list": [
+            "Live Online Instructor-led Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Soft copy of the course material",
+            "Access to iLabs for 6 months",
+            "Industry Case Studies",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "Top instructors",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Self_placed": {
+          "title": "SELF PLACED",
+          "list": [
+            "Access to Audio/Video Learning",
+            "Exam and Certification Included",
+            "Soft copy of the course material",
+            "Access to iLabs for 6 months",
+            "Industry Case Studies",
+            "24x7 learner assistance and support",
+            "Learn anytime anywhere"
+          ],
+          "timeliness": "Interested?",
+          "view": "GET IN TOUCH"
+        }
+      },
+      {
+        "Practice": {
+          "title": "PRACTICE",
+          "list": [
+            "Industry standard question bank",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "Multiple re-takes",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "Interested?",
+          "view": "GET IN TOUCH"
+        }
+      }
+    ],
+
+    "Know_more_about": [
+      {
+        "title": "Know more about CEH Certification"
+      }
+    ],
+
+    "know_more_title": [
+      {
+        "title": "Know more about CEH Certification"
+      }
+    ],
+
+    "steps": [
+      {
+        "label": "Qualified mentor equals insightful mentee",
+        "description": "The CEH Training boot camp is delivered by certified professionals with more than 15 years of relevant industry experience. They are experts who know what they teach and preach."
+      },
+      {
+        "label": "Hands on mentor-ship",
+        "description": "The mentor will determine your readiness for the examination and will assess the areas of your strengths and weakness. The trainer will guide you through the simulation examination and assist you in answering the long scenario-based questions. Those questions are based on the standards set by previous examinations.."
+      },
+      {
+        "label": "Case studies and practical assignments",
+        "description": "Learn the various concepts of CEH Certification with the help of practical assignments and industry case studies."
+      }
+    ],
+    "Enterprise_Solutions": [
+      {
+        "title": "Learning delivery model as per your organisational requirements"
+      },
+      {
+        "title": "Enterprise-grade Learning Management System (LMS), dashboard and tools."
+      },
+      {
+        "title": "Flexible pricing options and models."
+      },
+      {
+        "title": "24x7 learner assistance and support"
+      }
+    ],
+    "faqs": [
+      {
+        "Title": "Introduction",
+        "list": ["Introduction to Ethical Hacking "]
+      },
+      {
+        "Title": "Modules",
+        "list": [
+          "Footprinting and Reconnaissance",
+          "Scanning Networks",
+          "Enumeration ",
+          "Vulnerability Analysis",
+          "System Hacking",
+          "Malware Threats ",
+          "Sniffing",
+          "Social Engineering",
+          "Denial-of-Service",
+          "Session Hijacking",
+          "Evading IDS, Firewalls, and Honeypots",
+          "Hacking Web Servers",
+          "Hacking Web Applications",
+          "SQL Injection",
+          "Hacking Wireless Networks",
+          "Hacking Mobile Platforms",
+          "IoT and OT Hacking",
+          "Hacking Wireless Networks",
+          "Cloud Computing",
+          "Cryptography"
+        ]
+      }
+    ],
+    "learning_overview_desc": [
+      {
+        "description": "Get an overview of the training structure, modules, and methodology for CEH Certification training by CertScope training solutions."
+      }
+    ],
+    "learning_outcomes": [
+      {
+        "description": [
+          "This ethical hacking certification verifies the skills required to thrive in the information security domain.",
+          "Key issues include plaguing the information security world, ethical hacking, information security controls, laws, and standards.",
+          "Perform footprinting and reconnaissance using the latest footprinting techniques and tools as a critical pre-attack phase required in ethical hacking.",
+          "Different types of malware (Trojan, Virus, worms, etc.), system auditing for malware attacks, malware analysis, and countermeasures",
+          "Social engineering techniques and how to identify theft attacks to audit human level vulnerabilities and suggest social engineering countermeasures",
+          "Session hijacking techniques to discover network-level session management, authentication/authorization, cryptographic weaknesses, and countermeasures",
+          "Penetration testing, security audit, vulnerability assessment, and penetration testing roadmap."
+        ]
+      }
+    ],
+    "certificationSteps": [
+      {
+        "title": "Enroll for the course",
+        "description": "You can choose from the classroom, Live online or self-paced learning delivery options. Choose which suits your needs the best. Once you enroll, the relevant designated course adviser will guide you on how to get started with the training."
+      },
+      {
+        "title": "Complete the Assignments given by the trainer",
+        "description": "Complete the 5 days live online training/online training or classroom training by the certified trainer.."
+      },
+      {
+        "title": "Access iLabs",
+        "description": "As part of the course, you are required to go through iLabs which will help you to gain practical knowledge of the domains."
+      },
+      {
+        "title": "Appear in the exam",
+        "description": "Once the training and iLabs sessions are complete, you can schedule the exam as per your convenient schedule."
+      }
+    ]
+  },
+  "ITIL_4_Foundation_Certification": {
+    "heading": [
+      {
+        "heading_title": "IT SERVICE MANAGEMENT",
+        "title": "ITIL-4 Foundation Certification",
+        "description": "ITIL 4 Foundation Certification from CertScope is a comprehensive session on ITIL 4 , understand Service Strategy, Design, Transition, Operation and Continual service improvement of ITIL 4 and master the skills to clear the exam in the first attempt."
+      }
+    ],
+    "certification_overview": [
+      {
+        "title": "Multiple delivery options",
+
+        "description": "Delivery Options: Self Paced | Instructor-led Live Online | Traditional classroom."
+      },
+      {
+        "title": "Exam and Certification",
+        "description": "Exam and Certification is part of the exam and conducted at end of the training"
+      },
+      {
+        "title": "Case studies",
+        "description": "Seven (07) Industry Case Studies with more than 15 industry based scenarios."
+      },
+      {
+        "title": "Hands-on projects and practice tests",
+        "description": "Five (05) hands-on projects and access to five (05) practice tests with 200 questions each."
+      }
+    ],
+
+    "Delivery_Methods": [
+      {
+        "Classroom": {
+          "title": "CLASSROOM",
+          "list": [
+            "Comprehensive Classroom Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Hard copy of Course Material",
+            "Centralized Venues",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies"
+          ],
+          "timeliness": "On-time training",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Live_online": {
+          "title": "LIVE ONLINE",
+          "list": [
+            "Live Online Instructor-led Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "Top instructors",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Self_placed": {
+          "title": "SELF PLACED",
+          "list": [
+            "Access to Audio/Video Learning",
+            "Exam and Certification Included",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support",
+            "Learn anytime anywhere"
+          ],
+          "timeliness": "$599",
+          "view": "ENROLL NOW"
+        }
+      },
+      {
+        "Practice": {
+          "title": "PRACTICE",
+          "list": [
+            "Industry standard question bank",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "Multiple re-takes",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "$10",
+          "view": "ENROLL NOW"
+        }
+      }
+    ],
+
+    "know_more_title": [
+      {
+        "title": "Know more about ITIL Foundation Certification program"
+      }
+    ],
+
+    "steps": [
+      {
+        "label": "ITIL Framework",
+        "description": "The ITIL 4 Foundation certification introduces the ITIL framework and enables candidates to look at ITSM through an end-to-end operating model for the creation, delivery and continual improvement of tech-enabled products and services"
+      },
+      {
+        "label": "ITIL Foundation Overview",
+        "description": "The Foundation level is designed as an introduction to ITIL 4 and enables you to look at IT service management through an end-to-end operating model for the creation, delivery and continual improvement of tech-enabled products and services."
+      },
+      {
+        "label": "ITIL 4 Certification Levels",
+        "description": [
+          "There are four certification levels within the ITIL 4 scheme:",
+          "Foundation",
+          "ITIL 4 Managing Professional",
+          "ITIL 4 Strategic Leader",
+          "Master"
+        ]
+      }
+    ],
+    "Enterprise_Solutions": [
+      {
+        "title": "Learning delivery model as per your organisational requirements"
+      },
+      {
+        "title": "Enterprise-grade Learning Management System (LMS), dashboard and tools."
+      },
+      {
+        "title": "Flexible pricing options and models."
+      },
+      {
+        "title": "24x7 learner assistance and support"
+      }
+    ],
+    "faqs": [
+      {
+        "Title": "Understand the key concepts of service management",
+        "list": [
+          "Service",
+          "Utility",
+          "Warranty",
+          "Customer",
+          "User",
+          "Service management",
+          "Sponsor"
+        ]
+      },
+      {
+        "Title": "Key concepts of creating value with services",
+        "list": [
+          "Cost",
+          "Value",
+          "Organization",
+          "Outcome",
+          "Output",
+          "Risk",
+          "Utility",
+          "Warranty"
+        ]
+      },
+      {
+        "Title": "Key concepts of service relationships",
+        "list": [
+          "Service offering",
+          "Service relationship management",
+          "Service provision",
+          "Service consumption"
+        ]
+      }
+    ],
+
+    "learning_overview_desc": [
+      {
+        "description": "Get an overview of the training structure, modules, and methodology for ITIL-4 Foundation Certification training by CertScope training solutions."
+      }
+    ],
+    "learning_outcomes": [
+      {
+        "description": [
+          "A holistic approach to the facilitation of co-creation of value with customers and other stakeholders in the form of products and services",
+          "The guiding principles of ITIL 4",
+          "The four dimensions of Service Management",
+          "Key concepts from Lean, Agile, DevOps, and why these are important to deliver business value",
+          "How ITIL practices described in ITIL 4 will maintain the value and importance provided by the current ITIL processes, whilst at the same time expand to be integrated to different areas of service mana"
+        ]
+      }
+    ],
+    "certificationSteps": [
+      {
+        "title": "Choose the delivery method",
+        "description": "Choose your preferred delivery mode and complete the required training"
+      },
+      {
+        "title": "Take the exams",
+        "description": "There are two routes towards obtaining the ITIL Foundation certificate - you can sit the exams at the end of a training course with an Accredited Training Organization (ATO), or study privately and then book the exam without a training course via PeopleCert, our ITIL Examination Institute."
+      },
+      {
+        "title": "Receive the Certificate",
+        "description": "Upon successful completion of the exam, you will get the result in a weeks time and certificate will be issued online."
+      }
+    ]
+  },
+  "CSM_Certification": {
+    "heading": [
+      {
+        "heading_title": "AGILE AND SCRUM",
+        "title": "CSM Certification",
+        "description": "CSM Certification Training by CertScope; Certified Scrum Master Certification is granted by Scrum Alliance USA, CSM is the most demanded Agile certification in the market. CSM training is delivered only by Certified Scrum Trainers across the globe which makes it very niche in the market."
+      }
+    ],
+    "certification_overview": [
+      {
+        "title": "Case studies and activities",
+
+        "description": "Experiential learning with Case studies, Scrum Activities, Role plays, & Simulations"
+      },
+      {
+        "title": "Exam and Certification",
+        "description": "Exam and Certification is part of the program"
+      },
+      {
+        "title": "Case studies",
+        "description": "Case studies and activities are part of the program"
+      },
+      {
+        "title": "Membership",
+        "description": "2 Years of membership from Scrum Alliance"
+      }
+    ],
+
+    "Delivery_Methods": [
+      {
+        "Classroom": {
+          "title": "CLASSROOM",
+          "list": [
+            "Comprehensive Classroom Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Hard copy of Course Material",
+            "Centralized Venues",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies"
+          ],
+          "timeliness": "On-time training",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Live_online": {
+          "title": "LIVE ONLINE",
+          "list": [
+            "Live Online Instructor-led Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "Top instructors",
+          "view": "VIEW BATCHES"
+        }
+      }
+    ],
+
+    "know_more_title": [
+      {
+        "title": "Know more about CSM Certification"
+      }
+    ],
+
+    "steps": [
+      {
+        "label": "Qualified mentor equals insightful mentee",
+        "description": "The mentor will determine your readiness for the examination and will assess the areas of your strengths and weakness. The trainer will guide you through the simulation examination and assist you in answering the long scenario-based questions. Those questions are based on the standards set by previous examinations."
+      },
+      {
+        "label": "Case studies and practical assignments",
+        "description": "Learn the various concepts of CSM with the help of practical assignments and industry case studies."
+      }
+    ],
+    "Enterprise_Solutions": [
+      {
+        "title": "Learning delivery model as per your organisational requirements"
+      },
+      {
+        "title": "Enterprise-grade Learning Management System (LMS), dashboard and tools."
+      },
+      {
+        "title": "Flexible pricing options and models."
+      },
+      {
+        "title": "24x7 learner assistance and support"
+      }
+    ],
+
+    "learning_overview_desc": [
+      {
+        "description": "Get an overview of the training structure, modules, and methodology for CSM Certification training by CertScope training solutions."
+      }
+    ],
+    "faqs": [
+      {
+        "Title": "Introduction",
+        "list": [
+          "Agile and Scrum Overview",
+          "Agile Principles ",
+          "Agile Values "
+        ]
+      },
+      {
+        "Title": "Roles in Scrum",
+        "list": [
+          "Scrum Master roles and challenges",
+          "Product Owner roles and responsibilities",
+          "Product Owner roles and responsibilities"
+        ]
+      },
+      {
+        "Title": "Scrum ceremonies",
+        "list": [
+          "Sprint planning",
+          "Daily Scrum",
+          "Sprint Review",
+          "Sprint Retrospective"
+        ]
+      },
+      {
+        "Title": "Scrum Artifacts",
+        "list": ["Product Backlog", "Sprint Backlog", "Product Increment"]
+      }
+    ],
+
+    "learning_outcomes": [
+      {
+        "description": [
+          "Foundation of Agile and Scrum concepts",
+          "The guiding principles of ITIL 4Terminologies and Concepts of CSM",
+          "Scrum Ceremonies",
+          "Daily Scrum, Sprint Review, Sprint Retrospective, Product Backlog, Sprint Backlog, Definition of Done"
+        ]
+      }
+    ],
+    "certificationSteps": [
+      {
+        "title": "Enroll for the course",
+        "description": "Follow the easy and convenient approach to register yourself at CertScope"
+      },
+      {
+        "title": "Attend the course",
+        "description": "Attend the course and complete all the assignments as advised by the trainer."
+      },
+      {
+        "title": "Create online credentials at Scrum Alliance",
+        "description": "You will be receiving an email from Scrum Alliance to create login credentials"
+      },
+      {
+        "title": "Write an Online exam",
+        "description": "Once you create login credentials Take the 1 hour online CSM® test which comprises of 50 MCQs."
+      },
+      {
+        "title": "Minimum passing marks",
+        "description": "Write an online exam and score a minimum of  74% to pass the CSM® exam"
+      }
+    ],
+    "resources_data": [
+      {
+        "resource_images": ["/images/CSM_1.jpg"],
+        "resource_title": "IT SERVICE MANAGEMENT",
+        "resource_desc": ["Which ITIL version is better v3 or v4?"]
+      }
+    ]
+  }
+}
