@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter, Navigate, Route, Routes , useLocation } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
 import UserLogin from './pages/auth/UserLogin'
 import ResetPassword from "./pages/auth/ResetPassword";
 import SendPasswordResetEmail from "./pages/auth/SendPasswordResetEmail";
@@ -8,7 +8,6 @@ import Layout from './Layout'
 import { useSelector } from "react-redux";
 import Certification from "./components/Pages/PMP_Certification";
 import Registration from './pages/auth/Registration'
-import Reg from './pages/auth/reg'
 import Error_page from './components/Pages/404_page'
 import Nav from './components/Navbar/Nav';
 import Nav2 from './components/Navbar/Nav2';
