@@ -11,6 +11,7 @@ import Registration from './pages/auth/Registration'
 import Error_page from './components/Pages/404_page'
 import Nav from './components/Navbar/Nav';
 import Nav2 from './components/Navbar/Nav2';
+import User_profile from './pages/User_profile/User_profile';
 function App() {
   const { access_token } = useSelector(state => state.auth)
   // v
@@ -25,6 +26,7 @@ function App() {
           <Route path="sendpasswordresetemail" element={<SendPasswordResetEmail />} />
           <Route path="api/user/reset/:id/:token" element={<ResetPassword />} />
           <Route path="/dashboard" element={access_token ? <Dashboard /> : <Navigate to="/login" />} />
+          <Route path="/dashboard/profile" element={access_token ? <User_profile/> :  <UserLogin/>} />
           <Route path="*" element={<Error_page/>} />
           <Route path="/project_management/pmp_certification" element={<Certification certificationType="pmp" />}/>
           <Route path="/project_management/ceh_certification" element={<Certification certificationType="ceh" />}/>

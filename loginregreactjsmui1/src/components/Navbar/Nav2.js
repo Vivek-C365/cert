@@ -15,7 +15,6 @@ import HelpIcon from "@mui/icons-material/Help";
 import FolderIcon from "@mui/icons-material/Folder";
 import ContactsIcon from "@mui/icons-material/Contacts";
 import InfoIcon from "@mui/icons-material/Info";
-import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
@@ -119,6 +118,10 @@ const Nav = () => {
     dispatch(unSetUserToken({ access_token: null }))
     removeToken()
     navigate('/')
+  }
+
+  const profile = ()=>{
+    navigate('/dashboard/profile')
   }
 
   return (
@@ -279,7 +282,7 @@ const Nav = () => {
                   "aria-labelledby": "basic-button",
                 }}
               >
-                <MenuItem onClick={handleClose}>Profile</MenuItem>
+                <MenuItem onClick={profile}>Profile</MenuItem>
                 <MenuItem onClick={handleClose}>My account</MenuItem>
                 <MenuItem onClick={handleLogout}>Logout</MenuItem>
               </Menu>
