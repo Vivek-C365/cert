@@ -1,4 +1,6 @@
-import React from "react";
+import React, {useState , useEffect}from "react";
+import { getToken} from '../../services/LocalStorageService';
+import { useGetLoggedUserQuery } from '../../services/userAuthApi';
 import Banner from "../../Assets/PNG/UserProfile/Banner.png";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LanguageIcon from "@mui/icons-material/Language";
@@ -8,6 +10,26 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 function User_profile() {
+
+  const { access_token } = getToken()
+  const { data, isSuccess } = useGetLoggedUserQuery(access_token)
+
+  const [userData, setUserData] = useState({
+    email: "",
+    name: ""
+  })
+
+  // Store User Data in Local State
+  useEffect(() => {
+    if (data && isSuccess) {
+      setUserData({
+        email: data.email,
+        name: data.name,
+      })
+    }
+  }, [data, isSuccess])
+
+
   return (
     <>
       <div className="dash-certscope-com">
@@ -39,7 +61,7 @@ function User_profile() {
                           <div className="div-flex-column">
                             <div className="heading-margin">
                               <div className="heading">
-                                <div className="text-wrapper">Aamir Mir</div>
+                                <div className="text-wrapper">{userData.name}</div>
                               </div>
                             </div>
                             <div className="p-flex-middle">

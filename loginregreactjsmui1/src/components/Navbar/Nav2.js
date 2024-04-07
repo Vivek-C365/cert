@@ -123,6 +123,9 @@ const Nav = () => {
   const profile = ()=>{
     navigate('/dashboard/profile')
   }
+  const Account_setting = ()=>{
+    navigate('/dashboard/Account_setting')
+  }
 
   return (
     <>
@@ -283,7 +286,7 @@ const Nav = () => {
                 }}
               >
                 <MenuItem onClick={profile}>Profile</MenuItem>
-                <MenuItem onClick={handleClose}>My account</MenuItem>
+                <MenuItem onClick={Account_setting}>My account</MenuItem>
                 <MenuItem onClick={handleLogout}>Logout</MenuItem>
               </Menu>
             </div>
