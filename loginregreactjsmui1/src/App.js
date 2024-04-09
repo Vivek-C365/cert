@@ -13,6 +13,7 @@ import Nav from './components/Navbar/Nav';
 import Nav2 from './components/Navbar/Nav2';
 import User_profile from './pages/User_profile/User_profile';
 import Account_setting from './pages/User_profile/Account_setting';
+import Enterprise from './components/Pages/Enterprise';
 function App() {
   const { access_token } = useSelector(state => state.auth)
   // v
@@ -30,10 +31,32 @@ function App() {
           <Route path="/dashboard/profile" element={access_token ? <User_profile/> :  <UserLogin/>} />
           <Route path="/dashboard/Account_setting" element={access_token ? <Account_setting/> :  <UserLogin/>} />
           <Route path="*" element={<Error_page/>} />
+
+          <Route path="business" element={<Enterprise Type="enterprise" />}/>
+          <Route path="service" element={<Enterprise Type="service" />}/>
+
+          
+          
+          <Route path="/agile-and-scrum/csm_certification" element={<Certification certificationType="CSM_Certification" />}/>
+          <Route path="/agile-and-scrum/cspo_certification" element={<Certification certificationType="CSPO_Certification" />}/>
+          <Route path="/agile-and-scrum/PMI_ACP_Certification" element={<Certification certificationType="PMI_ACP_Certification" />}/>
+          <Route path="big-data/big-data-administrator-certification" element={<Certification certificationType="Big_Data_Administrator_Certification" />}/>
+          <Route path="cloud-computing/aws-solution-architect-certification" element={<Certification certificationType="AWS_Solution_Architect_Certification" />}/>
+          <Route path="cloud-computing/aws-developer-associate-certification" element={<Certification certificationType="AWS_Developer_Associate_Certification" />}/>
+          <Route path="cyber-security/ceh-certification" element={<Certification certificationType="CEH_Certification" />}/>
+          <Route path="cyber-security/cissp-certification" element={<Certification certificationType="CISSP_Certification" />}/>
+          <Route path="data-science/data-science-python-certification" element={<Certification certificationType="Data_Science_with_Python_Certification" />}/>
+          <Route path="devops/devops-certification" element={<Certification certificationType="DevOps_Certification" />}/>
+          <Route path="digital-marketing/digital-marketing-expert-certification" element={<Certification certificationType="Digital_Marketing_Expert_Certification" />}/>
+          <Route path="iso-certifications/iso-27001-lead-auditor-certification" element={<Certification certificationType="ISO_27001_Lead_Auditor_Certification" />}/>
+          <Route path="it-service-management/itil-4-foundation-certification" element={<Certification certificationType="ITIL_4_Foundation_Certification" />}/>
           <Route path="/project_management/pmp_certification" element={<Certification certificationType="pmp" />}/>
-          <Route path="/project_management/ceh_certification" element={<Certification certificationType="ceh" />}/>
-          <Route path="/project_management/itil_4_foundation_certification" element={<Certification certificationType="ITIL_4_Foundation_Certification" />}/>
-          <Route path="/project_management/csm_certification" element={<Certification certificationType="CSM_Certification" />}/>
+          <Route path="project-management/pfmp-certification" element={<Certification certificationType="PfMP_Certification" />}/>
+          <Route path="project-management/pgmp-certification" element={<Certification certificationType="PgMP_Certification" />}/>
+          <Route path="quality-management/lean-six-sigma-yellow-belt-certification" element={<Certification certificationType="Lean_Six_Sigma_Yellow_Belt_Certification" />}/>
+          <Route path="quality-management/lean-six-sigma-black-belt-certification" element={<Certification certificationType="Lean_Six_Sigma_Black_Belt_certification" />}/>
+          <Route path="quality-management/lean-six-sigma-green-belt-certification" element={<Certification certificationType="Lean_Six_Sigma_Green_Belt_certification" />}/>
+          <Route path="ux-and-design-thinking/design-thinking-certification" element={<Certification certificationType="Design_Thinking_Certification" />}/>
         </Routes>
       </BrowserRouter>
     </>

@@ -1,6 +1,8 @@
 import React, {useState , useEffect}from "react";
 import { getToken} from '../../services/LocalStorageService';
 import { useGetLoggedUserQuery } from '../../services/userAuthApi';
+import { useDispatch } from 'react-redux';
+import { setUserInfo, unsetUserInfo } from '../../features/userSlice';
 import Banner from "../../Assets/PNG/UserProfile/Banner.png";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LanguageIcon from "@mui/icons-material/Language";
@@ -10,25 +12,46 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 function User_profile() {
-
+  const dispatch = useDispatch()
   const { access_token } = getToken()
   const { data, isSuccess } = useGetLoggedUserQuery(access_token)
 
   const [userData, setUserData] = useState({
     email: "",
-    name: ""
+    name: "",
+    bio: "",
+    profile_image :""
   })
 
   // Store User Data in Local State
   useEffect(() => {
-    if (data && isSuccess) {
+    if (isSuccess && data && data.name) {
       setUserData({
         email: data.email,
         name: data.name,
-      })
+        bio: data.bio,
+        profile_image:`http://127.0.0.1:8000/api/user/profile${data.profile_image}` 
+      });
     }
-  }, [data, isSuccess])
+  }, [data, isSuccess]);
 
+
+  // Store User Data in Redux Store
+  useEffect(() => {
+    if (isSuccess && data && data.name) {
+      dispatch(
+        setUserInfo({
+          email: data.email,
+          name: data.name,
+          bio : data.bio
+        })
+      );
+    }
+  }, [data, isSuccess, dispatch]);
+
+
+  console.log(userData)
+  console.log("Profile Image:", userData.profile_image);
 
   return (
     <>
@@ -140,9 +163,7 @@ function User_profile() {
                       <div className="separator" />
                       <div className="div-text-steel">
                         <p className="certified-trainer">
-                          Certified Trainer and consultant for PMP,
-                          <br />
-                          Six Sigma, ITIL, PRINCE2 and CSM.
+                        {userData.bio}
                         </p>
                       </div>
                       <div className="div-w">

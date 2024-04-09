@@ -434,7 +434,7 @@ function PMP_Certification({ certificationType }) {
         </div>
         <div className="resources_content center_div">
           {(certificationType === "pmp" ||
-            certificationType === "CSM_Certification") && (
+            certificationType === "CSM_Certification" || certificationType === "Lean_Six_Sigma_Black_Belt_certification") && (
             <>
               <div className="resources_top_content common_center">
                 <span className="upper_case">resources</span>

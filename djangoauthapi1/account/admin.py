@@ -1,30 +1,30 @@
 from django.contrib import admin
-from account.models import User
-from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
+from .models import User
+from django.utils.safestring import mark_safe
 
-class UserModelAdmin(BaseUserAdmin):
-  # The fields to be used in displaying the User model.
-  # These override the definitions on the base UserModelAdmin
-  # that reference specific fields on auth.User.
-  list_display = ('id', 'email', 'name', 'tc', 'is_admin')
-  list_filter = ('is_admin',)
-  fieldsets = (
-      ('User Credentials', {'fields': ('email', 'password')}),
-      ('Personal info', {'fields': ('name', 'tc')}),
-      ('Permissions', {'fields': ('is_admin',)}),
-  )
-  # add_fieldsets is not a standard ModelAdmin attribute. UserModelAdmin
-  # overrides get_fieldsets to use this attribute when creating a user.
-  add_fieldsets = (
-      (None, {
-          'classes': ('wide',),
-          'fields': ('email', 'name', 'tc', 'password1', 'password2'),
-      }),
-  )
-  search_fields = ('email',)
-  ordering = ('email', 'id')
-  filter_horizontal = ()
+@admin.register(User)
+class UserAdmin(admin.ModelAdmin):
+    list_display = ('email', 'name', 'profile_image_thumbnail', 'tc', 'bio', 'phone_number', 'social_media_links', 'created_at', 'is_active', 'is_admin')
+    search_fields = ('email', 'name')
+    list_filter = ('is_admin', 'is_active')
+    fieldsets = (
+        ('User Credentials', {'fields': ('email', 'password')}),
+        ('Personal Info', {'fields': ('name', 'tc', 'bio', 'phone_number', 'social_media_links', 'profile_image')}),
+        ('Permissions', {'fields': ('is_admin', 'is_active')}),
+    )
+    add_fieldsets = (
+        (None, {
+            'classes': ('wide',),
+            'fields': ('email', 'name', 'tc', 'bio', 'phone_number', 'social_media_links', 'profile_image', 'password1', 'password2'),
+        }),
+    )
+    ordering = ('email', 'id')
+    filter_horizontal = ()
 
-
-# Now register the new UserModelAdmin...
-admin.site.register(User, UserModelAdmin)
+    def profile_image_thumbnail(self, obj):
+        if obj.profile_image:
+            return mark_safe(f'<img src="{obj.profile_image.url}" height="50px" />')
+        else:
+            return ''
+    profile_image_thumbnail.short_description = 'Profile Image'
+    profile_image_thumbnail.allow_tags = True

@@ -21,9 +21,9 @@ import MenuItem from "@mui/material/MenuItem";
 
 import { removeToken } from "../../services/LocalStorageService";
 import { useNavigate } from "react-router-dom";
-import { useDispatch } from 'react-redux';
-import { unSetUserToken } from '../../features/authSlice';
-import { setUserInfo, unsetUserInfo } from '../../features/userSlice';
+import { useDispatch } from "react-redux";
+import { unSetUserToken } from "../../features/authSlice";
+import { setUserInfo, unsetUserInfo } from "../../features/userSlice";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,57 +34,57 @@ const Nav = () => {
 
   const pathway = [
     {
-        title: "Agile and Scrum",
-        link: "/project_management/csm_certification",
-      },
-      {
-        title: "Big Data",
-        link: "/big_data",
-      },
-      {
-        title: "Cloud Computing",
-        link: "/cloud_computing",
-      },
-      {
-        title: "Cyber Security",
-        link: "/project_management/ceh_certification",
-      },
-      {
-        title: "Data Science",
-        link: "/data_science",
-      },
-      {
-        title: "DevOps",
-        link: "/devops",
-      },
-      {
-        title: "Digital Marketing",
-        link: "/digital_marketing",
-      },
-      {
-        title: "Health and Safety",
-        link: "/health_and_safety",
-      },
-      {
-        title: "ISO Certifications",
-        link: "/iso_certifications",
-      },
-      {
-        title: "IT Service Management",
-        link: "/project_management/itil_4_foundation_certification",
-      },
-      {
-        title: "Project Management",
-        link: "/project_management/pmp_certification",
-      },
-      {
-        title: "Quality Management",
-        link: "/quality_management",
-      },
-      {
-        title: "UX and Design Thinking",
-        link: "/ux_and_design_thinking",
-      },
+      title: "Agile and Scrum",
+      link: "/project_management/csm_certification",
+    },
+    {
+      title: "Big Data",
+      link: "/big_data",
+    },
+    {
+      title: "Cloud Computing",
+      link: "/cloud_computing",
+    },
+    {
+      title: "Cyber Security",
+      link: "/project_management/ceh_certification",
+    },
+    {
+      title: "Data Science",
+      link: "/data_science",
+    },
+    {
+      title: "DevOps",
+      link: "/devops",
+    },
+    {
+      title: "Digital Marketing",
+      link: "/digital_marketing",
+    },
+    {
+      title: "Health and Safety",
+      link: "/health_and_safety",
+    },
+    {
+      title: "ISO Certifications",
+      link: "/iso_certifications",
+    },
+    {
+      title: "IT Service Management",
+      link: "/project_management/itil_4_foundation_certification",
+    },
+    {
+      title: "Project Management",
+      link: "/project_management/pmp_certification",
+    },
+    {
+      title: "Quality Management",
+      link: "/quality_management",
+    },
+    {
+      title: "UX and Design Thinking",
+      link: "/ux_and_design_thinking",
+    },
   ];
 
   const openNav = () => {
@@ -111,21 +111,21 @@ const Nav = () => {
     setAnchorEl(null);
   };
 
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   const handleLogout = () => {
-    dispatch(unsetUserInfo({ name: "", email: "" }))
-    dispatch(unSetUserToken({ access_token: null }))
-    removeToken()
-    navigate('/')
-  }
+    dispatch(unsetUserInfo({ name: "", email: "" }));
+    dispatch(unSetUserToken({ access_token: null }));
+    removeToken();
+    navigate("/");
+  };
 
-  const profile = ()=>{
-    navigate('/dashboard/profile')
-  }
-  const Account_setting = ()=>{
-    navigate('/dashboard/Account_setting')
-  }
+  const profile = () => {
+    navigate("/dashboard/profile");
+  };
+  const Account_setting = () => {
+    navigate("/dashboard/Account_setting");
+  };
 
   return (
     <>
@@ -142,10 +142,7 @@ const Nav = () => {
                   onClick={openNav}
                 />
               </div>
-              <div
-                id="mySidenav"
-                className={`sidenav ${isOpen ? "open" : ""}`}
-              >
+              <div id="mySidenav" className={`sidenav ${isOpen ? "open" : ""}`}>
                 <div className="div-flex_sidebar">
                   <a
                     href="https://certscope.com/"
@@ -157,61 +154,61 @@ const Nav = () => {
                 </div>
 
                 <div className="side_bar_tabs">
-                    <div className="content">
-                      <div className="content_img">
-                        <BusinessCenterIcon />
-                      </div>
-                      <span>Enterprise</span>
+                  <div className="content">
+                    <div className="content_img">
+                      <BusinessCenterIcon />
                     </div>
-                    <div className="content">
-                      <div className="content_img">
-                        <MiscellaneousServicesIcon />
-                      </div>
-                      <span>Services</span>
-                    </div>
-                    <div className="content">
-                      <div className="content_img">
-                        <PeopleAltIcon />
-                      </div>
-                      <span>Mentorship Program</span>
-                    </div>
-                    <div className="content">
-                      <div className="content_img">
-                        <CalendarTodayIcon />
-                      </div>
-                      <span>Training Calender</span>
-                    </div>
-                    <div className="content">
-                      <div className="content_img">
-                        <MenuBookIcon />
-                      </div>
-                      <span>Resources</span>
-                    </div>
-                    <div className="content">
-                      <div className="content_img">
-                        <HelpIcon />
-                      </div>
-                      <span>Help and Support</span>
-                    </div>
-                    <div className="content">
-                      <div className="content_img">
-                        <FolderIcon />
-                      </div>
-                      <span>Policies</span>
-                    </div>
-                    <div className="content">
-                      <div className="content_img">
-                        <ContactsIcon />
-                      </div>
-                      <span>Contact Us</span>
-                    </div>
-                    <div className="content">
-                      <div className="content_img">
-                        <InfoIcon />
-                      </div>
-                      <span>About us</span>
-                    </div>
+                    <span>Enterprise</span>
                   </div>
+                  <div className="content">
+                    <div className="content_img">
+                      <MiscellaneousServicesIcon />
+                    </div>
+                    <span>Services</span>
+                  </div>
+                  <div className="content">
+                    <div className="content_img">
+                      <PeopleAltIcon />
+                    </div>
+                    <span>Mentorship Program</span>
+                  </div>
+                  <div className="content">
+                    <div className="content_img">
+                      <CalendarTodayIcon />
+                    </div>
+                    <span>Training Calender</span>
+                  </div>
+                  <div className="content">
+                    <div className="content_img">
+                      <MenuBookIcon />
+                    </div>
+                    <span>Resources</span>
+                  </div>
+                  <div className="content">
+                    <div className="content_img">
+                      <HelpIcon />
+                    </div>
+                    <span>Help and Support</span>
+                  </div>
+                  <div className="content">
+                    <div className="content_img">
+                      <FolderIcon />
+                    </div>
+                    <span>Policies</span>
+                  </div>
+                  <div className="content">
+                    <div className="content_img">
+                      <ContactsIcon />
+                    </div>
+                    <span>Contact Us</span>
+                  </div>
+                  <div className="content">
+                    <div className="content_img">
+                      <InfoIcon />
+                    </div>
+                    <span>About us</span>
+                  </div>
+                </div>
               </div>
               <div className="div-flex">
                 <a
@@ -224,11 +221,7 @@ const Nav = () => {
               </div>
             </div>
             <div className="div">
-              <div
-                className="button-browse"
-                src={menu}
-                onClick={openPath}
-              >
+              <div className="button-browse" src={menu} onClick={openPath}>
                 <img className="SVG" alt="Svg" src={Book} />
                 <div className="span-ttu">
                   <div className="pathways">PATHWAYS</div>

@@ -236,7 +236,7 @@
       }
     ]
   },
-  "ceh": {
+  "CEH_Certification": {
     "heading": [
       {
         "heading_title": "Cyber Security",
@@ -433,6 +433,2140 @@
       {
         "title": "Appear in the exam",
         "description": "Once the training and iLabs sessions are complete, you can schedule the exam as per your convenient schedule."
+      }
+    ]
+  },
+  
+  "CSM_Certification": {
+    "heading": [
+      {
+        "heading_title": "AGILE AND SCRUM",
+        "title": "CSM Certification",
+        "description": "CSM Certification Training by CertScope; Certified Scrum Master Certification is granted by Scrum Alliance USA, CSM is the most demanded Agile certification in the market. CSM training is delivered only by Certified Scrum Trainers across the globe which makes it very niche in the market."
+      }
+    ],
+    "certification_overview": [
+      {
+        "title": "Case studies and activities",
+
+        "description": "Experiential learning with Case studies, Scrum Activities, Role plays, & Simulations"
+      },
+      {
+        "title": "Exam and Certification",
+        "description": "Exam and Certification is part of the program"
+      },
+      {
+        "title": "Case studies",
+        "description": "Case studies and activities are part of the program"
+      },
+      {
+        "title": "Membership",
+        "description": "2 Years of membership from Scrum Alliance"
+      }
+    ],
+
+    "Delivery_Methods": [
+      {
+        "Classroom": {
+          "title": "CLASSROOM",
+          "list": [
+            "Comprehensive Classroom Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Hard copy of Course Material",
+            "Centralized Venues",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies"
+          ],
+          "timeliness": "On-time training",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Live_online": {
+          "title": "LIVE ONLINE",
+          "list": [
+            "Live Online Instructor-led Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "Top instructors",
+          "view": "VIEW BATCHES"
+        }
+      }
+    ],
+
+    "know_more_title": [
+      {
+        "title": "Know more about CSM Certification"
+      }
+    ],
+
+    "steps": [
+      {
+        "label": "Qualified mentor equals insightful mentee",
+        "description": "The mentor will determine your readiness for the examination and will assess the areas of your strengths and weakness. The trainer will guide you through the simulation examination and assist you in answering the long scenario-based questions. Those questions are based on the standards set by previous examinations."
+      },
+      {
+        "label": "Case studies and practical assignments",
+        "description": "Learn the various concepts of CSM with the help of practical assignments and industry case studies."
+      }
+    ],
+    "Enterprise_Solutions": [
+      {
+        "title": "Learning delivery model as per your organisational requirements"
+      },
+      {
+        "title": "Enterprise-grade Learning Management System (LMS), dashboard and tools."
+      },
+      {
+        "title": "Flexible pricing options and models."
+      },
+      {
+        "title": "24x7 learner assistance and support"
+      }
+    ],
+
+    "learning_overview_desc": [
+      {
+        "description": "Get an overview of the training structure, modules, and methodology for CSM Certification training by CertScope training solutions."
+      }
+    ],
+    "faqs": [
+      {
+        "Title": "Introduction",
+        "list": [
+          "Agile and Scrum Overview",
+          "Agile Principles ",
+          "Agile Values "
+        ]
+      },
+      {
+        "Title": "Roles in Scrum",
+        "list": [
+          "Scrum Master roles and challenges",
+          "Product Owner roles and responsibilities",
+          "Product Owner roles and responsibilities"
+        ]
+      },
+      {
+        "Title": "Scrum ceremonies",
+        "list": [
+          "Sprint planning",
+          "Daily Scrum",
+          "Sprint Review",
+          "Sprint Retrospective"
+        ]
+      },
+      {
+        "Title": "Scrum Artifacts",
+        "list": ["Product Backlog", "Sprint Backlog", "Product Increment"]
+      }
+    ],
+
+    "learning_outcomes": [
+      {
+        "description": [
+          "Foundation of Agile and Scrum concepts",
+          "The guiding principles of ITIL 4Terminologies and Concepts of CSM",
+          "Scrum Ceremonies",
+          "Daily Scrum, Sprint Review, Sprint Retrospective, Product Backlog, Sprint Backlog, Definition of Done"
+        ]
+      }
+    ],
+    "certificationSteps": [
+      {
+        "title": "Enroll for the course",
+        "description": "Follow the easy and convenient approach to register yourself at CertScope"
+      },
+      {
+        "title": "Attend the course",
+        "description": "Attend the course and complete all the assignments as advised by the trainer."
+      },
+      {
+        "title": "Create online credentials at Scrum Alliance",
+        "description": "You will be receiving an email from Scrum Alliance to create login credentials"
+      },
+      {
+        "title": "Write an Online exam",
+        "description": "Once you create login credentials Take the 1 hour online CSM® test which comprises of 50 MCQs."
+      },
+      {
+        "title": "Minimum passing marks",
+        "description": "Write an online exam and score a minimum of  74% to pass the CSM® exam"
+      }
+    ],
+    "resources_data": [
+      {
+        "resource_images": ["/images/CSM_1.jpg"],
+        "resource_title": "IT SERVICE MANAGEMENT",
+        "resource_desc": ["Which ITIL version is better v3 or v4?"]
+      }
+    ]
+  },
+  "CSPO_Certification": {
+    "heading": [
+      {
+        "heading_title": "AGILE AND SCRUM",
+        "title": "CSPO Certification",
+        "description": "CSPO certification training from CertScope will help you to improve lead the scrum teams, with focus on product features, delivery of a product and overall efficiency which helps in better ROI. Certified Scrum Product Owner credential is offered by Scrum Alliance."
+      }
+    ],
+    "certification_overview": [
+      {
+        "title": "Case studies and activities",
+
+        "description": "Experiential learning with Case studies, Scrum Activities, Role plays, & Simulations"
+      },
+      {
+        "title": "Exam and Certification",
+        "description": "Exam and Certification is part of the program"
+      },
+      {
+        "title": "Simulation practice tests",
+        "description": "Access to 4 Simulation practice tests"
+      },
+      {
+        "title": "Multiple delivery options",
+        "description": "Choose from multiple delivery options"
+      }
+    ],
+
+    "Delivery_Methods": [
+      {
+        "Classroom": {
+          "title": "CLASSROOM",
+          "list": [
+            "Comprehensive Classroom Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Hard copy of Course Material",
+            "Centralized Venues",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies"
+          ],
+          "timeliness": "On-time training",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Live_online": {
+          "title": "LIVE ONLINE",
+          "list": [
+            "Live Online Instructor-led Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "Top instructors",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Self_placed": {
+          "title": "SELF PLACED",
+          "list": [
+            "Access to Audio/Video Learning",
+            "Exam and Certification Included",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support",
+            "Learn anytime anywhere"
+          ],
+          "timeliness": "$499",
+          "view": "ENROLL NOW"
+        }
+      },
+      {
+        "Practice": {
+          "title": "PRACTICE",
+          "list": [
+            "Industry standard question bank",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "Multiple re-takes",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "$10",
+          "view": "ENROLL NOW"
+        }
+      }
+    ],
+
+    "know_more_title": [
+      {
+        "title": "Know more about PSPO Certification"
+      }
+    ],
+
+    "steps": [
+      {
+        "label": "Qualified mentor equals insightful mentee",
+        "description": "The mentor will determine your readiness for the examination and will assess the areas of your strengths and weakness. The trainer will guide you through the simulation examination and assist you in answering the long scenario-based questions. Those questions are based on the standards set by previous examinations."
+      },
+      {
+        "label": "Prerequisites for CSPO certification",
+        "description": "There are no prerequisites to take the Certified Scrum Product Owner® (CSPO®) training and certification"
+      }
+    ],
+    "Enterprise_Solutions": [
+      {
+        "title": "Learning delivery model as per your organisational requirements"
+      },
+      {
+        "title": "Enterprise-grade Learning Management System (LMS), dashboard and tools."
+      },
+      {
+        "title": "Flexible pricing options and models."
+      },
+      {
+        "title": "24x7 learner assistance and support"
+      }
+    ],
+
+    "learning_overview_desc": [
+      {
+        "description": "Get an overview of the training structure, modules, and methodology for CSPO Certification training by CertScope training solutions."
+      }
+    ],
+    "faqs": [
+      {
+        "Title": "Fundamentals of Scrum",
+        "list": [
+          "Understand the core components of the Scrum framework, and the Scrum vocabulary",
+          "Core definitions",
+          "Core terminologies"
+        ]
+      },
+      {
+        "Title": "Roles and Responsibilities",
+        "list": ["Scope of Product owner "]
+      },
+      {
+        "Title": "Content Overview",
+        "list": [
+          "Product vision ",
+          "Estimation",
+          "Product Backlog",
+          "Prioritizing",
+          "Release management ",
+          "Sprints"
+        ]
+      }
+    ],
+
+    "learning_outcomes": [
+      {
+        "description": [
+          "Understand the core concepts of Scrum",
+          "Understand the scope of Product Owner and Scrum Master and lead",
+          "Learn how to improve on the implementation of Scrum",
+          "Learn how to motivate Agile teams and team members",
+          "Implement Scrum functionality",
+          "Manage risks"
+        ]
+      }
+    ],
+    "certificationSteps": [
+      {
+        "title": "Enroll for the course",
+        "description": "Follow the easy and convenient approach to register yourself at CertScope"
+      },
+      {
+        "title": "Attend the course",
+        "description": "Attend the course and complete all the assignments as advised by the trainer."
+      },
+      {
+        "title": "Create online credentials at Scrum Alliance",
+        "description": "You will be receiving an email from Scrum Alliance to create login credentials"
+      },
+      {
+        "title": "Write an Online exam",
+        "description": "Once you create login credentials Take the 1 hour online CSM® test which comprises of 50 MCQs."
+      },
+      {
+        "title": "Download the certificate",
+        "description": "You will be able to download the certificate online from Scrum Alliance website."
+      }
+    ],
+    "resources_data": [
+      {
+        "resource_images": ["/images/CSM_1.jpg"],
+        "resource_title": "IT SERVICE MANAGEMENT",
+        "resource_desc": ["Which ITIL version is better v3 or v4?"]
+      }
+    ]
+  },
+  "PMI_ACP_Certification": {
+    "heading": [
+      {
+        "heading_title": "AGILE AND SCRUM",
+        "title": "PMI-ACP Certification",
+        "description": "The PMI-ACP certification training by CertScope will help you gain knowledge of Agile principles and Agile techniques , PMI-ACP has various approaches to Agile such as Kanban, Lean, Scrum which makes you versatile in handling projects. It is offered by PMI-USA."
+      }
+    ],
+    "certification_overview": [
+      {
+        "title": "Case studies and activities",
+
+        "description": "Seven (07) Industry Case Studies with more than 15 industry based scenarios."
+      },
+      {
+        "title": "Multiple delivery options",
+        "description": "Delivery Options: Self Paced | Instructor-led Live Online | Traditional classroom"
+      },
+      {
+        "title": "Course completion certificate",
+        "description": "Contact hour certificate will be issued after successful completion of the training."
+      },
+      {
+        "title": "Hands-on projects and practice testsMultiple delivery options",
+        "description": "Five (05) hands-on projects and access to five (05) practice tests with 200 questions each."
+      }
+    ],
+
+    "Delivery_Methods": [
+      {
+        "Classroom": {
+          "title": "CLASSROOM",
+          "list": [
+            "Comprehensive Classroom Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Hard copy of Course Material",
+            "Centralized Venues",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies"
+          ],
+          "timeliness": "On-time training",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Live_online": {
+          "title": "LIVE ONLINE",
+          "list": [
+            "Live Online Instructor-led Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "Top instructors",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Self_placed": {
+          "title": "SELF PLACED",
+          "list": [
+            "Access to Audio/Video Learning",
+            "Exam and Certification Included",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support",
+            "Learn anytime anywhere"
+          ],
+          "timeliness": "$199",
+          "view": "ENROLL NOW"
+        }
+      },
+      {
+        "Practice": {
+          "title": "PRACTICE",
+          "list": [
+            "Industry standard question bank",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "Multiple re-takes",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "$10",
+          "view": "ENROLL NOW"
+        }
+      }
+    ],
+
+    "know_more_title": [
+      {
+        "title": "Know more about PMI-ACP Certification"
+      }
+    ],
+
+    "steps": [
+      {
+        "label": "Qualified mentor equals insightful mentee",
+        "description": "The mentor will determine your readiness for the examination and will assess the areas of your strengths and weakness. The trainer will guide you through the simulation examination and assist you in answering the long scenario-based questions. Those questions are based on the standards set by previous examinations."
+      },
+      {
+        "label": "Case studies and practical assignments",
+        "description": "Learn the various concepts of PMI-ACP with the help of practical assignments and industry case studies."
+      }
+    ],
+    "Enterprise_Solutions": [
+      {
+        "title": "Learning delivery model as per your organisational requirements"
+      },
+      {
+        "title": "Enterprise-grade Learning Management System (LMS), dashboard and tools."
+      },
+      {
+        "title": "Flexible pricing options and models."
+      },
+      {
+        "title": "24x7 learner assistance and support"
+      }
+    ],
+
+    "learning_overview_desc": [
+      {
+        "description": "Get an overview of the training structure, modules, and methodology for CSPO Certification training by CertScope training solutions."
+      }
+    ],
+    "faqs": [
+      {
+        "Title": "PMI-ACP Introduction",
+        "list": [
+          "Value of PMI–ACP® Certification to the Professional ",
+          "What is PMI ACP",
+          "Eligibility requirements for PMI-ACP",
+          "PMI-ACP syllabus and exam procedure",
+          "Timeline and exam fee of PMI-ACP",
+          "PMI-ACP Eligibility and exam format",
+          "ACP Practice questions ",
+          "Difference between PMP and ACP"
+        ]
+      },
+      {
+        "Title": "Introduction to Agile",
+        "list": [
+          "What is Agile and its evolution  ",
+          "What is Agile Methodology  ",
+          "Evolution of Agile  ",
+          "What is Agile manifesto",
+          "Principles of Agile manifesto",
+          "Define Agile ",
+          "Agile and its benefits  ",
+          "Real life examples of agile  "
+        ]
+      },
+      {
+        "Title": "Agile Methodologies, Framework, and Processes",
+        "list": [
+          "What are agile methodologies ",
+          "Agile frameworks",
+          "Agile processes ",
+          "What is scrum ",
+          "What are scrum roles",
+          "Define scrum meetings",
+          "What is extreme programming ",
+          "Explain diagram of extreme programming ",
+          "What are five core principles of XP in Agile ",
+          "What are crystal methodologies in Agile",
+          "What is dynamic systems development method"
+        ]
+      },
+      {
+        "Title": "Understanding scrum meetings",
+        "list": [
+          "What is Extreme Programming (XP) and Process Diagram",
+          "What are Five Core Principles of XP ",
+          "What are Crystal Methodologies? ",
+          "What is Dynamic Systems Development Method (DSDM?)  ",
+          "What are scrum roles",
+          "Define scrum meetings",
+          "What is extreme programming ",
+          "Explain diagram of extreme programming ",
+          "What are five core principles of XP in Agile ",
+          "What are crystal methodologies in Agile",
+          "What is dynamic systems development method"
+        ]
+      }
+    ],
+
+    "learning_outcomes": [
+      {
+        "description": [
+          "Understand the core concepts of Scrum",
+          "Understand the scope of Product Owner and Scrum Master and lead",
+          "Learn how to improve on the implementation of Scrum",
+          "Learn how to motivate Agile teams and team members",
+          "Implement Scrum functionality",
+          "Manage risks"
+        ]
+      }
+    ],
+    "certificationSteps": [
+      {
+        "title": "Enroll for the course",
+        "description": "Follow the easy and convenient approach to register yourself at CertScope"
+      },
+      {
+        "title": "Attend the course",
+        "description": "Attend the course and complete all the assignments as advised by the trainer."
+      },
+      {
+        "title": "Create online credentials at Scrum Alliance",
+        "description": "You will be receiving an email from Scrum Alliance to create login credentials"
+      },
+      {
+        "title": "Write an Online exam",
+        "description": "Once you create login credentials Take the 1 hour online CSM® test which comprises of 50 MCQs."
+      },
+      {
+        "title": "Download the certificate",
+        "description": "You will be able to download the certificate online from Scrum Alliance website."
+      }
+    ],
+    "resources_data": [
+      {
+        "resource_images": ["/images/CSM_1.jpg"],
+        "resource_title": "IT SERVICE MANAGEMENT",
+        "resource_desc": ["Which ITIL version is better v3 or v4?"]
+      }
+    ]
+  },
+  "Big_Data_Administrator_Certification": {
+    "heading": [
+      {
+        "heading_title": "BIG DATA",
+        "title": "Big Data Administrator Certification",
+        "description": "The Big Data Administration Certification training course by CertScope provides the participants with a comprehensive understanding of the nuts and bolts of the Hadoop cluster that further enables them to install, deploy, configure, upgrade, manage, monitor, tune, and secure a distributed Hadoop cluster."
+      }
+    ],
+    "certification_overview": [
+      {
+        "title": "Multiple delivery options",
+
+        "description": "Delivery Options: Self Paced | Instructor-led Live Online | Traditional classroom."
+      },
+      {
+        "title": "Case studies",
+        "description": "Seven (07) Industry Case Studies with more than 15 industry based scenarios."
+      },
+      {
+        "title": "Hands-on projects and practice tests",
+        "description": "Five (05) hands-on projects and access to five (05) practice tests with 200 questions each."
+      },
+      {
+        "title": "Practical Assignments and lab access",
+        "description": "Lab access for all the projects and assignments is given"
+      }
+    ],
+
+    "Delivery_Methods": [
+      {
+        "Classroom": {
+          "title": "CLASSROOM",
+          "list": [
+            "Comprehensive Classroom Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Hard copy of Course Material",
+            "Centralized Venues",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies"
+          ],
+          "timeliness": "On-time training",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Live_online": {
+          "title": "LIVE ONLINE",
+          "list": [
+            "Live Online Instructor-led Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "Top instructors",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Self_placed": {
+          "title": "SELF PLACED",
+          "list": [
+            "Access to Audio/Video Learning",
+            "Exam and Certification Included",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support",
+            "Learn anytime anywhere"
+          ],
+          "timeliness": "$199",
+          "view": "ENROLL NOW"
+        }
+      },
+      {
+        "Practice": {
+          "title": "PRACTICE",
+          "list": [
+            "Industry standard question bank",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "Multiple re-takes",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "$10",
+          "view": "ENROLL NOW"
+        }
+      }
+    ],
+
+    "know_more_title": [
+      {
+        "title": "Know more about Big data administrator certification"
+      }
+    ],
+
+    "steps": [
+      {
+        "label": "Advanced and in depth content",
+        "description": "This Big data developer certification training is designed to give you in-depth knowledge frameworks on the Hadoop ecosystem and big data engineering tools like Data Model Creation, Database Interfaces, Advanced Architecture, Spark, Scala, RDD, SparkSQL, Spark Streaming, Spark ML, GraphX, Sqoop, Flume, Pig, Hive, Impala, and Kafka Architecture."
+      },
+      {
+        "label": "Prerequisites for Big data developer certification course",
+        "description": "The Big Data Engineer certification course is ideal for professionals who wish to pursue a career in Big Data. There are no prerequisites to take this course, but prior knowledge of the listed skills and technologies are beneficial"
+      }
+    ],
+    "Enterprise_Solutions": [
+      {
+        "title": "Learning delivery model as per your organisational requirements"
+      },
+      {
+        "title": "Enterprise-grade Learning Management System (LMS), dashboard and tools."
+      },
+      {
+        "title": "Flexible pricing options and models."
+      },
+      {
+        "title": "24x7 learner assistance and support"
+      }
+    ],
+
+    "learning_overview_desc": [
+      {
+        "description": "Get an overview of the training structure, modules, and methodology for Big Data Administrator training by CertScope training solutions."
+      }
+    ],
+    "faqs": [
+      {
+        "Title": "Introduction",
+        "list": [
+          "Core fundamental concepts of working with Big Data",
+          "Understanding the state of data and the need for distributed systems to store and process Big Data",
+          "Distribute architectures and softwares used in Big Data analytics",
+          "Case for Apache Hadoop",
+          "Hadoop Distributions and Ecosystems",
+          "Key skills required to embrace the role of a Hadoop Administrator"
+        ]
+      },
+      {
+        "Title": "HADOOP CORE - HDFS & YARN",
+        "list": [
+          "Distributed architecture of Hadoop",
+          "Hadoop Distributed File System (HDFS)",
+          "HDFS high availability and federation",
+          "File operations and read write I/O handling in HDFS",
+          "Replication, balancing, and rack awareness in HDFS",
+          "HDFS commands",
+          "Processing resource management using YARN",
+          "YARN daemons and architecture"
+        ]
+      },
+      {
+        "Title": "HANDOOP INSTALLATION USING CLOUDERA MANAGER",
+        "list": [
+          "Prepare the Linux environment",
+          "Install Cloudera manager",
+          "Install Cloudera CDH on multiple nodes of Hadoop cluster using Cloudera manager ",
+          "Configurations using Cloudera manager",
+          "Monitoring and maintenance using Cloudera manager"
+        ]
+      },
+      {
+        "Title": "HANDOOP INSTALLATION USING CLOUDERA AMBARI",
+        "list": [
+          "Prepare the Linux environment",
+          "Install Ambari",
+          "Install Hortonworks HDP on multiple nodes of a Hadoop cluster using Ambari",
+          "Configurations using Ambari",
+          "Monitoring and maintenance using Ambari",
+          "Comparison between MapRFs and HDFS"
+        ]
+      },
+      {
+        "Title": "COMPUTATION USING YARN",
+        "list": [
+          "YARN architecture",
+          "YARN configuration",
+          "Running applications on YARN",
+          "Application lifecycle management on YARN",
+          "Resource management and scheduling on YARN"
+        ]
+      }
+    ],
+
+    "learning_outcomes": [
+      {
+        "description": [
+          "Core components of Hadoop – YARN, MapReduce and HDFS",
+          "Planning a Hadoop cluster in terms of the hardware and infrastructure based on the requirements",
+          "Installing and configuring the Hadoop cluster using Cloudera Manager and Ambari with all the components",
+          "Enabling HDFS High Availability, Resource Manager and exploring HDFS Federation",
+          "Contrasting MapRFs and HDFS, and the configuration changes required to operate",
+          "Loading data from the databases and streaming sources"
+        ]
+      }
+    ],
+    "certificationSteps": [
+      {
+        "title": "Enroll for the course",
+        "description": "Choose your mode of training and enroll for the training"
+      },
+      {
+        "title": "Attend the course",
+        "description": "Attend the course and complete all the assignments as advised by the trainer."
+      },
+      {
+        "title": "Appear in the exam",
+        "description": "Appear in the examination, once you complete an online exam , the certificate will be issued within 7 working days."
+      }
+    ]
+  },
+  "AWS_Solution_Architect_Certification": {
+    "heading": [
+      {
+        "heading_title": "CLOUD COMPUTING",
+        "title": "AWS Solution Architect Certification",
+        "description": "Amazon Web Services Solution Architect training assists you to design and scale AWS Cloud implementations with recommended practices by Amazon, it is a comprehensive course Amazon web services architectural principles, the content is aligned with exam announced by Amazon Web Services."
+      }
+    ],
+    "certification_overview": [
+      {
+        "title": "Practical Hands-on Session",
+
+        "description": "30 Hours of Hands on session"
+      },
+      {
+        "title": "Course Completion Certificate",
+        "description": "Course Completion Certificate will be provided at the end of the last day of training."
+      },
+      {
+        "title": "Live-Online Classes",
+        "description": "Classes will be conducted Live by Instructor."
+      },
+      {
+        "title": "Practical Assignments and lab access",
+        "description": "Practice Tests are provided to prepare for the examination and ensure 100% success in the first attempt"
+      }
+    ],
+
+    "Delivery_Methods": [
+      {
+        "Classroom": {
+          "title": "CLASSROOM",
+          "list": [
+            "Comprehensive Classroom Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Hard copy of Course Material",
+            "Centralized Venues",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies"
+          ],
+          "timeliness": "On-time training",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Live_online": {
+          "title": "LIVE ONLINE",
+          "list": [
+            "Live Online Instructor-led Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "Top instructors",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Self_placed": {
+          "title": "SELF PLACED",
+          "list": [
+            "Access to Audio/Video Learning",
+            "Exam and Certification Included",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support",
+            "Learn anytime anywhere"
+          ],
+          "timeliness": "Interested?",
+          "view": "ENROLL NOW"
+        }
+      },
+      {
+        "Practice": {
+          "title": "PRACTICE",
+          "list": [
+            "Industry standard question bank",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "Multiple re-takes",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "Interested?",
+          "view": "ENROLL NOW"
+        }
+      }
+    ],
+
+    "know_more_title": [
+      {
+        "title": "Know more about AWS Solution Architect Certification"
+      }
+    ],
+
+    "steps": [
+      {
+        "label": "Hands on session for all topics",
+        "description": "All the areas  of AWS Solution Architect Certification training include Hands-On session, which will help you to gain the practical knowledge."
+      },
+      {
+        "label": "30 Hours Intensive Coaching",
+        "description": "The  trainer will provide the live online session for 30 Hours. The live session will be through Webex- cisco, Zoom launcher or any online meeting platform."
+      },
+      {
+        "label": "Important Topics",
+        "description": "Hands On session on AWS components such as S3, EC2, IAM, DB services, DynamoDB, AWS application services, cost management, Lambda and Kinesis management tools, VPC, Route 53, SDK, CLI and AWS security features."
+      },
+      {
+        "label": "Projects and Assignments",
+        "description": "The projects and Assignments are part of the training, the trainees are expected to complete all the assignments suggested by trainer. "
+      }
+    ],
+    "Enterprise_Solutions": [
+      {
+        "title": "Learning delivery model as per your organisational requirements"
+      },
+      {
+        "title": "Enterprise-grade Learning Management System (LMS), dashboard and tools."
+      },
+      {
+        "title": "Flexible pricing options and models."
+      },
+      {
+        "title": "24x7 learner assistance and support"
+      }
+    ],
+
+    "learning_overview_desc": [
+      {
+        "description": "Get an overview of the training structure, modules, and methodology for AWS Solution Architect Certification training by CertScope training solutions.."
+      }
+    ],
+    "faqs": [
+      {
+        "Title": "Introduction to AWS Solution Architect",
+        "list": ["Introduction", "Exam Blue Print", "Study Tips"]
+      },
+      {
+        "Title": "Content Overview",
+        "list": [
+          "Basic Concepts of Cloud Computing",
+          "AWS Overview",
+          "AWS Services",
+          "Other AWS Services and Security"
+        ]
+      },
+      {
+        "Title": "Design Applications",
+        "list": [
+          "How to design Cloud Services",
+          "Planning and Designing",
+          "Monitoring and Logging",
+          "Hybrid IT Architectures"
+        ]
+      },
+      {
+        "Title": "Identity Access Management",
+        "list": [
+          "IAM Overview and Policies",
+          "IAM Users, Groups and Roles",
+          "Best Practices"
+        ]
+      },
+      {
+        "Title": "VPC",
+        "list": [
+          "VPC and Subnets basics",
+          "Networking",
+          "Using Security Groups and Network ACLs",
+          "VPC best practices and cost"
+        ]
+      },
+      {
+        "Title": "EC2 Overview",
+        "list": [
+          "Amazon Machine Images (AMI)",
+          "Launch and Connect to EC2 Linux instances",
+          "Launch and Connect to EC2 Windows instances",
+          "Create an AMI",
+          "Introduction to EC2 instance types",
+          "Overview of EBS and EFS",
+          "EC2 Pricing",
+          "Elastic Load Balancer (ELB)",
+          "AutoScaling",
+          "Amazon Elastic Container Service"
+        ]
+      }
+    ],
+
+    "learning_outcomes": [
+      {
+        "description": [
+          "Effectively demonstrate knowledge of how to architect and deploy secure and robust applications on AWS technologies.",
+          "Define a solution using architectural design principles based on customer requirements.",
+          "Provide implementation guidance based on best practices to the organization throughout the life cycle of the project."
+        ]
+      }
+    ],
+    "certificationSteps": [
+      {
+        "title": "Attend the Instructor led Online session",
+        "description": "Your account manager will guide you will all the details of the online session, you will get online access before the actual training date.  "
+      },
+      {
+        "title": "Complete the Assignments given by the trainer",
+        "description": "You will be given assignments by the trainer; you will have to complete the same in the given timeframe. You would need to ensure 100% attendance in the training."
+      },
+      {
+        "title": "Appear in the exam online",
+        "description": "At the end of the training, you will have to register for exam online, the trainer  will take you through the complete application process and will help you to write the exam."
+      }
+    ]
+  },
+  "AWS_Developer_Associate_Certification": {
+    "heading": [
+      {
+        "heading_title": "CLOUD COMPUTING",
+        "title": "AWS Developer Associate Certification",
+        "description": "The AWS Certified Developer Training is meant for the professionals who are into development role and practical experience of a year or more in developing and maintaining an AWS based application."
+      }
+    ],
+    "certification_overview": [
+      {
+        "title": "Delivery Options",
+
+        "description": "Choose from Online, Live Online and Classroom delivery options"
+      },
+      {
+        "title": "Course Completion Certificate",
+        "description": "Certificate is issues after the successful completion of the training"
+      },
+      {
+        "title": "Hands on Session",
+        "description": "Hands on Session on all the topics of AWS Developer is a part of Live Online Training"
+      },
+      {
+        "title": "Practice Tests",
+        "description": "Practice Tests are provided to prepare for the examination and ensure 100% success in the first attempt"
+      }
+    ],
+
+    "Delivery_Methods": [],
+
+    "know_more_title": [
+      {
+        "title": "Know more about AWS Developer Associate Certification"
+      }
+    ],
+
+    "steps": [
+      {
+        "label": "Hands on session for all topics",
+        "description": "All the areas  of AWS Solution Architect Certification training include Hands-On session, which will help you to gain the practical knowledge."
+      },
+      {
+        "label": "30 Hours Intensive Coaching",
+        "description": "The  trainer will provide the live online session for 30 Hours. The live session will be through Webex- cisco, Zoom launcher or any online meeting platform."
+      },
+      {
+        "label": "Important Topics",
+        "description": "Hands On session on AWS components such as S3, EC2, IAM, DB services, DynamoDB, AWS application services, cost management, Lambda and Kinesis management tools, VPC, Route 53, SDK, CLI and AWS security features."
+      },
+      {
+        "label": "Projects and Assignments",
+        "description": "The projects and Assignments are part of the training, the trainees are expected to complete all the assignments suggested by trainer. "
+      }
+    ],
+    "Enterprise_Solutions": [
+      {
+        "title": "Learning delivery model as per your organisational requirements"
+      },
+      {
+        "title": "Enterprise-grade Learning Management System (LMS), dashboard and tools."
+      },
+      {
+        "title": "Flexible pricing options and models."
+      },
+      {
+        "title": "24x7 learner assistance and support"
+      }
+    ],
+
+    "learning_overview_desc": [
+      {
+        "description": "Get an overview of the training structure, modules, and methodology for AWS Developer Associate Certification training by CertScope training solutions."
+      }
+    ],
+    "faqs": [
+      {
+        "Title": "Introduction to AWS",
+        "list": [
+          "Cloud Computing",
+          "Cloud deployment and service models",
+          "AWS Global infrastructure and benefits",
+          "AWS Services",
+          "Ways to Access AWS Services"
+        ]
+      },
+      {
+        "Title": "AWS Practical",
+        "list": [
+          "Sign-up for AWS free-tier account",
+          "Create an S3 bucket and upload data through Console"
+        ]
+      }
+    ],
+
+    "learning_outcomes": [
+      {
+        "description": [
+          "Introduction to Cloud and AWS",
+          "EC2 (Elastic Compute Cloud)",
+          "IAM (Identity & Access Management)",
+          "Using SDK and CLI",
+          "Load Balancing and Auto Scaling",
+          "Database Services (RDS, DynamoDB etc.)",
+          "Networking and Monitoring Services (VPC, CloudWatch, CloudTrail etc.)",
+          "Application Services (SES, SNS, SQS, AWS Lambda)",
+          "Automation in the Cloud (CloudFormation, Elastic Beanstalk)",
+          "Project and Certification"
+        ]
+      }
+    ],
+    "certificationSteps": [
+      {
+        "title": "Attend the Instructor led Online session",
+        "description": "Your account manager will guide you will all the details of the online session, you will get online access before the actual training date.  "
+      },
+      {
+        "title": "Complete the Assignments given by the trainer",
+        "description": "You will be given assignments by the trainer; you will have to complete the same in the given timeframe. You would need to ensure 100% attendance in the training."
+      },
+      {
+        "title": "Appear in the exam online",
+        "description": "At the end of the training, you will have to register for exam online, the trainer  will take you through the complete application process and will help you to write the exam."
+      }
+    ]
+  },
+  "CISSP_Certification": {
+    "heading": [
+      {
+        "heading_title": "Cyber Security",
+        "title": "CISSP Certification",
+        "description": "The Certified Information Systems Security Professional (CISSP) certification Training by CertScope is for the professionals who would like to understand security practices and principles. CISSP is granted by International Information System Security Certification Consortium, also known as (ISC)². CISSP credential means that a you can effectively design, implement and manage a best cybersecurity program."
+      }
+    ],
+    "certification_overview": [
+      {
+        "title": "CISSP Exam Voucher Included",
+        "description": "Exam and Certification included in the program"
+      },
+      {
+        "title": "Practice Tests",
+        "description": "5 simulation test papers to prepare you for CISSP certification"
+      },
+      {
+        "title": "Case studies",
+        "description": "Industry case studies and projects discussed during the training"
+      },
+      {
+        "title": "Certified Trainer",
+        "description": "Classes conducted by industry experts"
+      }
+    ],
+
+    "Delivery_Methods": [
+      {
+        "Classroom": {
+          "title": "CLASSROOM",
+          "list": [
+            "Comprehensive Classroom Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Hard copy of Course Material",
+            "Centralized Venues",
+            "Access to iLabs for 6 months",
+            "Industry Case Studies"
+          ],
+          "timeliness": "On-time training",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Live_online": {
+          "title": "LIVE ONLINE",
+          "list": [
+            "Live Online Instructor-led Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Soft copy of the course material",
+            "Access to iLabs for 6 months",
+            "Industry Case Studies",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "Top instructors",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Self_placed": {
+          "title": "SELF PLACED",
+          "list": [
+            "Access to Audio/Video Learning",
+            "Exam and Certification Included",
+            "Soft copy of the course material",
+            "Access to iLabs for 6 months",
+            "Industry Case Studies",
+            "24x7 learner assistance and support",
+            "Learn anytime anywhere"
+          ],
+          "timeliness": "$299",
+          "view": "GET IN TOUCH"
+        }
+      },
+      {
+        "Practice": {
+          "title": "PRACTICE",
+          "list": [
+            "Industry standard question bank",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "Multiple re-takes",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "$10",
+          "view": "GET IN TOUCH"
+        }
+      }
+    ],
+
+    "know_more_title": [
+      {
+        "title": "Know more about CISSP Certification"
+      }
+    ],
+
+    "steps": [
+      {
+        "label": "Course Objective",
+        "description": "The CISSP course is designed to help you advance in your journey as an Information Security Professional. You will be equipped with the knowledge and expertise to master concepts and methods in IT Security "
+      },
+      {
+        "label": "Prerequisites for CISSP certification",
+        "description": "There are no prerequisites to attend the CISSP training. To be eligible for certification you must have at least five years of cumulative experience in two or more of the eight domains in the (ISC)² CISSP Common Body of Knowledge. Earning a 4-year college degree or regional equivalent or an additional credential from the (ISC)² approved list will satisfy 1 year of the required experience.  "
+      }
+    ],
+    "Enterprise_Solutions": [
+      {
+        "title": "Learning delivery model as per your organisational requirements"
+      },
+      {
+        "title": "Enterprise-grade Learning Management System (LMS), dashboard and tools."
+      },
+      {
+        "title": "Flexible pricing options and models."
+      },
+      {
+        "title": "24x7 learner assistance and support"
+      }
+    ],
+    "faqs": [
+      {
+        "Title": "Introduction Security and Risk Management",
+        "list": [
+          "Foundational Concepts of Information Security", 
+          "Professional Ethics ",
+          "Information Security Management Systems Documentation ",
+          "Business Continuity Planning ",
+          "Human Resource Security ",
+          "Concepts of Risk Management"
+        
+        ]
+      },
+      {
+        "Title": "Asset Security",
+        "list": [
+          "Introduction to Asset Management `",
+          "Concepts of Asset Management Lifecycle Management ",
+          "Asset Classification and Ownership ",
+          "Vulnerability Analysis",
+          "Asset Retention ",
+          "Basics of Privacy Principles "
+        ]
+      },
+      {
+        "Title": "Security architecture and engineering",
+        "list": [
+          "Introduction to Information Security Engineering ",
+          "Fundamentals of Information Security Models"
+        ]
+      }
+    ],
+    "learning_overview_desc": [
+      {
+        "description": "Get an overview of the training structure, modules, and methodology for CISSP Certification training by CertScope training solutions."
+      }
+    ],
+    "learning_outcomes": [
+      {
+        "description": [
+          "Learn how to protect organizational assets throughout every stage in their lifecycle.",
+          "Physical Security",
+          "Security Standards",
+          "Network Security",
+          "Build highly secure information security teams"
+        ]
+      }
+    ],
+    "certificationSteps": [
+      {
+        "title": "Start by choosing the desired delivery method of training",
+        "description": "You can choose from the classroom, Live online or self-paced learning delivery options. Choose which suits your needs the best. Once you enroll, the relevant designated course adviser will guide you on how to get started with the training."
+      },
+      {
+        "title": "Complete the required hours of training",
+        "description": "The trainer will take you through the complete syllabus"
+      },
+      {
+        "title": "Appear in the online exam.",
+        "description": "At the end of the  training, you will have to register for exam online, the trainer  will take you through the complete application process and will help you to write the exam."
+      }
+    ]
+  },
+  "Data_Science_with_Python_Certification": {
+    "heading": [
+      {
+        "heading_title": "DATA SCIENCE",
+        "title": "Data Science with Python Certification",
+        "description": "Data Analytics with Python Certification from CertScope extensively covers all the stages of Data Science, from Data extraction, munging, cleansing, modelling to visualization, the course discusses all the core concepts related to Python, by laying specific focus on Data Science, and further allows you to have a hands-on practice on the different application libraries like Pandas, NumPy, SciPy, Scikit-learn, and Matplotlib."
+      }
+    ],
+    "certification_overview": [
+      {
+        "title": "Multiple delivery options",
+
+        "description": "Choose form Self Paced, Instructor-led Live Online and Traditional classroom options to suit your preference."
+      },
+      {
+        "title": "Hands-on projects and practice tests",
+        "description": "Hands on Session on all the modules is a part of the Training and Certification"
+      },
+      {
+        "title": "Case studies",
+        "description": "Seven (07) Industry Case Studies with more than 15 industry based scenarios."
+      },
+      {
+        "title": "Exam and Certification",
+        "description": "Exam and Certification is part of the program and will be conducted at the end of training."
+      }
+    ],
+
+    "Delivery_Methods": [
+      {
+        "Classroom": {
+          "title": "CLASSROOM",
+          "list": [
+            "Comprehensive Classroom Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Hard copy of Course Material",
+            "Centralized Venues",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies"
+          ],
+          "timeliness": "On-time training",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Live_online": {
+          "title": "LIVE ONLINE",
+          "list": [
+            "Live Online Instructor-led Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "Top instructors",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Self_placed": {
+          "title": "SELF PLACED",
+          "list": [
+            "Access to Audio/Video Learning",
+            "Exam and Certification Included",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support",
+            "Learn anytime anywhere"
+          ],
+          "timeliness": "Interested?",
+          "view": "GET IN TOUCH"
+        }
+      },
+      {
+        "Practice": {
+          "title": "PRACTICE",
+          "list": [
+            "Industry standard question bank",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "Multiple re-takes",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "Interested?",
+          "view": "GET IN TOUCH"
+        }
+      }
+    ],
+
+    "know_more_title": [
+      {
+        "title": "Know more about Data Science with Python Certification"
+      }
+    ],
+
+    "steps": [
+      {
+        "label": "Who should attend this course",
+        "description": "This course is designed for students and the professionals having the designations like: Technical Analyst, Data Analyst, Database Developer, Hadoop Developer, Big Data Architect, Programming Analyst, Big Data Engineer, Business Analyst, and the aspirants who are looking for a career progression in the field of Data Science. "
+      },
+      {
+        "label": "Job roles for Data scientists",
+        "description": 
+          "Data Scientist, Data Engineer, Business Intelligence Analyst, Marketing Analyst"
+      },
+      {
+        "label": "Core Objectives of Data science with Python certification",
+        "description": "Build your first program in Python,  Learn about Python fundamentals, Python data structures, and working with data in Python,  Become familiar with key Python functions, objects, and classes,  Gain career skills in one of the world’s most popular programming languages"
+      }
+    ],
+    "Enterprise_Solutions": [
+      {
+        "title": "Learning delivery model as per your organisational requirements"
+      },
+      {
+        "title": "Enterprise-grade Learning Management System (LMS), dashboard and tools."
+      },
+      {
+        "title": "Flexible pricing options and models."
+      },
+      {
+        "title": "24x7 learner assistance and support"
+      }
+    ],
+
+    "learning_overview_desc": [
+      {
+        "description": "Get an overview of the training structure, modules, and methodology for Data Science with Python Certification training by CertScope training solutions."
+      }
+    ],
+    "faqs": [
+      {
+        "Title": "Introduction to Python Programming",
+        "list": [
+          "Introduction to Data Science",
+          "Introduction to Python",
+          "Basic Operations in Python",
+          "Variable Assignment",
+          "Functions: In-built functions, User-defined functions",
+          "Conditions: if, if-else, nested if-else, else-if"
+        ]
+      },
+      {
+        "Title": "Data structures in python",
+        "list": [
+          "List: Different datatypes in a list, List in a list ",
+          "Operations on a List: Slicing, Splicing, Sub-setting ",
+          "Conditional (true/false) on a List",
+          "Applying functions on a List",
+          "Dictionary: Index, Value",
+          "Operation on a Dictionary: Slicing, Splicing, Sub-setting",
+          "NumPy array: Datatypes in an array, Dimensions in an array",
+          "Operations on an Array: Slicing, Splicing, Sub-setting",
+          "Conditional (true/false) on an Array",
+          "Loops: for, while"
+        ]
+      },
+      {
+        "Title": "Statistics for Data Science",
+        "list": [
+          "Seabourn & Matplotlib – Introduction",
+          "Univariate analysis on data",
+          "Find the Distribution",
+          "Applying functions on a List",
+          "Find Mean, Median, Mode, and Standard Deviation of data",
+          "Multiple data with different distributions",
+          "Bootstrapping and Sub-setting",
+          "Making samples from the data",
+          "Making stratified samples – covered in bivariate analysis",
+          "Find the Mean of sample",
+          "Central Limit Theorem",
+          "Plotting",
+          "Hypothesis testing + DOE",
+          "Bivariate analysis",
+          "Correlation"
+        ]
+      },
+      {
+        "Title": "Python Pandas",
+        "list": [
+          "File I/O",
+          "Series: Datatypes in Series, Index",
+          "Data Frame",
+          "Series to Data Frame",
+          "Re-indexing",
+          "Operations on Data Frame: Slicing, Splicing (also Alternate), Sub-setting",
+          "Pandas",
+          "Stat operations on Data Frame",
+          "Reading from different sources",
+          "Missing data treatment",
+          "Merge, Join",
+          "Writing to file",
+          "DB operations"
+        ]
+      }
+    ],
+
+    "learning_outcomes": [
+      {
+        "description": [
+          "Determining what Data Science is all about and the role that Python plays in it",
+          "Identifying the phases of data analytics workflow",
+          "Understanding the key statistical concepts relevant to data science",
+          "Determining the python environment and libraries",
+          "Load Balancing and Auto Scaling",
+          "Getting data from open data sources and web",
+          "Determining the key concepts of python programming",
+          "Using the python libraries like Pandas, NumPy, SciPy, Scikit-learn, and Matplotlib"
+        ]
+      }
+    ],
+    "certificationSteps": [
+      {
+        "title": "Enroll for the course",
+        "description": "Enroll for the course and your account manager will guide you will all the details of the online/classroom/self paced session, you will get online access before the actual training date. "
+      },
+      {
+        "title": "Complete the Assignments given by the trainer",
+        "description": "You will be given assignments by the trainer; you will have to complete the same in the given timeframe. You would need to ensure 100% attendance in the training."
+      },
+      {
+        "title": "Appear in the exam online",
+        "description": "At the end of the training, you will have to register for exam online, the trainer  will take you through the complete application process and will help you to write the exam."
+      }
+    ]
+  },
+  "DevOps_Certification": {
+    "heading": [
+      {
+        "heading_title": "DEVOPS",
+        "title": "DevOps Certification",
+        "description": "DevOps is a blend of people, process and products for continuous value delivery. The certification course from CertScope is designed to make you understand the significance and the need of DevOps in the real-time business operations. The course assists you in building the ability for integrating and automating the workflow between the development and operations team."
+      }
+    ],
+    "certification_overview": [
+      {
+        "title": "Multiple delivery options",
+
+        "description": "Delivery Options: Self Paced | Instructor-led Live Online | Traditional classroom."
+      },
+      {
+        "title": "Hands-on projects and practice tests",
+        "description": "Five (05) hands-on projects and access to five (05) practice tests with 200 questions each."
+      },
+      {
+        "title": "Case studies",
+        "description": "Seven (07) Industry Case Studies with more than 15 industry based scenarios."
+      },
+      {
+        "title": "Practical Assignments and lab access",
+        "description": "Lab access for all the projects and assignments is given"
+      }
+    ],
+
+    "Delivery_Methods": [
+      {
+        "Classroom": {
+          "title": "CLASSROOM",
+          "list": [
+            "Comprehensive Classroom Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Hard copy of Course Material",
+            "Centralized Venues",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies"
+          ],
+          "timeliness": "On-time training",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Live_online": {
+          "title": "LIVE ONLINE",
+          "list": [
+            "Live Online Instructor-led Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "Top instructors",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Self_placed": {
+          "title": "SELF PLACED",
+          "list": [
+            "Access to Audio/Video Learning",
+            "Exam and Certification Included",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support",
+            "Learn anytime anywhere"
+          ],
+          "timeliness": "Interested?",
+          "view": "GET IN TOUCH"
+        }
+      },
+      {
+        "Practice": {
+          "title": "PRACTICE",
+          "list": [
+            "Industry standard question bank",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "Multiple re-takes",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "Interested?",
+          "view": "GET IN TOUCH"
+        }
+      }
+    ],
+
+    "know_more_title": [
+      {
+        "title": "Know more about Dev-Ops Certification"
+      }
+    ],
+
+    "steps": [
+      {
+        "label": "Who should attend this course",
+        "description": "This course is designed for students and the professionals having the designations like: Software Tester, Architect, Build & Release Engineer, Automation Engineer, Integration Specialist and the aspirants who are seeking a strong foundation with DevOps"
+      },
+      {
+        "label": "About Dev-Ops",
+        "description": 
+          "DevOps is a blend of people, process and products for continuous value delivery. The certification course from CertScope is designed to make you understand the significance and the need of DevOps in the real-time business operations. The course assists you in building the ability for integrating and automating the workflow between the development and operations team."
+      }
+    ],
+    "Enterprise_Solutions": [
+      {
+        "title": "Learning delivery model as per your organisational requirements"
+      },
+      {
+        "title": "Enterprise-grade Learning Management System (LMS), dashboard and tools."
+      },
+      {
+        "title": "Flexible pricing options and models."
+      },
+      {
+        "title": "24x7 learner assistance and support"
+      }
+    ],
+
+    "learning_overview_desc": [
+      {
+        "description": "Get an overview of the training structure, modules, and methodology for DevOps Certification training by CertScope training solutions."
+      }
+    ],
+    "faqs": [
+      {
+        "Title": "Introduction to DevOps",
+        "list": [
+          "Define DevOps",
+          "What is DevOps?",
+          "SDLC models, Lean, ITIL, Agile ",
+          "Why DevOps?",
+          "History of DevOps",
+          "DevOps Stakeholders",
+          "DevOps Goals",
+          "Important Terminology",
+          "DevOps Perspective",
+          "DevOps and Agile",
+          "DevOps Tools",
+          "Configuration Management",
+          "Continuous Integration and Deployment"
+        ]
+      },
+      {
+        "Title": "Data structures in python",
+        "list": [
+          "List: Different datatypes in a list, List in a list ",
+          "Operations on a List: Slicing, Splicing, Sub-setting ",
+          "Conditional (true/false) on a List",
+          "Applying functions on a List",
+          "Dictionary: Index, Value",
+          "Operation on a Dictionary: Slicing, Splicing, Sub-setting",
+          "NumPy array: Datatypes in an array, Dimensions in an array",
+          "Operations on an Array: Slicing, Splicing, Sub-setting",
+          "Conditional (true/false) on an Array",
+          "Loops: for, while"
+        ]
+      },
+      {
+        "Title": "Introduction to Cloud Computing",
+        "list": [
+          "What is Cloud Computing?",
+          "Characteristics of Cloud Computing",
+          "Cloud Implementation Models",
+          "Cloud Service Models",
+          "Advantages of Cloud Computing",
+          "Concerns of Cloud Computing"
+        ]
+      },
+      {
+        "Title": "Introduction to Virtualization",
+        "list": [
+          "What is Virtualization?",
+          "History of Virtualization",
+          "What is Hypervisor?",
+          "Types of Server Virtualization",
+          "Benefits of Virtualization",
+          "Important Virtualization Products"
+        ]
+      },
+      {
+        "Title": "Vagrant",
+        "list": [
+          "Why and what is Vagrant? ",
+          "Uses of Vagrant in an environment",
+          "Alternatives of Vagrant",
+          "Vagrant versions",
+          "Installing Virtual Box",
+          "How to install Vagrant on Windows?",
+          "Configuring Vagrant",
+          "Creating first VM with Vagrant",
+          "Operations on the VM",
+          "Connecting to the VM",
+          "Add required Images to Vagrant",
+          "Using Vagrant"
+        ]
+      }
+    ],
+
+    "learning_outcomes": [
+      {
+        "description": [
+          "Defining the basics concepts of DevOps",
+          "Explaining the significance and need of DevOps in the real-time business operations",
+          "Understanding the installation & configuration of basic infrastructure servers",
+          "Implementing the concepts & practices of DevOps",
+          "Discussing about the different DevOps tools, such as Puppet, Jenkins, etc."
+        ]
+      }
+    ],
+    "certificationSteps": [
+      {
+        "title": "Enroll for the course",
+        "description": "Enroll for the course and your account manager will guide you will all the details of the online/classroom/self paced session, you will get online access before the actual training date. "
+      },
+      {
+        "title": "Complete the Assignments given by the trainer",
+        "description": "You will be given assignments by the trainer; you will have to complete the same in the given timeframe. You would need to ensure 100% attendance in the training."
+      },
+      {
+        "title": "Appear in the exam online",
+        "description": "At the end of the training, you will have to register for exam online, the trainer  will take you through the complete application process and will help you to write the exam."
+      }
+    ]
+  },
+  "Digital_Marketing_Expert_Certification": {
+    "heading": [
+      {
+        "heading_title": "DIGITAL MARKETING",
+        "title": "Digital Marketing Expert Certification",
+        "description": "Digital Marketing Expert Certification Training by CertScope is a comprehensive training courses where our expert trainers will provide hands –on session on SEO, SEM, web analytics , search engine analytics, mobile marketing, email marketing etc."
+      }
+    ],
+    "certification_overview": [
+      {
+        "title": "Multiple delivery options",
+
+        "description": "Delivery Options: Self Paced | Instructor-led Live Online | Traditional classroom."
+      },
+      {
+        "title": "Hands-on projects and practice tests",
+        "description": "Five (05) hands-on projects and access to five (05) practice tests with 200 questions each."
+      },
+      {
+        "title": "Case studies",
+        "description": "Seven (07) Industry Case Studies with more than 15 industry based scenarios."
+      },
+      {
+        "title": "Exam and Certification",
+        "description": "Exam and certification is part of the program"
+      }
+    ],
+
+    "Delivery_Methods": [
+      {
+        "Classroom": {
+          "title": "CLASSROOM",
+          "list": [
+            "Comprehensive Classroom Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Hard copy of Course Material",
+            "Centralized Venues",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies"
+          ],
+          "timeliness": "On-time training",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Live_online": {
+          "title": "LIVE ONLINE",
+          "list": [
+            "Live Online Instructor-led Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "Top instructors",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Self_placed": {
+          "title": "SELF PLACED",
+          "list": [
+            "Access to Audio/Video Learning",
+            "Exam and Certification Included",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support",
+            "Learn anytime anywhere"
+          ],
+          "timeliness": "Interested?",
+          "view": "GET IN TOUCH"
+        }
+      },
+      {
+        "Practice": {
+          "title": "PRACTICE",
+          "list": [
+            "Industry standard question bank",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "Multiple re-takes",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "Interested?",
+          "view": "GET IN TOUCH"
+        }
+      }
+    ],
+
+    "know_more_title": [
+      {
+        "title": "Know more about Digital Marketing Expert Certification"
+      }
+    ],
+
+    "steps": [
+      {
+        "label": "Course Objective",
+        "description": "Digital Marketing expert certification from CertScope explores several aspects of the new digital marketing environment, including topics such as digital marketing analytics, search engine optimization, social media marketing, search engine marketing. upon completion you will have a richer understanding of digital marketing landscape and acquire a new set of stories, concepts, and tools to help you digitally create, promote products and services."
+      },
+      {
+        "label": "Prerequisites for Digital Marketing Certification",
+        "description": "There are no prerequisites for this certifications, professionals who are interested in making the career in Digital Marketing can take this course."
+      },
+      {
+        "label": "Who should take this course",
+        "description": "Professionals looking to upskill their digital marketing expertise.Digital marketing professionals looking to broaden their skillset.Aspiring professionals looking to make career in digital marketing."
+      }
+    ],
+    "Enterprise_Solutions": [
+      {
+        "title": "Learning delivery model as per your organisational requirements"
+      },
+      {
+        "title": "Enterprise-grade Learning Management System (LMS), dashboard and tools."
+      },
+      {
+        "title": "Flexible pricing options and models."
+      },
+      {
+        "title": "24x7 learner assistance and support"
+      }
+    ],
+
+    "learning_overview_desc": [
+      {
+        "description": "Get an overview of the training structure, modules, and methodology for Digital Marketing Expert Certification training by CertScope training solutions."
+      }
+    ],
+    "faqs": [
+      {
+        "Title": "Introduction to Digital Marketing",
+        "list": [
+          "Importance of Digital marketing ",
+          "Various means of digital marketing"
+        ]
+      },
+      {
+        "Title": "SEO",
+        "list": [
+          "Search engines",
+          "Google submission",
+          "Bing",
+          "Yahoo"
+        ]
+      },
+      {
+        "Title": "Social Media Marketing",
+        "list": [
+          "Facebook marketing",
+          "Instagram ",
+          "Youtube"
+        ]
+      }
+    ],
+
+    "learning_outcomes": [
+      {
+        "description": [
+          "Fundamentals of Digital Marketing",
+          "Search engine marketing",
+          "Search engine optimization",
+          "Social media marketing"
+        ]
+      }
+    ],
+    "certificationSteps": [
+      {
+        "title": "Enroll for the course",
+        "description": "Choose your mode of training and enroll for the training"
+      },
+      {
+        "title": "Attend the training",
+        "description": "Attend the training and complete the assignments as suggested by trainer"
+      },
+      {
+        "title": "Appear in the exam",
+        "description": "Appear in the examination, once you complete an online exam , the certificate will be issued within 7 working days."
+      }
+    ]
+  },
+  "ISO_27001_Lead_Auditor_Certification": {
+    "heading": [
+      {
+        "heading_title": "ISO CERTIFICATIONS",
+        "title": "ISO 27001 Lead Auditor Certification",
+        "description": "ISO/IEC 27001 specifies a management system that is intended to bring information security under management control and gives specific requirements. Organizations that meet the requirements may be certified by an accredited certification body following successful completion of an audit."
+      }
+    ],
+    "certification_overview": [
+      {
+        "title": "Multiple delivery options",
+
+        "description": "Delivery Options: Self Paced | Instructor-led Live Online | Traditional classroom."
+      },
+      {
+        "title": "Hands-on projects and practice tests",
+        "description": "Five (05) hands-on projects and access to five (05) practice tests with 200 questions each."
+      },
+      {
+        "title": "Case studies",
+        "description": "Seven (07) Industry Case Studies with more than 15 industry based scenarios."
+      },
+      {
+        "title": "Exam and Certification",
+        "description": "Exam and Certification is part of the program and will be conducted at the end of training."
+      }
+    ],
+
+    "Delivery_Methods": [],
+
+    "know_more_title": [
+      {
+        "title": "Know more about ISO 27001 Certification program"
+      }
+    ],
+
+    "steps": [
+      {
+        "label": "Comprehensive instructor-led training",
+        "description": "This 5 day ISO 27000 Lead Auditor course is designed to equip delegates with the skills and techniques of auditing and how to communicate the findings of the audit effectively to the management of the audited organization."
+      },
+      {
+        "label": "Case studies and practical assignments",
+        "description": "Systematically examine the organization's information security risks, taking account of the threats, vulnerabilities, and impacts. Design and implement a coherent and comprehensive suite of information security controls and/or other forms of risk treatment (such as risk avoidance or risk transfer) to address those risks that are deemed unacceptable; and adopt an overarching management process to ensure that the information security controls continue to meet the organization's information security needs on an ongoing basis."
+      },
+      {
+        "label": "Who should attend",
+        "description": "Individuals who want to become ISMS Registered Lead Auditors Individuals leading their companies to ISO 27001:2013 registration.It is also essential for anyone involved managing information and with a responsibility to design, implement and manage an ISMS management system that meets the requirements of ISO 27001:2013"
+      }
+    ],
+    "Enterprise_Solutions": [
+      {
+        "title": "Learning delivery model as per your organisational requirements"
+      },
+      {
+        "title": "Enterprise-grade Learning Management System (LMS), dashboard and tools."
+      },
+      {
+        "title": "Flexible pricing options and models."
+      },
+      {
+        "title": "24x7 learner assistance and support"
+      }
+    ],
+
+    "learning_overview_desc": [
+      {
+        "description": "Get an overview of the training structure, modules, and methodology for ISO 27001 Lead Auditor Certification training by CertScope training solutions."
+      }
+    ],
+    "faqs": [
+      {
+        "Title": "Introduction to ISO 27001",
+        "list": [
+          "Introduction & suggested reading",
+          "What is ISO 27001?",
+          "The structure of ISO 27001",
+          "Information security principles",
+          "Introduction to the Information Security Management System",
+          "Implementing ISO 27001 requirements",
+          "Implementing ISO 27001 as a project",
+          "Documenting ISO 27001 requirements"
+        ]
+      },
+      {
+        "Title": "The planning Phase",
+        "list": [
+          "Understanding your organization and its context [clause 4.1",
+          "Understanding the needs and expectations of interested parties [clause 4.2]",
+          "Determining the scope of the ISMS [clause 4.3]",
+          "Leadership and commitment [clause 5.1]",
+          "Information Security Policy [clause 5.2]",
+          "Organizational roles, responsibilities and authorities [clause 5.3]",
+          "Information security objectives [clause 6.2]"
+        ]
+      },
+      {
+        "Title": "Risk Management",
+        "list": [
+          "Introduction & suggested reading",
+          "Formulating the risk treatment plan [clause 6.1.3]",
+          "Implementing the risk treatment plan [clause 8.3] ",
+          "Operational planning and control [clause 8.1]"
+        ]
+      }
+    ],
+
+    "learning_outcomes": [
+      {
+        "description": [
+          "Background and overview of the ISO 27001 and other Information Security Standards",
+          "An introduction to auditing and implementing an audit system and the auditor’s role in the process",
+          "Management’s role in reviewing risk and the effectiveness of the overall ISMS",
+          "Planning and managing a process based audit",
+          "Resources and timing",
+          "Use of checklists",
+          "Selection of audit teams",
+          "Conducting the audit – skills, techniques and auditor competence",
+          "Evaluating the significance of audit findings",
+          "Communicating and presenting audit reports"
+        ]
+      }
+    ],
+    "certificationSteps": [
+      {
+        "title": "Choose the delivery method",
+        "description": "Choose your preferred delivery mode and complete the required training"
+      },
+      {
+        "title": "Complete the training",
+        "description": "Through an online workshop via webinar/or classroom you will enjoy enhanced learning opportunities through roleplay, case studies, and other activities. You will also work on developing the soft skills needed to prepare for the certification exam, and to excel as a certification auditor."
+      },
+      {
+        "title": "Appear in the exam",
+        "description": "After you complete the training, you will be ready to take the final step: the certification exam. You can take this online exam from your home, your office, or any other place that is convenient for you."
+      },
+      {
+        "title": "Appear in an online exam.",
+        "description": "After you complete the training, you will be ready to take the final step: the certification exam. You can take this online exam from your home, your office, or any other place that is convenient for you. This online exam has been certified by Exemplar Global (previously RABQSA), and you will receive your certificate once you successfully pass the test. This certification is highly regarded, serving as evidence that you are competent to perform certification audits according to ISO 27001.The fee for the exam is included in the price of the workshop, and you will have access to the exam after you schedule your workshop."      },
+      {
+        "title": "Receive the Certificate",
+        "description": "Certificate of competence proves that you attended the auditor training course, and that you passed the exam certified by Exemplar Global (formerly RABQSA). This ensures that you understand and can apply the knowledge you gained in each of the course's modules."
       }
     ]
   },
@@ -637,31 +2771,31 @@
       }
     ]
   },
-  "CSM_Certification": {
+  "PfMP_Certification": {
     "heading": [
       {
-        "heading_title": "AGILE AND SCRUM",
-        "title": "CSM Certification",
-        "description": "CSM Certification Training by CertScope; Certified Scrum Master Certification is granted by Scrum Alliance USA, CSM is the most demanded Agile certification in the market. CSM training is delivered only by Certified Scrum Trainers across the globe which makes it very niche in the market."
+        "heading_title": "PROJECT MANAGEMENT",
+        "title": "PfMP Certification",
+        "description": "Portfolio management is a highly effective approach for implementing strategic initiatives as it helps bridge the gap between strategy and execution. The research found that organizations with effective portfolio management achieved more than 62% success rate in meeting or exceeding expected return on investment for their products. Portfolio managers ensure that projects, programs, and operations are aligned with strategic objectives, and they invest resources in the right areas to deliver expected value."
       }
     ],
     "certification_overview": [
       {
-        "title": "Case studies and activities",
+        "title": "Multiple delivery options",
 
-        "description": "Experiential learning with Case studies, Scrum Activities, Role plays, & Simulations"
+        "description": "Delivery Options: Instructor-led Live Online | Traditional classroom | On-on-one mentoring model"
       },
       {
-        "title": "Exam and Certification",
-        "description": "Exam and Certification is part of the program"
+        "title": "Course completion certificate",
+        "description": "Course completion certificate will be issued after successful completion of the training."
+      },
+      {
+        "title": "Practice Exams",
+        "description": "Practice exams to help you in exams"
       },
       {
         "title": "Case studies",
-        "description": "Case studies and activities are part of the program"
-      },
-      {
-        "title": "Membership",
-        "description": "2 Years of membership from Scrum Alliance"
+        "description": "5+ Industry case studies"
       }
     ],
 
@@ -702,18 +2836,859 @@
 
     "know_more_title": [
       {
-        "title": "Know more about CSM Certification"
+        "title": "More about PfMP Certification training course"
       }
     ],
 
     "steps": [
       {
         "label": "Qualified mentor equals insightful mentee",
-        "description": "The mentor will determine your readiness for the examination and will assess the areas of your strengths and weakness. The trainer will guide you through the simulation examination and assist you in answering the long scenario-based questions. Those questions are based on the standards set by previous examinations."
+        "description": "Our PfMP training boot camps are delivered by PfMP certified professionals with more than 15 years of relevant industry experience. They are experts who know what they teach and preach."
       },
       {
         "label": "Case studies and practical assignments",
-        "description": "Learn the various concepts of CSM with the help of practical assignments and industry case studies."
+        "description": "Learn the various concepts as laid by PMI-USA  with the help of practical assignments and industry case studies."
+      },
+      {
+        "label": "Hands on mentor-ship",
+        "description":"The mentor will determine your readiness for the examination and will assess the areas of your strengths and weakness. The trainer will guide you through the simulation examination and assist you in answering the long scenario-based questions. Those questions are based on the standards set by previous examinations."
+      },
+      {
+        "label": "Guidance with examination",
+        "description":"Our training curriculum is updated with latest version as advised by PMI-USA On successful completion of the training, our certification team will guide you through the certification process. We do stay till the end to see you succeed."
+      }
+    ],
+    "Enterprise_Solutions": [
+      {
+        "title": "Learning delivery model as per your organisational requirements"
+      },
+      {
+        "title": "Enterprise-grade Learning Management System (LMS), dashboard and tools."
+      },
+      {
+        "title": "Flexible pricing options and models."
+      },
+      {
+        "title": "24x7 learner assistance and support"
+      }
+    ],
+    "faqs": [
+      {
+        "Title": "Introduction: Introduction to Portfolio & Portfolio Management",
+        "list": [
+          "Relationships Amongs Portfolios, Programs, and Projects ",
+          "Portfolio Management and Organizational Strategy ",
+          "Business Value",
+          "Role of the Portfolio Manager",
+          "Role of the PMO in Portfolio Management"
+        ]
+      },
+      {
+        "Title": "Portfolio Management Overview and Organization",
+        "list": [
+          "Portfolio Management and Organizational Strategy and Objectives ",
+          "Portfolio Management Process Implementation",
+          "Portfolio Management Process Cycle",
+          "Portfolio Management Information System (PMIS) ",
+          "Portfolio Management Governance",
+          "Portfolio Stakeholders",
+          "Organizational Influences on Portfolio Management"
+        ]
+      },
+      {
+        "Title": "Portfolio Management Process Groups",
+        "list": [
+          "Portfolio Management Process Groups & Knowledge Area Mapping",
+          "Portfolio Management Process Interactions",
+          "Key Deliverables Across Portfolio Management Processes"
+        ]
+      },
+      {
+        "Title": "Portfolio Strategic Management",
+        "list": [
+          "Develop Portfolio Strategic Plan, Portfolio Charter Define ",
+          "Portfolio Roadmap",
+          "Manage Strategic Change"
+        ]
+      },
+      {
+        "Title": "Portfolio Governance Management",
+        "list": [
+          "Develop Portfolio Management Plan",
+          "Define Portfolio, Optimize Portfolio, Authorize Portfolio & Provide Portfolio Oversight"
+        ]
+      },
+      {
+        "Title": "Portfolio Performance Management",
+        "list": [
+          "Develop Portfolio Performance Management Plan ",
+          "Manage Supply and Demand",
+          "Manage Portfolio Value"
+        ]
+      },
+      {
+        "Title": "Portfolio Communication Management",
+        "list": [
+          "Develop Portfolio Communication Management ",
+          "Plan Manage Portfolio Information"
+        ]
+      },
+      {
+        "Title": "Portfolio Risk Management",
+        "list": [
+          "Develop Portfolio Risk Management ",
+          "Plan Manage Portfolio Risks"
+        ]
+      }
+    ],
+
+    "learning_overview_desc": [
+      {
+        "description": "Get an overview of the training structure, modules, and methodology for PfMP Certification training by CertScope training solutions."
+      }
+    ],
+    "learning_outcomes": [
+      {
+        "description": [
+          "You will have demonstrated advanced competency in coordinating the management of one or more portfolios to achieve strategic objectives.",
+          "You will learn how to align projects, programs, and operations with organizational strategy, and how to prioritize investments to deliver maximum value.",
+          "You will also learn how to balance risks and opportunities in the portfolio and ensure that resources are effectively allocated and managed.",
+          "Additionally, the certification program covers topics such as stakeholder engagement, governance, performance measurement, and communication."
+        ]
+      }
+    ],
+    "certificationSteps": [
+      {
+        "title": "Start by choosing the desired delivery method of training",
+        "description": "You can choose from the classroom, Live online or self-paced learning delivery options. Choose which suits your needs the best. Once you enroll, the relevant designated course adviser will guide you on how to get started with the training."
+      },
+      {
+        "title": "Virtual Classroom Session Training (24 Hours)",
+        "description": "Understand Portfolio management concepts from SFPMv3 & ECO from PMI. Learn/Apply Portfolio Management Practices, and Frameworks with real case studies, tools & templates. Experience sharing, current industries practices/trends"
+      },
+      {
+        "title": "PfMP Application Support (12 Hours)",
+        "description": " Participant will be guided through application writing/review support Audit and Panel review support ( If Required)"
+      },
+      {
+        "title": "Exam Prep Session (4-8 Hours) : Revision of Key Concepts & Q&A Session",
+        "description": "Q&A session covering all modules to fix any knowledge/understanding gap. Ongoing interaction/collaboration over exclusive WhatsApp group with trainer & certified PfMP's"
+      },
+      {
+        "title": "Final Exam Strategies & Individual Gap Assessment (2-4 Hours)",
+        "description": " Exam time management and question answering strategies"
+      }
+    ]
+  },
+  "PgMP_Certification": {
+    "heading": [
+      {
+        "heading_title": "PROJECT MANAGEMENT",
+        "title": "PgMP Certification",
+        "description": "The Program Management Professional (PgMP) certification is a globally recognized credential that is designed for program managers who have a proven track record of leading and delivering complex projects and programs. This certification demonstrates an individual's mastery of the knowledge, skills, and practices required to effectively manage programs and achieve strategic objectives."
+      }
+    ],
+    "certification_overview": [
+      {
+        "title": "Multiple delivery options",
+
+        "description": "Delivery Options: Instructor-led Live Online | Traditional classroom | On-on-one mentoring model"
+      },
+      {
+        "title": "Course completion certificate",
+        "description": "Course completion certificate will be issued after successful completion of the training."
+      },
+      {
+        "title": "Practice Exams",
+        "description": "Practice exams to help you in exams"
+      },
+      {
+        "title": "Case studies",
+        "description": "5+ Industry case studies"
+      }
+    ],
+
+    "Delivery_Methods": [
+      {
+        "Classroom": {
+          "title": "CLASSROOM",
+          "list": [
+            "Comprehensive Classroom Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Hard copy of Course Material",
+            "Centralized Venues",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies"
+          ],
+          "timeliness": "On-time training",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Live_online": {
+          "title": "LIVE ONLINE",
+          "list": [
+            "Live Online Instructor-led Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "Top instructors",
+          "view": "VIEW BATCHES"
+        }
+      }
+    ],
+
+    "know_more_title": [
+      {
+        "title": "More about PgMP Certification training course"
+      }
+    ],
+
+    "steps": [
+      {
+        "label": "Qualified mentor equals insightful mentee",
+        "description": "Our PgMP training boot camps are delivered by PgMP certified professionals with more than 15 years of relevant industry experience. They are experts who know what they teach and preach."
+      },
+      {
+        "label": "Case studies and practical assignments",
+        "description": "Learn the various concepts as laid by PMI-USA  with the help of practical assignments and industry case studies."
+      },
+      {
+        "label": "Hands on mentor-ship",
+        "description":"The mentor will determine your readiness for the examination and will assess the areas of your strengths and weakness. The trainer will guide you through the simulation examination and assist you in answering the long scenario-based questions. Those questions are based on the standards set by previous examinations."
+      },
+      {
+        "label": "Guidance with examination",
+        "description":"Our training curriculum is updated with latest version as advised by PMI-USA On successful completion of the training, our certification team will guide you through the certification process. We do stay till the end to see you succeed."
+      }
+    ],
+    "Enterprise_Solutions": [
+      {
+        "title": "Learning delivery model as per your organisational requirements"
+      },
+      {
+        "title": "Enterprise-grade Learning Management System (LMS), dashboard and tools."
+      },
+      {
+        "title": "Flexible pricing options and models."
+      },
+      {
+        "title": "24x7 learner assistance and support"
+      }
+    ],
+    "faqs": [
+      {
+        "Title": "Introduction to PMI standard of Program Management",
+        "list": [
+          "Project, Program & Portfolio Focus & Interactions",
+          "Program, Operation and Organizational Strategy Relationship",
+          "Types of Programs & High-Level Program Management Activities",
+          "Vision, Mission & Program Goals & Objectives Case studies ",
+          "Business Value"
+        ]
+      },
+      {
+        "Title": "Program Management Performance Domain",
+        "list": [
+          "Program Management Performance Domain Definition& Interaction"
+        ]
+      },
+      {
+        "Title": "Program Strategic Alignment",
+        "list": [
+          "Organizational Strategy and Program Alignment ",
+          "Program Business Case, Charter & Roadmap",
+          "Environmental Assessment (PESTLEED & Other Analysis Techniques)",
+          "Role of the Program Management Office",
+          "Sample Questions Discussion"
+        ]
+      },
+      {
+        "Title": "Program Benefits Management",
+        "list": [
+          "Introduction to Benefits and Value Type with a case study ",
+          "Benefits Lifecycle and its alignment to Program Lifecycle ",
+          "Benefit Register & Benefits Management Plan",
+          "Mapping Benefits to Program Management Plan",
+          "Benefits Transition / Sustainment process and its activities",
+          "Sample Questions Discussion"
+        ]
+      },
+      {
+        "Title": "Program Stakeholder Engagement",
+        "list": [
+          "Program Stakeholder Identification Techniques",
+          "Stakeholder Engagement Planning & Activities",
+          "Program Stakeholder Engagement & Communications",
+          "Sample Questions Discussion"
+        ]
+      },
+      {
+        "Title": "Program Governance",
+        "list": [
+          "Program Governance framework & Plan",
+          "Governance Goals. Structure and Composition",
+          "Governance Board, Program Sponsor/Manager Responsibilities",
+          "Governance Reviews, Risk & Issue Escalation, Change Management",
+          "Sample Questions Discussion"
+        ]
+      },
+      {
+        "Title": "Program Lifecycle Management",
+        "list": [
+          "Program Definition phase, sub-phases, and activities",
+          "Program Delivery Phase, sub-phases, and activities",
+          "Program Closure Phase, sub-phases, and activities",
+          "Sample Questions Discussion"
+        ]
+      },
+      {
+        "Title": "Program Activities",
+        "list": [
+          "Program Supporting activities mapping with Program Lifecycle Management domain."
+        ]
+      }
+    ],
+
+    "learning_overview_desc": [
+      {
+        "description": "Get an overview of the training structure, modules, and methodology for PgMP Certification training by CertScope training solutions."
+      }
+    ],
+    "learning_outcomes": [
+      {
+        "description": [
+          "Understand the key concepts and principles of program management, including program strategy, governance, alignment, and integration.",
+          "Be able to apply the PMBOK Guide (Project Management Body of Knowledge) and the Standard for Program Management to real-world scenarios.",
+          "Have a better understanding of the program management profession and its role in achieving strategic objectives.",
+          "Be able to lead and deliver large, complex programs successfully.",
+          "Be prepared to take the PgMP certification exam and demonstrate their mastery of the program management profession.",
+          "Be able to identify and manage risks, issues, and changes that may affect the program."
+        ]
+      }
+    ],
+    "certificationSteps": [
+      {
+        "title": "Start by choosing the desired delivery method of training",
+        "description": "You can choose from the classroom, Live online or self-paced learning delivery options. Choose which suits your needs the best. Once you enroll, the relevant designated course adviser will guide you on how to get started with the training."
+      },
+      {
+        "title": "Virtual Classroom Session Training (24 Hours)",
+        "description": "Understand Portfolio management concepts from SFPMv3 & ECO from PMI. Learn/Apply Portfolio Management Practices, and Frameworks with real case studies, tools & templates. Experience sharing, current industries practices/trends"
+      },
+      {
+        "title": "Exam Prep Session (8 Hours)",
+        "description": " Revision of key concepts & Q&A Session Q&A session covering all domains to fix any knowledge understanding gap Ongoing interaction/collaboration over exclusive WhatsApp group with trainer & certified PgMP’s"
+      },
+      {
+        "title": "PgMP Application Support (12 Hours)",
+        "description": "Participant will be guided through application writing/review support Audit and Panel review support ( If Required)"
+      },
+      {
+        "title": "Final Exam Strategies & Individual Gap Assessment (4 Hours)",
+        "description": " Exam time management and question answering strategies"
+      }
+    ]
+  },
+  "Lean_Six_Sigma_Yellow_Belt_Certification": {
+    "heading": [
+      {
+        "heading_title": "QUALITY MANAGEMENT",
+        "title": "Lean Six Sigma Yellow Belt Certification",
+        "description": "Lean Six Sigma Yellow-Belt certification from CertScope helps you learn DMAIC methodologies with lean integration using real life case studies, It is an interactive classroom session delivered by highly qualified instructors with examination and certification included in the course"
+      }
+    ],
+    "certification_overview": [
+      {
+        "title": "Exam and Certification included",
+        "description": "Exam and certification is part of the program and will be conducted by end of the training."
+      },
+      {
+        "title": "Multiple Delivery Options",
+        "description": "Delivery Options: Self Paced | Instructor-led Live Online | Traditional classroom"
+      },
+      {
+        "title": "Hands-on projects and practice tests",
+        "description": "Five hands-on projects and access to five practice tests with 200 questions each."
+      },
+      {
+        "title": "Case studies",
+        "description": "Seven (07) Industry Case Studies with more than 15 industry based scenarios."
+      }
+    ],
+
+    "Delivery_Methods": [
+      {
+        "Classroom": {
+          "title": "CLASSROOM",
+          "list": [
+            "Comprehensive Classroom Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Hard copy of Course Material",
+            "Centralized Venues",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies"
+          ],
+          "timeliness": "On-time training",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Live_online": {
+          "title": "LIVE ONLINE",
+          "list": [
+            "Live Online Instructor-led Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "Top instructors",
+          "view": "VIEW BATCHES"
+        }
+      }
+    ],
+
+    "know_more_title": [
+      {
+        "title": "Know more about Yellow-belt Certification"
+      }
+    ],
+
+    "steps": [
+      {
+        "label": "Multiple Delivery Options",
+        "description": "Delivery Options: Self Paced | Instructor-led Live Online | Traditional classroom"
+      },
+      {
+        "label": "Case studies",
+        "description": "Seven (07) Industry Case Studies with more than 15 industry based scenarios."
+      },
+      {
+        "label": "Hands-on projects and practice tests",
+        "description":"Five hands-on projects and access to five practice tests with 200 questions each."
+      },
+      {
+        "label": "Exam and Certification",
+        "description":"Exam and certification is part of the program"
+      }
+    ],
+    "Enterprise_Solutions": [
+      {
+        "title": "Learning delivery model as per your organisational requirements"
+      },
+      {
+        "title": "Enterprise-grade Learning Management System (LMS), dashboard and tools."
+      },
+      {
+        "title": "Flexible pricing options and models."
+      },
+      {
+        "title": "24x7 learner assistance and support"
+      }
+    ],
+    "faqs": [
+      {
+        "Title": "The Basics of Six Sigma",
+        "list": [
+          "1.1.1 Meanings of Six Sigma",
+          "1.1.2 General History of Six Sigma & Continuous Improvement",
+          "1.1.3 Deliverables of a Lean Six Sigma Project",
+          "1.1.4 The Problem Solving Strategy Y = f(x)",
+          "1.1.5 Voice of the Customer, Business and Employee",
+          "1.1.6 Six Sigma Roles & Responsibilities"
+        ]
+      },
+      {
+        "Title": "Introduction to Six Sigma",
+        "list": [
+          "1.2.1 Defining a Process",
+          "1.2.2 Critical to Quality Characteristics (CTQ’s)",
+          "1.2.3 Cost of Poor Quality (COPQ)",
+          "1.2.4 Pareto Analysis (80:20 rule)",
+          "1.2.5 Basic Six Sigma Metrics"
+        ]
+      }
+    ],
+
+    "learning_overview_desc": [
+      {
+        "description": "Get an overview of the training structure, modules, and methodology for Lean Six Sigma Yellow Belt Certification training by CertScope training solutions."
+      }
+    ],
+    "learning_outcomes": [
+      {
+        "description": [
+          "Introduction to Six Sigma",
+          "BBasic concepts of Six Sigma",
+          "Evolution of Six Sigma",
+          "Implementation of Six Sigma",
+          "Significance of Six Sigma",
+          "Stages of Six Sigma Certification"
+        ]
+      }
+    ],
+    "certificationSteps": [
+      {
+        "title": "Register for the course",
+        "description": "Register for the  Six Sigma Yellow Belt (SSYB™) online course. Get an automated email with the login credentials."
+      },
+      {
+        "title": "Access the course",
+        "description": "Use the login credentials to login and access the course., The online course includes: Videos of important concepts , Study Guides , Glossary of important terms , Chapter Test Questions"
+      },
+      {
+        "title": "Write the exam",
+        "description": " Take the un-proctored 40-question online exam. Answer 28 out of 40 questions correctly and get recognized as a 'Six Sigma Yellow Belt' by CertScope"
+      },
+      {
+        "title": "Receive the Certificate",
+        "description": "Receive a certificate from  CertScope's Certification team"
+      }
+    ]
+  },
+  "Lean_Six_Sigma_Black_Belt_certification": {
+    "heading": [
+      {
+        "heading_title": "QUALITY MANAGEMENT",
+        "title": "Lean Six Sigma Black Belt certification",
+        "description": "Lean Six Sigma Green Belt training and Certification from CertScope helps you understanding the practical implementation of Lean and Six Sigma design, this course integrates lean and DMAIC methodologies: Six Sigma Define, Measure, Analyze, Improve and Control (DMAIC)"
+      }
+    ],
+    "certification_overview": [
+      {
+        "title": "Examination and Certification",
+        "description": "Examination and Certification is part of the course"
+      },
+      {
+        "title": "Minitab Session",
+        "description": "Hands- on session on Minitab software included"
+      },
+      {
+        "title": "Hands-on projects and practice tests",
+        "description": "Five hands-on projects and access to five practice tests with 200 questions each."
+      },
+      {
+        "title": "Case studies",
+        "description": "Seven (07) Industry Case Studies with more than 15 industry based scenarios."
+      }
+    ],
+
+    "Delivery_Methods": [
+      {
+        "Classroom": {
+          "title": "CLASSROOM",
+          "list": [
+            "Comprehensive Classroom Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Hard copy of Course Material",
+            "Centralized Venues",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies"
+          ],
+          "timeliness": "On-time training",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Live_online": {
+          "title": "LIVE ONLINE",
+          "list": [
+            "Live Online Instructor-led Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "Top instructors",
+          "view": "VIEW BATCHES"
+        }
+      }
+    ],
+
+    "know_more_title": [
+      {
+        "title": "Become a Six Sigma Black Belt: Transform Your Career"
+      }
+    ],
+
+    "steps": [
+      {
+        "label": "Become a Six Sigma Black Belt: Transform Your Career",
+        "description": "Are you ready to elevate your career to new heights and become a master of process improvement? Look no further than our Six Sigma Black Belt Certification Training."
+      },
+      {
+        "label": "Why Choose Six Sigma Black Belt Certification?",
+        "description": "Drive Business Excellence , Enhance Your Leadership ,  Accelerate Your Career"
+      },
+      {
+        "label": "What You'll Gain:",
+        "description":"Comprehensive Curriculum ,  Expert Instructors , Practical Projects , Certification"
+      },
+      {
+        "label": "Your Path to Success Begins Here!",
+        "description":"Don't miss out on this opportunity to become a Six Sigma Black Belt. Seize the chance to drive excellence and lead transformational change in your organization."
+      }
+    ],
+    "Enterprise_Solutions": [
+      {
+        "title": "Learning delivery model as per your organisational requirements"
+      },
+      {
+        "title": "Enterprise-grade Learning Management System (LMS), dashboard and tools."
+      },
+      {
+        "title": "Flexible pricing options and models."
+      },
+      {
+        "title": "24x7 learner assistance and support"
+      }
+    ],
+    "faqs": [
+      {
+        "Title": "Basics of Six Sigma And Define Phase",
+        "list": [
+          "The Basics of Six Sigma",
+          "The Fundamentals of Six Sigma",
+          "Selecting Lean Six Sigma Projects",
+          "The Lean Enterprise"
+        ]
+      },
+      {
+        "Title": "Measure Phase",
+        "list": [
+          "Process Definition",
+          "Lean Six Sigma Statistics",
+          "Measurement System Analysis",
+          "Process Capability"
+        ]
+      },
+      {
+        "Title": "Analyze Phase",
+        "list": [
+          "Patterns of Variation",
+          "Inferential Statistics",
+          "Hypothesis Testing",
+          "Hypothesis Testing with Normal Data",
+          "Hypothesis Testing with Non-Normal",
+          "Data"
+        ]
+      },
+      {
+        "Title": "Improve Phase",
+        "list": [
+          "Simple Linear Regression",
+          "Multiple Regression Analysis",
+          "Designed Experiments",
+          "Full Factorial Experiments",
+          "Fractional Factorial Experiments"
+        ]
+      },
+      {
+        "Title": "Control Phase",
+        "list": [
+          "Lean Controls",
+          "Statistical Process Control (SPC)",
+          "Six Sigma Control Plans",
+          "Process Capability"
+        ]
+      }
+    ],
+
+    "learning_overview_desc": [
+      {
+        "description": "Get an overview of the training structure, modules, and methodology for Lean Six Sigma Black Belt certification training by CertScope training solutions."
+      }
+    ],
+    "learning_outcomes": [
+      {
+        "description": [
+          "1. Mastery of Six Sigma Methodology: Black Belts will have a deep understanding of the DMAIC (Define, Measure, Analyze, Improve, Control) methodology and its application in solving complex business pr",
+          "2. Statistical Expertise: Black Belts will be proficient in statistical tools and techniques used for data analysis and process improvement.",
+          "3. Leadership in Process Improvement: Black Belts will possess strong leadership skills, enabling them to lead cross-functional teams in process improvement projects.",
+          "4. Project Management: Black Belts are adept at project management principles and tools.",
+          "5. Problem Solving: Black Belts are skilled problem solvers. They can identify, define, and prioritize business problems, develop hypotheses, and use data to uncover solutions that lead to process opt",
+          "6. Data Analysis: Black Belts have a high level of competence in data collection, analysis, and interpretation.",
+          "7. Process Optimization: Black Belts are experts in identifying opportunities for process optimization and waste reduction.",
+          "8. Quality Control: Black Belts understand principles of quality control and can implement effective control plans to ensure that processes remain stable and meet established quality standards.",
+          "9. Change Management: Black Belts are skilled in change management techniques. They can navigate resistance to change, facilitate smooth transitions, and ensure that improvements are sustained over ti",
+          "10. Effective Communication: Black Belts can communicate complex concepts and findings effectively to both technical and non-technical stakeholders.",
+          "11. Certification and Recognition: Upon completion of the certification, individuals receive a recognized credential that demonstrates their expertise in Six Sigma.",
+          "12. Continuous Improvement Culture: Black Belts are well-equipped to foster a culture of continuous improvement within their organizations."
+          
+        ]
+      }
+    ],
+    "certificationSteps": [
+      {
+        "title": "Step 1: Understand Six Sigma Basics",
+        "description": "Introduction to Six Sigma (1-2 weeks) "
+      },
+      {
+        "title": "Step 2: Green Belt Certification",
+        "description": "Six Sigma Green Belt Training (8-12 weeks)"
+      },
+      {
+        "title": "Step 3: Gain Practical Experience",
+        "description": "Project Work (Variable Duration)"
+      },
+      {
+        "title": "Step 4: Advanced Six Sigma Training",
+        "description": "Advanced Six Sigma Techniques (8-12 weeks)"
+      },
+      {
+        "title": "Step 5: Prepare for Black Belt Certification",
+        "description": "Self-Study and Exam Prep (Variable Duration)"
+      },
+      {
+        "title": "Step 6: Six Sigma Black Belt Certification Exam",
+        "description": "Exam (Scheduled at your convenience)"
+      },
+      {
+        "title": "Step 7: Completion and Certification",
+        "description": "Certification (Upon passing the exam)"
+      },
+      {
+        "title": "Step 8: Continuous Learning and Project Leadership",
+        "description": "Advanced Projects (Ongoing)"
+      },
+      {
+        "title": "Step 9: Maintain Certification",
+        "description": "Continuing Education (Every 2-3 years)"
+      }
+    ],
+    "resources_data": [
+      {
+        "resource_images": [
+          "/images/benefits_5.jpg",
+          "/images/benefits_6.PNG"
+        ],
+        "resource_title": "Project Management",
+        "resource_desc": [
+          "Significance of Six Sigma Certifications",
+          "Agile Project Manager: Description of Role, Duties, and Competencies"
+        ]
+      }
+    ]
+  },
+  "Lean_Six_Sigma_Green_Belt_certification": {
+    "heading": [
+      {
+        "heading_title": "QUALITY MANAGEMENT",
+        "title": "Lean Six Sigma Green Belt certification",
+        "description": "Lean Six Sigma Green Belt training and Certification from CertScope helps you in understanding various Six Sigma and lean techniques for process improvement. This includes the practical implementation of statistical tools like mini-tab used for quality management, process improvement and overall efficiency."
+      }
+    ],
+    "certification_overview": [
+      {
+        "title": "Examination and Certification",
+
+        "description": "Examination and Certification is part of the course"
+      },
+      {
+        "title": "Minitab Session",
+        "description": "Hands- on session on Minitab software included"
+      },
+      {
+        "title": "Hands-on projects and practice tests",
+        "description": "Five (05) hands-on projects and access to five (05) practice tests with 200 questions each."
+      },
+      {
+        "title": "Case studies",
+        "description": "Seven (07) Industry Case Studies with more than 15 industry based scenarios."
+      }
+    ],
+
+    "Delivery_Methods": [
+      {
+        "Classroom": {
+          "title": "CLASSROOM",
+          "list": [
+            "Comprehensive Classroom Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Hard copy of Course Material",
+            "Centralized Venues",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies"
+          ],
+          "timeliness": "On-time training",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Live_online": {
+          "title": "LIVE ONLINE",
+          "list": [
+            "Live Online Instructor-led Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "Top instructors",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Self_placed": {
+          "title": "SELF PLACED",
+          "list": [
+            "Access to Audio/Video Learning",
+            "Exam and Certification Included",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support",
+            "Learn anytime anywhere"
+          ],
+          "timeliness": "$99",
+          "view": "ENROLL NOW"
+        }
+      },
+      {
+        "Practice": {
+          "title": "PRACTICE",
+          "list": [
+            "Industry standard question bank",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "Multiple re-takes",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "$10",
+          "view": "ENROLL NOW"
+        }
+      }
+    ],
+
+    "know_more_title": [
+      {
+        "title": "Know more about Six Sigma Green Belt Certification"
+      }
+    ],
+
+    "steps": [
+      {
+        "label": "Six Sigma Green-belt introduction",
+        "description": "Six Sigma Green Belt course focuses on providing students with an understanding of the various Six Sigma tools and techniques. These tools and techniques are useful in improving the production process and help to minimize defects in the end product. This course lays greater emphasis on the practical implementation of these tool and techniques in the organization."
+      },
+      {
+        "label": "Target profiles",
+        "description": "This course is ideally suitable for the professionals having the roles (but not limited to) – Project Manager, Program Manager, Business Development Manager, Commodity Manager, Quality Manager, Business Manager or Consultant, Financial/Business Analyst, and a lot more."
       }
     ],
     "Enterprise_Solutions": [
@@ -733,78 +3708,86 @@
 
     "learning_overview_desc": [
       {
-        "description": "Get an overview of the training structure, modules, and methodology for CSM Certification training by CertScope training solutions."
+        "description": "Get an overview of the training structure, modules, and methodology for Lean Six Sigma Green Belt certification training by CertScope training solutions."
       }
     ],
     "faqs": [
       {
-        "Title": "Introduction",
+        "Title": "Six Sigma fundamentals",
         "list": [
-          "Agile and Scrum Overview",
-          "Agile Principles ",
-          "Agile Values "
+          "Meanings of Six Sigma",
+          "General History of Six Sigma & Continuous Improvement",
+          "Deliverables of a Lean Six Sigma Project",
+          "The Problem Solving Strategy Y = f(x)",
+          "Voice of the Customer, Business and Employee",
+          "Six Sigma Roles & Responsibilities"
         ]
       },
       {
-        "Title": "Roles in Scrum",
+        "Title": "Introduction to Six Sigma  Green Belt",
         "list": [
-          "Scrum Master roles and challenges",
-          "Product Owner roles and responsibilities",
-          "Product Owner roles and responsibilities"
+          "Defining a Process",
+          "Critical to Quality Characteristics (CTQ’s)",
+          "Cost of Poor Quality (COPQ)",
+          "Pareto Analysis (80:20 rule)",
+          "Basic Six Sigma Metrics"
         ]
       },
       {
-        "Title": "Scrum ceremonies",
+        "Title": "Selecting Lean Six Sigma Projects",
         "list": [
-          "Sprint planning",
-          "Daily Scrum",
-          "Sprint Review",
-          "Sprint Retrospective"
+          "Building a Business Case & Project Charter",
+          "Developing Project Metrics",
+          "Financial Evaluation & Benefits Capture"
         ]
       },
       {
-        "Title": "Scrum Artifacts",
-        "list": ["Product Backlog", "Sprint Backlog", "Product Increment"]
+        "Title": "The Lean Enterprise",
+        "list": [
+          "Basics of Lean",
+          "History of Lean",
+          "Lean & Six Sigma Integration",
+          "The Seven Elements of Waste",
+          "5S - Straighten, Shine, Standardize, Self-Discipline, Sort"
+        ]
+      },
+      {
+        "Title": "Measure Phase",
+        "list": [
+          "Cause & Effect / Fishbone Diagrams",
+          "Process Mapping, SIPOC, Value Stream Map",
+          "X-Y Diagram",
+          "Failure Modes & Effects Analysis (FMEA)"
+        ]
       }
     ],
 
     "learning_outcomes": [
       {
         "description": [
-          "Foundation of Agile and Scrum concepts",
-          "The guiding principles of ITIL 4Terminologies and Concepts of CSM",
-          "Scrum Ceremonies",
-          "Daily Scrum, Sprint Review, Sprint Retrospective, Product Backlog, Sprint Backlog, Definition of Done"
+          "Understand Six Sigma DMAIC Model and its significance",
+          "Learn and master the skills of quality standards and metrics defined by the governing bodies, for delivering consistency in the projects",
+          "Understand learning paths to cover all the stages of the quality management.",
+          "Train yourself in adherence to the standard certifications by the Lean Six Sigma accreditation bodies."
         ]
       }
     ],
     "certificationSteps": [
       {
-        "title": "Enroll for the course",
-        "description": "Follow the easy and convenient approach to register yourself at CertScope"
+        "title": "Register for the course",
+        "description": "Register for the  Six Sigma Green-belt online course. Get an automated email with the login credentials."
       },
       {
-        "title": "Attend the course",
-        "description": "Attend the course and complete all the assignments as advised by the trainer."
+        "title": "Access the course",
+        "description": "The online course includes:- Videos of important concepts ,Study Guides , Glossary of important terms , Chapter Test Questions"
       },
       {
-        "title": "Create online credentials at Scrum Alliance",
-        "description": "You will be receiving an email from Scrum Alliance to create login credentials"
+        "title": "Write the exam",
+        "description": "Take the unproctored 40-question online exam. Answer 28 out of 40 questions correctly and get recognized as a 'Six Sigma Yellow Belt' by 6sigmastudy™"
       },
       {
-        "title": "Write an Online exam",
-        "description": "Once you create login credentials Take the 1 hour online CSM® test which comprises of 50 MCQs."
-      },
-      {
-        "title": "Minimum passing marks",
-        "description": "Write an online exam and score a minimum of  74% to pass the CSM® exam"
-      }
-    ],
-    "resources_data": [
-      {
-        "resource_images": ["/images/CSM_1.jpg"],
-        "resource_title": "IT SERVICE MANAGEMENT",
-        "resource_desc": ["Which ITIL version is better v3 or v4?"]
+        "title": "Receive the Certificate",
+        "description": "Receive a certificate from  CertScope's Certification team"
       }
     ]
   }
