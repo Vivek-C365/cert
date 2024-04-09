@@ -20,9 +20,13 @@ function ProfileForm() {
     email: "",
     bio: "", // New field
     phone_number: "", // New field
+    website: "", // New field
+    linkedin: "", // New field
+    twitter: "", // New field
+    instagram: "", // New field
+    youtube: "", // New field
+    facebook: "", // New field
   });
-
-  console.log(userData);
 
   const { data: loggedUserData, isLoading: isUserDataLoading } =
     useGetLoggedUserQuery(access_token);
@@ -54,10 +58,11 @@ function ProfileForm() {
   };
 
   return (
-    <div>
+    <div className="profile-form-container">
+      <h3>{userData.name}</h3>
       <form onSubmit={handleSubmit}>
-        <div>
-          <Accordion>
+        <div className="accordion-container">
+          <Accordion className="accordion">
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1-content"
@@ -74,18 +79,18 @@ function ProfileForm() {
               <TextField
                 id="standard-basic"
                 placeholder="Name"
-                label="Name"
                 variant="outlined"
                 type="text"
                 name="name"
                 value={userData.name}
                 onChange={handleChange}
+                className="text-field"
               />
             </AccordionDetails>
           </Accordion>
         </div>
-        <div>
-          <Accordion>
+        <div className="accordion-container">
+          <Accordion className="accordion">
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1-content"
@@ -97,30 +102,97 @@ function ProfileForm() {
               <Typography>Your profile information.</Typography>
               <TextField
                 fullWidth
-                minRows={3}
                 id="standard-basic"
-                placeholder="Name"
                 variant="outlined"
-                label="Bio"
                 type="text"
                 name="bio"
+                placeholder="Bio"
                 value={userData.bio}
                 onChange={handleChange}
+                className="text-field"
               />
               <TextField
+                fullWidth
                 id="standard-basic"
                 variant="outlined"
-                label="Phone Number"
                 type="number"
                 name="phone_number"
+                placeholder="Phone Number"
                 value={userData.phone_number}
                 onChange={handleChange}
+                className="text-field"
+              />
+              <TextField
+                fullWidth
+                id="standard-basic"
+                variant="outlined"
+                type="text"
+                name="website"
+                placeholder="Website"
+                value={userData.website}
+                onChange={handleChange}
+                className="text-field"
+              />
+              <TextField
+                fullWidth
+                id="standard-basic"
+                variant="outlined"
+                type="text"
+                name="linkedin"
+                placeholder="LinkedIn"
+                value={userData.linkedin}
+                onChange={handleChange}
+                className="text-field"
+              />
+              <TextField
+                fullWidth
+                id="standard-basic"
+                variant="outlined"
+                type="text"
+                name="twitter"
+                placeholder="Twitter"
+                value={userData.twitter}
+                onChange={handleChange}
+                className="text-field"
+              />
+              <TextField
+                fullWidth
+                id="standard-basic"
+                variant="outlined"
+                type="text"
+                name="instagram"
+                placeholder="Instagram"
+                value={userData.instagram}
+                onChange={handleChange}
+                className="text-field"
+              />
+              <TextField
+                fullWidth
+                id="standard-basic"
+                variant="outlined"
+                type="text"
+                name="youtube"
+                placeholder="YouTube"
+                value={userData.youtube}
+                onChange={handleChange}
+                className="text-field"
+              />
+              <TextField
+                fullWidth
+                id="standard-basic"
+                variant="outlined"
+                placeholder="Facebook"
+                type="text"
+                name="facebook"
+                value={userData.facebook}
+                onChange={handleChange}
+                className="text-field"
               />
             </AccordionDetails>
           </Accordion>
         </div>
-        <div>
-          <Accordion>
+        <div className="accordion-container">
+          <Accordion className="accordion">
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1-content"
@@ -145,6 +217,7 @@ function ProfileForm() {
                 name="email"
                 value={userData.email}
                 onChange={handleChange}
+                className="text-field"
               />
             </AccordionDetails>
           </Accordion>
@@ -155,8 +228,9 @@ function ProfileForm() {
           color="success"
           type="submit"
           disabled={isUpdateLoading || isUserDataLoading}
+          className="submit-button"
         >
-          {isUpdateLoading ? "Updating..." : "Update Profile"}
+          {isUpdateLoading ? "Saving..." : "Save Changes"}
         </Button>
       </form>
     </div>

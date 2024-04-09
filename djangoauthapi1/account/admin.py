@@ -4,18 +4,18 @@ from django.utils.safestring import mark_safe
 
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
-    list_display = ('email', 'name', 'profile_image_thumbnail', 'tc', 'bio', 'phone_number', 'social_media_links', 'created_at', 'is_active', 'is_admin')
+    list_display = ('email', 'name', 'profile_image_thumbnail', 'tc', 'bio', 'phone_number', 'social_media_links', 'website','linkedin','twitter','instagram','youtube','facebook','created_at', 'is_active', 'is_admin')
     search_fields = ('email', 'name')
     list_filter = ('is_admin', 'is_active')
     fieldsets = (
         ('User Credentials', {'fields': ('email', 'password')}),
-        ('Personal Info', {'fields': ('name', 'tc', 'bio', 'phone_number', 'social_media_links', 'profile_image')}),
+        ('Personal Info', {'fields': ('name', 'tc', 'bio', 'phone_number', 'social_media_links', 'website', 'linkedin','twitter','instagram','youtube','facebook','profile_image')}),
         ('Permissions', {'fields': ('is_admin', 'is_active')}),
     )
     add_fieldsets = (
         (None, {
             'classes': ('wide',),
-            'fields': ('email', 'name', 'tc', 'bio', 'phone_number', 'social_media_links', 'profile_image', 'password1', 'password2'),
+            'fields': ('email', 'name', 'tc', 'bio', 'phone_number', 'social_media_links','linkedin','twitter','instagram','youtube','facebook','website', 'profile_image', 'password1', 'password2'),
         }),
     )
     ordering = ('email', 'id')
