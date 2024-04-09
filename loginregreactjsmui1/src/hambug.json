@@ -1,0 +1,95 @@
+{
+  "enterprise": {
+    "heading": [
+      {
+        "title": "Scale New Heights",
+        "description": "Engage the workplace with Certscope's custom learning solutions. Enhance your teams' skills in Data Science, IT, Project Management and more with Cerscope's Business Solutions.",
+        "resource_images": "/images/benefits_1.jpg"
+      }
+    ],
+    "trainings_heading": [
+      {
+        "title": "How can we help you scale?"
+      }
+    ],
+    "trainings_content": {
+      "Customised_trainings": [
+        {
+          "title": "Customised",
+          "title_2":"trainings",
+          "description": "Certscope provides corporate training in emerging technologies like IT, Project Management, Scrum and Agile Development, Digital Marketing, and more. With customised learning pathways, we assist teams to acquire the skills they need to improve organisational efficiency.",
+          "details": "Our training and consulting approach is calculative and results oriented with the main focus on organisational development. With our interactive learning platform, we offer learners a unique anytime/anywhere approach using our interactive online tools.",
+          "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/a9cdd72c8bbc1ae2401c883f9dfa19d2d696e3fe3780e805653c9c31105cd9cf?apiKey=c0bca91966db4095b1e1b5a08f720e3b&"
+        }
+      ],
+      "certificationData": [
+        {
+          "title": "Certification services.",
+          "description": "Avail certification services and demonstrate the quality of your products and services to customers and stakeholders. Get certified and ensure security, quality, regulatory compliance and other critical factors of the business.",
+          "details": "We will assist you in the implementation of various ISO certifications for multiple domains like oil and gas, pharma, agriculture and food, IT, Construction and many more.",
+          "ctaText": "Get in touch",
+          "imageUrl": "https://cdn.builder.io/api/v1/image/assets/TEMP/e335535d88de4d02f774d464cffc60ff25dee229aeb35e55f36a7729135528a8?apiKey=c0bca91966db4095b1e1b5a08f720e3b&"
+        }
+      ],
+      "mentorshipData": [
+        {
+          "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/aa4f091d615d7ba8ede50ca96644ae328b44bf95c1c4431b82ebe59e97fbe6a2?apiKey=c0bca91966db4095b1e1b5a08f720e3b&",
+          "title": "Mentorship programs.",
+          "description": "We offer mentorship programs from subject matter experts for the mid and top level management to help you in improving your processes; our mentors are professional consultants with more than fifteen (15) years of industry experience.",
+          "callToAction": "Acquire professional skills that matter to you, and your workplace, at your own pace and terms.",
+          "buttonText": "Find out more"
+        }
+      ]
+    }
+  },
+  "service":{
+    "heading": [
+        {
+          "title": "what can we do?",
+          "description": "A partnership is about reaching inclusive results. Let CertScope be your partner on your next journey towards an all-embracing outcome. For not only do we have numerous and comprehensive training pathways, but we will also walk them with you towards your business objective.",
+          "resource_images": "/images/benefits_1.jpg"
+        }
+      ],
+      "trainings_heading": [
+        {
+          "title": "Our areas of expertise."
+        }
+      ],
+      "trainings_content": {
+        "Customised_trainings": [
+          {
+            "title": "Customised onsite",
+            "title_2":"training and consulting.",
+            "description": "We provide onsite training to the organisations based on their training needs.",
+            "details": "We cater to domains like Project Management, ITSM, Data Sciences, Cyber Security, Quality Management, Big Data, Agile and Scrum and more.",
+            "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/a9cdd72c8bbc1ae2401c883f9dfa19d2d696e3fe3780e805653c9c31105cd9cf?apiKey=c0bca91966db4095b1e1b5a08f720e3b&"
+          }
+        ],
+        "certificationData": [
+          {
+            "title": "Public training.",
+            "description": "For most of the certification, we offer public training batches in major cities across the globe with convenient locations.",
+            "details": "Check our pathways for more details and trainings we offer.",
+            "imageUrl": "https://cdn.builder.io/api/v1/image/assets/TEMP/e335535d88de4d02f774d464cffc60ff25dee229aeb35e55f36a7729135528a8?apiKey=c0bca91966db4095b1e1b5a08f720e3b&"
+          }
+        ],
+        "mentorshipData": [
+          {
+            "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/aa4f091d615d7ba8ede50ca96644ae328b44bf95c1c4431b82ebe59e97fbe6a2?apiKey=c0bca91966db4095b1e1b5a08f720e3b&",
+            "title": "Examination services..",
+            "description": "We assist professionals and organisations in the application and examination process for the various courses from their respective governing bodies. Some of the areas are PMP, PRINCE2, ITIL Foundation, SIX SIGMA, CEH, CISA, CISSP, ITIL Intermediate modules.",
+            "callToAction": "Do get in touch with our training team for any examination requirements you may have. Happy to assist."
+          }
+        ],
+        "certificationserivce": [
+            {
+              "title": "Certification services",
+              "description": "Other than certification courses to the individuals, we offer certification services to the organisations helping them in demonstrating the quality of their products and services.",
+              "details": "We provide consulting and implementation in ISO certifications like ISO 20000, ISO 27000, ISO9001, ISO 14001, ISO 45001, ISO 22000 and more.",
+              "imageUrl": "https://cdn.builder.io/api/v1/image/assets/TEMP/e335535d88de4d02f774d464cffc60ff25dee229aeb35e55f36a7729135528a8?apiKey=c0bca91966db4095b1e1b5a08f720e3b&"
+            }
+          ]
+      }
+  }
+  
+}

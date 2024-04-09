@@ -924,7 +924,11 @@ aside h3 span {
 
 }
 
-.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
     background-color: lightslategray;
     color: white !important;
 }
@@ -1203,50 +1207,50 @@ aside h3 span {
     padding: 20px 50px 40px;
     box-shadow: 1px 4px 10px 1px #aaa;
     font-family: sans-serif;
-  }
-  
-  #feedback-form * {
-      box-sizing: border-box;
-  }
-  
-  #feedback-form h2{
+}
+
+#feedback-form * {
+    box-sizing: border-box;
+}
+
+#feedback-form h2 {
     text-align: center;
     margin-bottom: 30px;
-  }
-  
-  #feedback-form input {
+}
+
+#feedback-form input {
     margin-bottom: 15px;
-  }
-  
-  #feedback-form input[type=text] {
+}
+
+#feedback-form input[type=text] {
     display: block;
     height: 32px;
     padding: 6px 16px;
     width: 100%;
     border: none;
     background-color: #f3f3f3;
-  }
-  
-  #feedback-form label {
+}
+
+#feedback-form label {
     color: #777;
     font-size: 0.8em;
-  }
-  
-  #feedback-form input[type=checkbox] {
+}
+
+#feedback-form input[type=checkbox] {
     float: left;
-  }
-  
-  #feedback-form input:not(:checked) + #feedback-phone {
+}
+
+#feedback-form input:not(:checked)+#feedback-phone {
     height: 0;
     padding-top: 0;
     padding-bottom: 0;
-  }
-  
-  #feedback-form #feedback-phone {
+}
+
+#feedback-form #feedback-phone {
     transition: .3s;
-  }
-  
-  #feedback-form button[type=submit] {
+}
+
+#feedback-form button[type=submit] {
     display: block;
     margin: 20px auto 0;
     width: 150px;
@@ -1256,10 +1260,788 @@ aside h3 span {
     color: #eee;
     font-weight: 700;
     box-shadow: 1px 4px 10px 1px #aaa;
-    
-    background: #207cca; /* Old browsers */
-    background: -moz-linear-gradient(left, #207cca 0%, #9f58a3 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #207cca 0%,#9f58a3 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #207cca 0%,#9f58a3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', endColorstr='#9f58a3',GradientType=1 ); /* IE6-9 */
+
+    background: #207cca;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #207cca 0%, #9f58a3 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #207cca 0%, #9f58a3 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #207cca 0%, #9f58a3 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#207cca', endColorstr='#9f58a3', GradientType=1);
+    /* IE6-9 */
+}
+
+
+
+/* User Profile Start here */
+
+.wave-svg-fill {
+    position: relative;
+    width: -webkit-fill-available;
+}
+
+.div-p-relative {
+    box-shadow: 0px 0px 8px gray;
+    padding: 5px;
+}
+
+.div-container-tablet{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.figure-margin .figure{
+    position: absolute;
+    right: 8em;
+    bottom: 1em;
+}
+
+.user_profile_content{
+    display: flex;
+    position: relative;
+    width: 30vh;
+    justify-content: space-evenly;
+    max-width: 100%;
+}
+.span-flex{
+    height: 100px;
+    width: 100px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+.Link_content_profile{
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.figure-margin{
+    width: 13vh;
+}
+
+.Link_content_profile .item{
+    margin: 13px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid gray;
+
+}
+
+.text-wrapper{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #192753;
+
+}
+
+.manager{
+    background-color: rgba(53, 106, 230, 0.14);
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1A3BA5;
+}
+
+.section-2{
+    padding: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
+.div-single-grid{
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70vh;
+    align-items: center;
+
+
+
+}
+.link-wrapper a{
+    color: gray;
+    text-decoration: none;
+}
+
+.text-wrapper-2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2D3748;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #5066905e;
+}
+
+.div-text-steel{
+    padding-top: 10px;
+    color: #506690;
+}
+
+.div-w{
+    display: inline-flex;
+    color: #506690;
+
+}
+
+.div-w svg{
+    margin-right: 10px;
+}
+.div-single-grid .list{
+    display: flex;
+    position: relative;
+    width: 70vh;
+    justify-content: space-around;
+    margin-bottom: 20px;
+
+}
+
+
+/* Enterprise Page Css Starts here */
+
+/* styles.css */
+.main-container {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
+  
+  .content-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 64px 0;
+  }
+  
+  .content-container {
+    max-width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    align-self: center;
+    width: 960px;
+  }
+  
+  .content-row {
+    gap: 20px;
+    display: flex;
+  }
+  
+  .content-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 59%;
+    margin-left: 0;
+  }
+  
+  .content-section {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  
+  .heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-weight: 900;
+    letter-spacing: -0.55px;
+    padding: 0 20px;
+  }
+  
+  .heading1 {
+    color: var(--dash-certscope-com-bunting, #192753);
+    font: 55px/100% "Red Hat Display", sans-serif;
+  }
+  
+  .heading2 {
+    color: var(--dash-certscope-com-cerulean-blue, #2651c5);
+    font: 72px/100% "Red Hat Display", sans-serif;
+  }
+  
+  .description {
+    max-width: 450px;
+    margin-top: 55px;
+    color: var(--dash-certscope-com-oxford-blue, #2d3748);
+    justify-content: center;
+    font: 400 16px/21px "Inter", sans-serif;
+  }
+  
+  .image-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 41%;
+    margin-left: 20px;
+  }
+  
+  .image-wrapper {
+    max-width: 350px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .image {
+    aspect-ratio: 1.32;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+  }
+  
+  .divider-wrapper {
+    justify-content: center;
+    align-items: center;
+    border-color: rgba(217, 226, 239, 1);
+    border-style: solid;
+    border-bottom-width: 1px;
+    display: flex;
+    width: 100%;
+    padding: 80px 60px 0;
+  }
+  
+  .logo-wrapper {
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid rgba(217, 226, 239, 1);
+    background-color: var(--dash-certscope-com-nero, #fff);
+    display: flex;
+    margin-top: 9px;
+    width: 60px;
+    padding: 12px 13px 0;
+  }
+  
+  .logo {
+    aspect-ratio: 1.85;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+  }
+
+  
+  .hero-container {
+    display: flex;
+    font-size: 48px;
+    color: var(--dash-certscope-com-cerulean-blue, #2651c5);
+    font-weight: 700;
+    text-align: center;
+    line-height: 48px;
+    padding: 48px 56px 0;
+    align-items: center;
+    flex-direction: column;
+  
+    @media (max-width: 991px) {
+      font-size: 40px;
+      line-height: 45px;
+      padding: 0 20px;
+    }
+  }
+  
+  .hero-content {
+    font-family: Red Hat Display, sans-serif;
+    max-width: 768px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px;
+  
+    @media (max-width: 991px) {
+      max-width: 100%;
+      font-size: 40px;
+      line-height: 45px;
+      padding: 0 20px;
+    }
+  }
+  
+  .hero-text {
+    color: rgba(25, 39, 83, 1);
+  }
+  
+  .highlight-text {
+    color: rgba(38, 81, 197, 1);
+  }
+
+
+
+
+  /* Add your styles here */
+
+.training-section-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 80px 60px;
+  
+    @media (max-width: 991px) {
+      padding: 0 20px;
+    }
+  }
+  
+  .training-section-content {
+    width: 880px;
+    max-width: 100%;
+    padding: 16px 0;
+    margin-top: 8px;
+    justify-content: center;
+  }
+  
+  .training-details {
+    display: flex;
+    gap: 20px;
+  
+    @media (max-width: 991px) {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  }
+  
+  .image-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 39%;
+    margin-left: 0;
+  
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+  
+  .image-wrapper {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    justify-content: center;
+    margin: auto 0;
+  
+    @media (max-width: 991px) {
+      margin-top: 40px;
+    }
+  }
+  
+  .training-image {
+    aspect-ratio: 1.33;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+  }
+  
+  .description-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 61%;
+    margin-left: 20px;
+  
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+  
+  .description-wrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  
+    @media (max-width: 991px) {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .training-title {
+    color: var(--dash-certscope-com-persian-blue, #1a3ba5);
+    justify-content: center;
+    font: 700 28px/28px Red Hat Display, -apple-system, Roboto, Helvetica, sans-serif;
+  
+    .title-part-1 {
+      color: rgba(33, 50, 90, 1);
+    }
+  
+    .title-part-2 {
+      color: rgba(26, 59, 165, 1);
+    }
+  
+    .title-part-3 {
+      color: rgba(33, 50, 90, 1);
+    }
+  
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+  }
+  
+  .training-description {
+    display: flex;
+    margin-top: 32px;
+    flex-direction: column;
+    font-size: 14px;
+    color: var(--dash-certscope-com-kashmir-blue, #506690);
+    font-weight: 400;
+    line-height: 20px;
+  
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+  }
+  
+  .training-description-text {
+    font-family: Inter, sans-serif;
+    justify-content: center;
+    padding: 1px 0;
+  
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+  }
+  
+  .training-details-text {
+    font-family: Inter, sans-serif;
+    margin-top: 15px;
+    justify-content: center;
+  
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+  }
+  
+  .know-more-button {
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border-radius: 22px;
+    border: 1px solid rgba(53, 106, 230, 1);
+    background-color: var(--dash-certscope-com-royal-blue, #356ae6);
+    align-self: start;
+    margin-top: 30px;
+    color: var(--dash-certscope-com-nero, #fff);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.22px;
+    padding: 1px 21px;
+    font: 600 11px/34px Inter, sans-serif;
+  
+    @media (max-width: 991px) {
+      padding: 0 20px;
+    }
+  }
+
+  
+
+/* Add your styles here */
+
+.certification-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 80px 60px;
+  
+    @media (max-width: 991px) {
+      padding: 0 20px;
+    }
+  }
+  
+  .certification-container {
+    width: 880px;
+    max-width: 100%;
+    margin-top: 18px;
+    padding: 16px 0;
+    justify-content: center;
+  }
+  
+  .certification-content {
+    display: flex;
+    gap: 20px;
+  
+    @media (max-width: 991px) {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  }
+  
+  .certification-info {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 62%;
+    margin-left: 0;
+  
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+  
+  .certification-title {
+    color: var(--dash-certscope-com-persian-blue, #1a3ba5);
+    justify-content: center;
+    font: 700 28px/28px Red Hat Display, -apple-system, Roboto, Helvetica, sans-serif;
+  
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+  }
+  
+  .title-text {
+    color: rgba(33, 50, 90, 1);
+  
+    &:nth-child(2) {
+      color: rgba(26, 59, 165, 1);
+    }
+  }
+  
+  .certification-description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    font-size: 14px;
+    color: var(--dash-certscope-com-kashmir-blue, #506690);
+    font-weight: 400;
+    line-height: 20px;
+  
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+  }
+  
+  .description-text {
+    font-family: Inter, sans-serif;
+    justify-content: center;
+    padding: 1px 0;
+  
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+  }
+  
+  .details-text {
+    font-family: Inter, sans-serif;
+    margin-top: 15px;
+    justify-content: center;
+  
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+  }
+  
+  .cta-button {
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border-radius: 22px;
+    border: 1px solid rgba(53, 106, 230, 1);
+    background-color: var(--dash-certscope-com-royal-blue, #356ae6);
+    align-self: start;
+    margin-top: 31px;
+    color: var(--dash-certscope-com-nero, #fff);
+    text-transform: uppercase;
+    letter-spacing: 0.22px;
+    padding: 1px 21px;
+    font: 600 11px/34px Inter, sans-serif;
+  
+    @media (max-width: 991px) {
+      padding: 0 20px;
+    }
+  }
+  
+  .certification-image {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 38%;
+    margin-left: 20px;
+  
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+  
+  .image-wrapper {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    justify-content: center;
+    margin: auto 0;
+  
+    @media (max-width: 991px) {
+      margin-top: 40px;
+    }
+  }
+  
+  .cert-image {
+    aspect-ratio: 1.32;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+  }
+
+  
+
+  .mentorship-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 62px 60px;
+  
+    @media (max-width: 991px) {
+      padding: 0 20px;
+    }
+  }
+  
+  .Mentorship_content_wrapper {
+    width: 880px;
+    max-width: 100%;
+    padding: 16px 0;
+  }
+  
+  .item-wrapper {
+    display: flex;
+    gap: 20px;
+  
+    @media (max-width: 991px) {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  }
+  
+  .image-column {
+    width: 39%;
+    margin-left: 0;
+  
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+  
+  .image-wrapper {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    justify-content: center;
+    margin: auto 0;
+  
+    @media (max-width: 991px) {
+      margin-top: 40px;
+    }
+  }
+  
+  .image {
+    aspect-ratio: 1.19;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .content-column {
+    width: 61%;
+    margin-left: 20px;
+  
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+  
+  .title {
+    color: var(--dash-certscope-com-persian-blue, #1a3ba5);
+    justify-content: center;
+    font: 700 28px/28px Red Hat Display, -apple-system, Roboto, Helvetica, sans-serif;
+        display: flex;
+    justify-content: flex-start;
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+  }
+  
+  .title-text {
+    color: rgba(33, 50, 90, 1);
+  
+    &:nth-child(2) {
+      color: rgba(26, 59, 165, 1);
+    }
+  }
+  
+  .description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    font-size: 14px;
+    color: var(--dash-certscope-com-kashmir-blue, #506690);
+    line-height: 20px;
+  
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+  }
+  
+  .description-text {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    justify-content: center;
+    padding: 1px 0;
+  
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+  }
+  
+  .call-to-action {
+    font-family: Inter, sans-serif;
+    margin-top: 15px;
+    font-weight: 500;
+    justify-content: center;
+  
+    @media (max-width: 991px) {
+      max-width: 100%;
+      padding-right: 20px;
+    }
+  }
+  
+  .button {
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border-radius: 22px;
+    border: 1px solid rgba(117, 79, 254, 1);
+    background-color: var(--dash-certscope-com-electric-violet, #754ffe);
+    align-self: start;
+    margin-top: 31px;
+    color: var(--dash-certscope-com-nero, #fff);
+    text-transform: uppercase;
+    letter-spacing: 0.22px;
+    padding: 1px 21px;
+    font: 600 11px/34px Inter, sans-serif;
+  
+    @media (max-width: 991px) {
+      padding: 0 20px;
+    }
+  }
+
+
+
+.Hamcom_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 35px 60px;
+}

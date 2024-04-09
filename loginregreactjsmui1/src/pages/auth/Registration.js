@@ -11,7 +11,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { storeToken } from "../../services/LocalStorageService";
 import "../../Assets/CSS/Pages.css";
-import logo from "../../Assets/PNG/logo.png";
 import { useRegisterUserMutation } from "../../services/userAuthApi";
 const Registration = () => {
   const [server_error, setServerError] = useState({});
@@ -29,8 +28,6 @@ const Registration = () => {
     };
     const res = await registerUser(actualData);
     if (res.error) {
-      // console.log(typeof (res.error.data.errors))
-      // console.log(res.error.data.errors)
       setServerError(res.error.data.errors);
     }
     if (res.data) {
