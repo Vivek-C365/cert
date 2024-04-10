@@ -11,6 +11,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
+import ChangePassword from "../auth/ChangePassword";
 
 function ProfileForm() {
   const { access_token } = getToken();
@@ -58,172 +59,190 @@ function ProfileForm() {
   };
 
   return (
-    <div className="profile-form-container">
-      <h3>{userData.name}</h3>
-      <form onSubmit={handleSubmit}>
-        <div className="accordion-container">
-          <Accordion className="accordion">
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1-content"
-              id="panel1-header"
-            >
-              FULL NAME
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                NameWe’re big on real names around here on CertScope, so people
-                know who’s who. As per our policy name can not be changed. To
-                know more visit our help and support centre.
-              </Typography>
-              <TextField
-                id="standard-basic"
-                placeholder="Name"
-                variant="outlined"
-                type="text"
-                name="name"
-                value={userData.name}
-                onChange={handleChange}
-                className="text-field"
-              />
-            </AccordionDetails>
-          </Accordion>
+    <div className="account_setting">
+      <div className="profile-form-container">
+        <div className="update_profile_form">
+          <h3>{userData.name}</h3>
+          <form>
+            <div className="accordion-container">
+              <Accordion className="accordion">
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel1-content"
+                  id="panel1-header"
+                >
+                  FULL NAME
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography>
+                    NameWe’re big on real names around here on CertScope, so
+                    people know who’s who. As per our policy name can not be
+                    changed. To know more visit our help and support centre.
+                  </Typography>
+                  <TextField
+                    fullWidth
+                    id="standard-basic"
+                    placeholder="Name"
+                    variant="outlined"
+                    type="text"
+                    name="name"
+                    value={userData.name}
+                    onChange={handleChange}
+                    className="text-field"
+                  />
+                </AccordionDetails>
+              </Accordion>
+            </div>
+            <div className="accordion-container">
+              <Accordion className="accordion" defaultExpanded>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel1-content"
+                  id="panel1-header"
+                >
+                  PROFILE
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography>Your profile information.</Typography>
+                  <TextField
+                    fullWidth
+                    id="standard-basic"
+                    variant="outlined"
+                    type="text"
+                    name="bio"
+                    placeholder="Bio"
+                    value={userData.bio}
+                    onChange={handleChange}
+                    className="text-field"
+                  />
+                  <TextField
+                    fullWidth
+                    id="standard-basic"
+                    variant="outlined"
+                    type="number"
+                    name="phone_number"
+                    placeholder="Phone Number"
+                    value={userData.phone_number}
+                    onChange={handleChange}
+                    className="text-field"
+                  />
+                  <TextField
+                    fullWidth
+                    id="standard-basic"
+                    variant="outlined"
+                    type="text"
+                    name="website"
+                    placeholder="Website"
+                    value={userData.website}
+                    onChange={handleChange}
+                    className="text-field"
+                  />
+                  <Typography>
+                    This must be an external URL such as http://example.com.
+                  </Typography>
+                  <TextField
+                    fullWidth
+                    id="standard-basic"
+                    variant="outlined"
+                    type="text"
+                    name="linkedin"
+                    placeholder="LinkedIn"
+                    value={userData.linkedin}
+                    onChange={handleChange}
+                    className="text-field"
+                  />
+                  <Typography>
+                    This must be an external URL such as http://example.com.
+                  </Typography>
+                  <TextField
+                    fullWidth
+                    id="standard-basic"
+                    variant="outlined"
+                    type="text"
+                    name="twitter"
+                    placeholder="Twitter"
+                    value={userData.twitter}
+                    onChange={handleChange}
+                    className="text-field"
+                  />
+                  <TextField
+                    fullWidth
+                    id="standard-basic"
+                    variant="outlined"
+                    type="text"
+                    name="instagram"
+                    placeholder="Instagram"
+                    value={userData.instagram}
+                    onChange={handleChange}
+                    className="text-field"
+                  />
+                  <TextField
+                    fullWidth
+                    id="standard-basic"
+                    variant="outlined"
+                    type="text"
+                    name="youtube"
+                    placeholder="YouTube"
+                    value={userData.youtube}
+                    onChange={handleChange}
+                    className="text-field"
+                  />
+                  <Typography>
+                    This must be an external URL such as http://example.com.
+                  </Typography>
+                  <TextField
+                    fullWidth
+                    id="standard-basic"
+                    variant="outlined"
+                    placeholder="Facebook"
+                    type="text"
+                    name="facebook"
+                    value={userData.facebook}
+                    onChange={handleChange}
+                    className="text-field"
+                  />
+                  <Typography>
+                    This must be an external URL such as http://example.com.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+            </div>
+            <div className="accordion-container">
+              <Accordion className="accordion">
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel1-content"
+                  id="panel1-header"
+                >
+                  ACCOUNT SETTINGS
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography>
+                    A valid email address. All emails from the system will be
+                    sent to this address. The email address is not made public
+                    and will only be used if you wish to receive a new password
+                    or wish to receive certain news or notifications by email.
+                  </Typography>
+                  <TextField
+                    fullWidth
+                    id="standard-basic"
+                    placeholder="Email"
+                    variant="outlined"
+                    label="Email"
+                    type="email"
+                    name="email"
+                    value={userData.email}
+                    onChange={handleChange}
+                    className="text-field"
+                  />
+                </AccordionDetails>
+              </Accordion>
+            </div>
+          </form>
         </div>
-        <div className="accordion-container">
-          <Accordion className="accordion">
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1-content"
-              id="panel1-header"
-            >
-              PROFILE
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>Your profile information.</Typography>
-              <TextField
-                fullWidth
-                id="standard-basic"
-                variant="outlined"
-                type="text"
-                name="bio"
-                placeholder="Bio"
-                value={userData.bio}
-                onChange={handleChange}
-                className="text-field"
-              />
-              <TextField
-                fullWidth
-                id="standard-basic"
-                variant="outlined"
-                type="number"
-                name="phone_number"
-                placeholder="Phone Number"
-                value={userData.phone_number}
-                onChange={handleChange}
-                className="text-field"
-              />
-              <TextField
-                fullWidth
-                id="standard-basic"
-                variant="outlined"
-                type="text"
-                name="website"
-                placeholder="Website"
-                value={userData.website}
-                onChange={handleChange}
-                className="text-field"
-              />
-              <TextField
-                fullWidth
-                id="standard-basic"
-                variant="outlined"
-                type="text"
-                name="linkedin"
-                placeholder="LinkedIn"
-                value={userData.linkedin}
-                onChange={handleChange}
-                className="text-field"
-              />
-              <TextField
-                fullWidth
-                id="standard-basic"
-                variant="outlined"
-                type="text"
-                name="twitter"
-                placeholder="Twitter"
-                value={userData.twitter}
-                onChange={handleChange}
-                className="text-field"
-              />
-              <TextField
-                fullWidth
-                id="standard-basic"
-                variant="outlined"
-                type="text"
-                name="instagram"
-                placeholder="Instagram"
-                value={userData.instagram}
-                onChange={handleChange}
-                className="text-field"
-              />
-              <TextField
-                fullWidth
-                id="standard-basic"
-                variant="outlined"
-                type="text"
-                name="youtube"
-                placeholder="YouTube"
-                value={userData.youtube}
-                onChange={handleChange}
-                className="text-field"
-              />
-              <TextField
-                fullWidth
-                id="standard-basic"
-                variant="outlined"
-                placeholder="Facebook"
-                type="text"
-                name="facebook"
-                value={userData.facebook}
-                onChange={handleChange}
-                className="text-field"
-              />
-            </AccordionDetails>
-          </Accordion>
-        </div>
-        <div className="accordion-container">
-          <Accordion className="accordion">
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1-content"
-              id="panel1-header"
-            >
-              ACCOUNT SETTINGS
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                A valid email address. All emails from the system will be sent
-                to this address. The email address is not made public and will
-                only be used if you wish to receive a new password or wish to
-                receive certain news or notifications by email.
-              </Typography>
-              <TextField
-                fullWidth
-                id="standard-basic"
-                placeholder="Email"
-                variant="outlined"
-                label="Email"
-                type="email"
-                name="email"
-                value={userData.email}
-                onChange={handleChange}
-                className="text-field"
-              />
-            </AccordionDetails>
-          </Accordion>
-        </div>
-
+        <ChangePassword />
         <Button
+          onClick={handleSubmit}
           variant="contained"
           color="success"
           type="submit"
@@ -232,7 +251,7 @@ function ProfileForm() {
         >
           {isUpdateLoading ? "Saving..." : "Save Changes"}
         </Button>
-      </form>
+      </div>
     </div>
   );
 }
