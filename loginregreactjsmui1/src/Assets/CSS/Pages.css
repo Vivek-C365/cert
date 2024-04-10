@@ -2045,3 +2045,72 @@ aside h3 span {
     background-color: #fff;
     padding: 35px 60px;
 }
+
+
+/* Account Settings Start Here */
+
+.account_setting{
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+    background-color: #f7f9fc;
+
+
+}
+
+.profile-form-container{
+    position: relative;
+    width: 100vh;
+    border: 1px solid lightgray;
+    padding: 30px;
+    background-color: white;
+
+}
+
+.profile-form-container h3{
+    margin-bottom: 30px;
+
+}
+
+.accordion-container{
+    margin-bottom: 30px;
+}
+
+.accordion-container .MuiButtonBase-root{
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    color: darkblue;
+
+}
+
+.accordion-container .MuiButtonBase-root:hover{
+    background-color: #f7f9fc;
+}
+
+.css-15v22id-MuiAccordionDetails-root {
+    /* padding: 8px 16px 16px; */
+    padding: 35px 10px !important;
+    border: 1px solid lightgray;
+}
+
+.css-1086bdv-MuiPaper-root-MuiAccordion-root{
+    box-shadow: none !important;
+}
+.css-ahj2mt-MuiTypography-root {
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    font-size: 14px !important;
+    margin-bottom: 20px !important;
+    font-family: inherit !important;
+    color: darkgray;
+}
+
+.css-eqpfi5-MuiAccordionSummary-content{
+    font-size: 14px;
+}
+
+.css-wb57ya-MuiFormControl-root-MuiTextField-root{
+    margin-bottom: 15px !important;
+}

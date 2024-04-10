@@ -54,7 +54,7 @@ class UserProfileView(APIView):
 class UserChangePasswordView(APIView):
     permission_classes = [IsAuthenticated]  # Require authentication to change password
     
-    def post(self, request, format=None):
+    def put(self, request, format=None):
         serializer = UserChangePasswordSerializer(data=request.data, context={'user':request.user})
         serializer.is_valid(raise_exception=True)
         return Response({'msg':'Password Changed Successfully'}, status=status.HTTP_200_OK)
