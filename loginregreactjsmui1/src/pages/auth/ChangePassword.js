@@ -7,6 +7,7 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
 const ChangePassword = () => {
   const [server_error, setServerError] = useState({});
   const [server_msg, setServerMsg] = useState({});
@@ -16,9 +17,18 @@ const ChangePassword = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
+    const password = data.get("password");
+    const password2 = data.get("password2");
+
+    // Check if either of the password fields is empty
+    if (!password || !password2) {
+      setServerError({ non_field_errors: ["Please enter both passwords."] });
+      return;
+    }
+
     const actualData = {
-      password: data.get("password"),
-      password2: data.get("password2"),
+      password,
+      password2,
     };
     const res = await changeUserPassword({ actualData, access_token });
     if (res.error) {
@@ -32,9 +42,9 @@ const ChangePassword = () => {
       document.getElementById("password-change-form").reset();
     }
   };
+
   // Getting User Data from Redux Store
   const myData = useSelector((state) => state.user);
-  // console.log("Change Password", myData)
 
   return (
     <>

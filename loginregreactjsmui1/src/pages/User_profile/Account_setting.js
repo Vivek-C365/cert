@@ -85,6 +85,7 @@ function ProfileForm() {
                     placeholder="Name"
                     variant="outlined"
                     type="text"
+                    label="Full Name"
                     name="name"
                     value={userData.name}
                     onChange={handleChange}
@@ -110,6 +111,7 @@ function ProfileForm() {
                     variant="outlined"
                     type="text"
                     name="bio"
+                    label="Bio"
                     placeholder="Bio"
                     value={userData.bio}
                     onChange={handleChange}
@@ -121,6 +123,7 @@ function ProfileForm() {
                     variant="outlined"
                     type="number"
                     name="phone_number"
+                    label="Phone Number*"
                     placeholder="Phone Number"
                     value={userData.phone_number}
                     onChange={handleChange}
@@ -132,6 +135,7 @@ function ProfileForm() {
                     variant="outlined"
                     type="text"
                     name="website"
+                    label="Website"
                     placeholder="Website"
                     value={userData.website}
                     onChange={handleChange}
@@ -146,6 +150,7 @@ function ProfileForm() {
                     variant="outlined"
                     type="text"
                     name="linkedin"
+                    label="LinkedIn"
                     placeholder="LinkedIn"
                     value={userData.linkedin}
                     onChange={handleChange}
@@ -160,6 +165,7 @@ function ProfileForm() {
                     variant="outlined"
                     type="text"
                     name="twitter"
+                    label="Twitter"
                     placeholder="Twitter"
                     value={userData.twitter}
                     onChange={handleChange}
@@ -171,6 +177,7 @@ function ProfileForm() {
                     variant="outlined"
                     type="text"
                     name="instagram"
+                    label="Instagram"
                     placeholder="Instagram"
                     value={userData.instagram}
                     onChange={handleChange}
@@ -181,6 +188,7 @@ function ProfileForm() {
                     id="standard-basic"
                     variant="outlined"
                     type="text"
+                    label="YouTube"
                     name="youtube"
                     placeholder="YouTube"
                     value={userData.youtube}
@@ -193,6 +201,7 @@ function ProfileForm() {
                   <TextField
                     fullWidth
                     id="standard-basic"
+                    label="Facebook"
                     variant="outlined"
                     placeholder="Facebook"
                     type="text"

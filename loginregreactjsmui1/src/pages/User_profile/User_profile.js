@@ -30,6 +30,12 @@ function User_profile() {
         email: data.email,
         name: data.name,
         bio: data.bio,
+        website : data.website,
+        linkedin : data.linkedin,
+        twitter : data.twitter,
+        facebook : data.facebook,
+        instagram : data.instagram,
+        youtube : data.youtube,
         profile_image:`http://127.0.0.1:8000/api/user/profile${data.profile_image}` 
       });
     }
@@ -51,7 +57,6 @@ function User_profile() {
 
 
   console.log(userData)
-  console.log("Profile Image:", userData.profile_image);
 
   return (
     <>
@@ -97,7 +102,7 @@ function User_profile() {
                         <div className="Link_content_profile">
                           <div className="item">
                             <a
-                              href="https://certscope.com/"
+                              href={userData.website}
                               rel="noopener noreferrer"
                               target="_blank"
                             >
@@ -106,7 +111,7 @@ function User_profile() {
                           </div>
                           <div className="item">
                             <a
-                              href="https://www.linkedin.com/in/miraamir/"
+                              href={userData.linkedin}
                               rel="noopener noreferrer"
                               target="_blank"
                             >
@@ -115,7 +120,7 @@ function User_profile() {
                           </div>
                           <div className="item">
                             <a
-                              href="https://twitter.com/aamirwrites"
+                              href={userData.twitter}
                               rel="noopener noreferrer"
                               target="_blank"
                             >
@@ -124,7 +129,7 @@ function User_profile() {
                           </div>
                           <div className="item">
                             <a
-                              href="https://facebook.com/certscope"
+                              href={userData.facebook}
                               rel="noopener noreferrer"
                               target="_blank"
                             >
@@ -133,7 +138,7 @@ function User_profile() {
                           </div>
                           <div className="item">
                             <a
-                              href="https://instagram.com/aamirwrites"
+                              href={userData.instagram}
                               rel="noopener noreferrer"
                               target="_blank"
                             >
@@ -142,7 +147,7 @@ function User_profile() {
                           </div>
                           <div className="item">
                             <a
-                              href="https://youtube.com/certscope"
+                              href={userData.youtube}
                               rel="noopener noreferrer"
                               target="_blank"
                             >
