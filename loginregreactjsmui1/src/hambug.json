@@ -4,7 +4,7 @@
       {
         "title": "Scale New Heights",
         "description": "Engage the workplace with Certscope's custom learning solutions. Enhance your teams' skills in Data Science, IT, Project Management and more with Cerscope's Business Solutions.",
-        "resource_images": "/images/benefits_1.jpg"
+        "resource_images": "/images/business_deal.svg"
       }
     ],
     "trainings_heading": [
@@ -16,10 +16,10 @@
       "Customised_trainings": [
         {
           "title": "Customised",
-          "title_2":"trainings",
+          "title_2": "trainings",
           "description": "Certscope provides corporate training in emerging technologies like IT, Project Management, Scrum and Agile Development, Digital Marketing, and more. With customised learning pathways, we assist teams to acquire the skills they need to improve organisational efficiency.",
           "details": "Our training and consulting approach is calculative and results oriented with the main focus on organisational development. With our interactive learning platform, we offer learners a unique anytime/anywhere approach using our interactive online tools.",
-          "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/a9cdd72c8bbc1ae2401c883f9dfa19d2d696e3fe3780e805653c9c31105cd9cf?apiKey=c0bca91966db4095b1e1b5a08f720e3b&"
+          "image": "/images/Customised_trainings _ CertScope_Trainings.svg"
         }
       ],
       "certificationData": [
@@ -28,12 +28,12 @@
           "description": "Avail certification services and demonstrate the quality of your products and services to customers and stakeholders. Get certified and ensure security, quality, regulatory compliance and other critical factors of the business.",
           "details": "We will assist you in the implementation of various ISO certifications for multiple domains like oil and gas, pharma, agriculture and food, IT, Construction and many more.",
           "ctaText": "Get in touch",
-          "imageUrl": "https://cdn.builder.io/api/v1/image/assets/TEMP/e335535d88de4d02f774d464cffc60ff25dee229aeb35e55f36a7729135528a8?apiKey=c0bca91966db4095b1e1b5a08f720e3b&"
+          "imageUrl": "/images/Certification_services _ CertScope Trainings.svg"
         }
       ],
       "mentorshipData": [
         {
-          "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/aa4f091d615d7ba8ede50ca96644ae328b44bf95c1c4431b82ebe59e97fbe6a2?apiKey=c0bca91966db4095b1e1b5a08f720e3b&",
+          "imageSrc": "/images/Mentorship_Programs _ Certscope_Trainings.svg",
           "title": "Mentorship programs.",
           "description": "We offer mentorship programs from subject matter experts for the mid and top level management to help you in improving your processes; our mentors are professional consultants with more than fifteen (15) years of industry experience.",
           "callToAction": "Acquire professional skills that matter to you, and your workplace, at your own pace and terms.",
@@ -42,54 +42,231 @@
       ]
     }
   },
-  "service":{
+  "service": {
     "heading": [
-        {
-          "title": "what can we do?",
-          "description": "A partnership is about reaching inclusive results. Let CertScope be your partner on your next journey towards an all-embracing outcome. For not only do we have numerous and comprehensive training pathways, but we will also walk them with you towards your business objective.",
-          "resource_images": "/images/benefits_1.jpg"
-        }
-      ],
-      "trainings_heading": [
-        {
-          "title": "Our areas of expertise."
-        }
-      ],
-      "trainings_content": {
-        "Customised_trainings": [
-          {
-            "title": "Customised onsite",
-            "title_2":"training and consulting.",
-            "description": "We provide onsite training to the organisations based on their training needs.",
-            "details": "We cater to domains like Project Management, ITSM, Data Sciences, Cyber Security, Quality Management, Big Data, Agile and Scrum and more.",
-            "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/a9cdd72c8bbc1ae2401c883f9dfa19d2d696e3fe3780e805653c9c31105cd9cf?apiKey=c0bca91966db4095b1e1b5a08f720e3b&"
-          }
-        ],
-        "certificationData": [
-          {
-            "title": "Public training.",
-            "description": "For most of the certification, we offer public training batches in major cities across the globe with convenient locations.",
-            "details": "Check our pathways for more details and trainings we offer.",
-            "imageUrl": "https://cdn.builder.io/api/v1/image/assets/TEMP/e335535d88de4d02f774d464cffc60ff25dee229aeb35e55f36a7729135528a8?apiKey=c0bca91966db4095b1e1b5a08f720e3b&"
-          }
-        ],
-        "mentorshipData": [
-          {
-            "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/aa4f091d615d7ba8ede50ca96644ae328b44bf95c1c4431b82ebe59e97fbe6a2?apiKey=c0bca91966db4095b1e1b5a08f720e3b&",
-            "title": "Examination services..",
-            "description": "We assist professionals and organisations in the application and examination process for the various courses from their respective governing bodies. Some of the areas are PMP, PRINCE2, ITIL Foundation, SIX SIGMA, CEH, CISA, CISSP, ITIL Intermediate modules.",
-            "callToAction": "Do get in touch with our training team for any examination requirements you may have. Happy to assist."
-          }
-        ],
-        "certificationserivce": [
-            {
-              "title": "Certification services",
-              "description": "Other than certification courses to the individuals, we offer certification services to the organisations helping them in demonstrating the quality of their products and services.",
-              "details": "We provide consulting and implementation in ISO certifications like ISO 20000, ISO 27000, ISO9001, ISO 14001, ISO 45001, ISO 22000 and more.",
-              "imageUrl": "https://cdn.builder.io/api/v1/image/assets/TEMP/e335535d88de4d02f774d464cffc60ff25dee229aeb35e55f36a7729135528a8?apiKey=c0bca91966db4095b1e1b5a08f720e3b&"
-            }
-          ]
+      {
+        "title": "what can we do?",
+        "description": "A partnership is about reaching inclusive results. Let CertScope be your partner on your next journey towards an all-embracing outcome. For not only do we have numerous and comprehensive training pathways, but we will also walk them with you towards your business objective.",
+        "resource_images": "/images/Services _ Certscope.svg"
       }
+    ],
+    "trainings_heading": [
+      {
+        "title": "Our areas of expertise."
+      }
+    ],
+    "trainings_content": {
+      "Customised_trainings": [
+        {
+          "title": "Customised onsite",
+          "title_2": "training and consulting.",
+          "description": "We provide onsite training to the organisations based on their training needs.",
+          "details": "We cater to domains like Project Management, ITSM, Data Sciences, Cyber Security, Quality Management, Big Data, Agile and Scrum and more.",
+          "image": "/images/Customised onsite training and consulting.svg"
+        }
+      ],
+      "certificationData": [
+        {
+          "title": "Public training.",
+          "description": "For most of the certification, we offer public training batches in major cities across the globe with convenient locations.",
+          "details": "Check our pathways for more details and trainings we offer.",
+          "imageUrl": "/images/Training services _ CertScope Trainings.svg"
+        }
+      ],
+      "mentorshipData": [
+        {
+          "imageSrc": "/images/Examination services _ Certscope Trainings.svg",
+          "title": "Examination services..",
+          "description": "We assist professionals and organisations in the application and examination process for the various courses from their respective governing bodies. Some of the areas are PMP, PRINCE2, ITIL Foundation, SIX SIGMA, CEH, CISA, CISSP, ITIL Intermediate modules.",
+          "callToAction": "Do get in touch with our training team for any examination requirements you may have. Happy to assist."
+        }
+      ],
+      "certificationserivce": [
+        {
+          "title": "Certification services",
+          "description": "Other than certification courses to the individuals, we offer certification services to the organisations helping them in demonstrating the quality of their products and services.",
+          "details": "We provide consulting and implementation in ISO certifications like ISO 20000, ISO 27000, ISO9001, ISO 14001, ISO 45001, ISO 22000 and more.",
+          "imageUrl": "/images/Certification services _ Certscope Trainings.svg"
+        }
+      ],
+      "contentdevelopment": [
+        {
+          "imageSrc": "/images/Content Development _ Certscope Trainings.svg",
+          "title": "Content development.",
+          "description": "We are passionate and enthusiastic to drive your businesses by enriched content. At Certscope, we source and deploy industry-best writers who can write an excellent content for various certification courses.",
+          "callToAction": "Our suite of content development services is extensively designed to meet your end-to-end learning and development requirements."
+        }
+      ],
+      "learningManagementSystemsData": [
+        {
+          "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/62930a09b14165f1c4c49877e71933e1496c8dfde1954b204ffae3e3e1500bae?apiKey=c0bca91966db4095b1e1b5a08f720e3b&",
+          "text": "Modular Platform"
+        },
+        {
+          "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/62930a09b14165f1c4c49877e71933e1496c8dfde1954b204ffae3e3e1500bae?apiKey=c0bca91966db4095b1e1b5a08f720e3b&",
+          "text": "Course Management"
+        },
+        {
+          "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/62930a09b14165f1c4c49877e71933e1496c8dfde1954b204ffae3e3e1500bae?apiKey=c0bca91966db4095b1e1b5a08f720e3b&",
+          "text": "Live Online training"
+        },
+        {
+          "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/62930a09b14165f1c4c49877e71933e1496c8dfde1954b204ffae3e3e1500bae?apiKey=c0bca91966db4095b1e1b5a08f720e3b&",
+          "text": "Assessments"
+        },
+        {
+          "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/62930a09b14165f1c4c49877e71933e1496c8dfde1954b204ffae3e3e1500bae?apiKey=c0bca91966db4095b1e1b5a08f720e3b&",
+          "text": "Gamification"
+        },
+        {
+          "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/62930a09b14165f1c4c49877e71933e1496c8dfde1954b204ffae3e3e1500bae?apiKey=c0bca91966db4095b1e1b5a08f720e3b&",
+          "text": "Dashboard"
+        }
+      ],
+      "Agile_consulting": [
+        {
+          "title": "Agile",
+          "title_secondary": " consulting",
+          "imageSrc": "/images/Agile Consulting _ Certscope Trainings.svg",
+          "description": "Other than the Agile and Certification certifications courses like CSM, PMI-ACP, CSPO, CSPO, PSD and more. We provide consulting in Agile methodologies and Scrum practices",
+          "checkpoint": "/images/svgexport-16.svg",
+          "list": [
+            "Consulting in Agile processes such as Scrum and Kanban.",
+            "Establishing a framework for agile software development.",
+            "Improving Agile software development practices."
+          ]
+        }
+      ],
+      "ITSM_and_BSM_consulting": [
+        {
+          "imageSrc": "/images/ITSM and BSM Consulting _ Certscope Trainings.svg",
+          "title": "ITSM and BSM consulting",
+          "description": "We offer consulting and implementation services in IT Service Desk, IT Service management and BSM for technologies like Service Now, BMC, Manage Engine, OTRS, ITOP, ITRP, Clarive, Wolken and Open Source."
+        }
+      ],
+      "Training_and_development_consulting": [
+        {
+          "title": "Training and development",
+          "title_secondary": " consulting",
+          "imageSrc": "/images/Training and development _ Certscope Trainings.svg",
+          "description": "We offer customised and need-based training solutions to organisations. Our solutions are objectively oriented with the mission, vision and values of the organisation.",
+          "checkpoint": "/images/svgexport-16.svg",
+          "list": [
+            "Training needs identification.",
+            "Training needs analysis.",
+            "Evaluation and assessment.",
+            "Train the trainer.",
+            "Design of training modules.",
+            "Development of training modules.",
+            "Leadership consulting.",
+            "Performance management system."
+          ]
+        }
+      ]
+    }
+  },
+  "mentorship_program": {
+    "heading": [
+      {
+        "title": "Unfurl your passion",
+        "description": "Take mentees on a customised learning journey. CertScope gives you the right tools to start an online learning pathway and provide mentorship. Assist mentees to reach their potential and pursue their passion.",
+        "resource_images": "/images/Certscope mentorship program.svg"
+      }
+    ],
+    "trainings_heading": [
+      {
+        "title": "Share your expertise."
+      }
+    ],
+    "trainings_content": {
+      "Customised_trainings": [
+        {
+          "title": "Earn",
+          "description": "Earn every time a mentee starts on your pathway. With Cerstcope, you do not only earn money, but you also earn reputation, friendship and your path to passion.",
+          "details": "If you are as passionate as us about creating and spreading knowledge, then you are in the right place..",
+          "image": "/images/Earn with CertScope Trainings.svg"
+        }
+      ],
+      "certificationData": [
+        {
+          "title": "Inspirit.",
+          "description": "Inspiration comes in many ways, often via people like you, who have the desire to spread knowledge. Assist mentees to learn new skills, advance their careers, and explore their passions by sharing your expertise.",
+          "details": "Be the fuel to the desire of learning.",
+          "ctaText": "Get Started",
+          "imageUrl": "/images/Inspire _ CertScope Trainings.svg"
+        }
+      ],
+      "mentorshipSteps": [
+        {
+          "icon": "/images/group.svg",
+          "title": "Join the community",
+          "description": {
+            "paragraphs": [
+              "The first step to getting started on the journey of becoming a part of CertScope Mentorship program is to create an account with us. You can get started with your account by visiting. If you already have an account continue to the next step.",
+              {
+                "note": "Only registered and verified members of the community can apply for the program. You need to have created an account with CertScope to apply. To know more about accounts, visit ",
+                "link": {
+                  "url": "https://certscope.com/hs/mentee/account-and-profile",
+                  "text": "Account Section",
+                  "target": "_blank"
+                },
+                "faq": "FAQs."
+              }
+            ]
+          }
+        },
+        {
+          "icon": "/images/Click.svg",
+          "title": "Apply for the program",
+          "description": {
+            "paragraph": "After you have created an account with us, you will need to verify yourself and complete your account details. Once your account is verified, you can apply to become a part of our mentorship program."
+          }
+        },
+        {
+          "icon": "/images/Stack.svg",
+          "title": "Submit information",
+          "description": {
+            "paragraphs": [
+              "After you apply for the mentorship program, we may ask you to submit proof and credentials based on the stream you have chosen to mentor. If requested you can either email or upload them for verification.",
+              {
+                "note": "Please do not submit any certificates or documents, until and unless you are asked to do so. Do keep in mind, CertScope does not charge any fee for mentorship application, and/or it's processing.",
+                "link": {}
+              }
+            ]
+          }
+        },
+        {
+          "icon": "/images/Star.svg",
+          "title": "Recieve decision",
+          "description": {
+            "paragraphs": [
+              "Based on your educational and personal experiences and our assessment criteria, we will inform you via email about the outcome of your application. We consider many aspects of the applicant while deciding the outcome of the application. We value quality over quantity.",
+              {
+                "note": "Note: Applying for the mentorship program does not qualify you for approval. If your application is refused, we may give you options to appeal against the decision. However, you may not be apply again for six months.",
+                "link": {}
+              }
+            ]
+          }
+        },
+        {
+          "icon": "/images/Plan.svg",
+          "title": "Plan the pathway",
+          "description": {
+            "paragraphs": [
+              "If your application was approved, you should start with what you are passionate about. Then organise your content, and pathway structure. You can use online documentation tools or even a piece of paper to create a wireframe of your content. Plan the pathway, and how you want the mentees to take that journey with you.",
+              {
+                "note": "Visit our dedicated ",
+                "link": {
+                  "url": "https://certscope.com/hs/mentee/account-and-profile",
+                  "text": " Mentor Help and Support ",
+                  "target": "_blank"
+                },
+                "faq": "centre for more information on how to create learning pathways."
+              }
+            ]
+          }
+        }
+      ]
+    }
   }
-  
 }

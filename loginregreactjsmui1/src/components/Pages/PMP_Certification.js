@@ -1,5 +1,4 @@
 import React from "react";
-import Nav from "../Navbar/Nav";
 import Footer from "../Footer/Footer";
 import PMP_Certificate from "../../Assets/PNG/PMP_Certification _ CertScope.svg";
 import Gray_tick from "../../Assets/PNG/gray_tick.svg";
@@ -66,24 +65,29 @@ function PMP_Certification({ certificationType }) {
                 href="/"
               >
                 <HomeIcon sx={{ mr: 0.5 }} fontSize="inherit" />
-                MUI
+                Home
               </Link>
-              <Link
-                underline="hover"
-                sx={{ display: "flex", alignItems: "center" }}
-                color="inherit"
-                href="/material-ui/getting-started/installation/"
-              >
-                <WhatshotIcon sx={{ mr: 0.5 }} fontSize="inherit" />
-                Core
-              </Link>
-              <Typography
-                sx={{ display: "flex", alignItems: "center" }}
-                color="text.primary"
-              >
-                <GrainIcon sx={{ mr: 0.5 }} fontSize="inherit" />
-                Breadcrumb
-              </Typography>
+              {heading.map((items, index) => (
+                <Link
+                  underline="hover"
+                  sx={{ display: "flex", alignItems: "center" }}
+                  color="inherit"
+                  href="/material-ui/getting-started/installation/"
+                >
+                  <WhatshotIcon sx={{ mr: 0.5 }} fontSize="inherit" />
+                  {items.heading_title}
+                </Link>
+              ))}
+
+              {heading.map((item, index) => (
+                <Typography
+                  sx={{ display: "flex", alignItems: "center" }}
+                  color="text.primary"
+                >
+                  <GrainIcon sx={{ mr: 0.5 }} fontSize="inherit" />
+                  {item.title}
+                </Typography>
+              ))}
             </Breadcrumbs>
           </div>
           {heading.map((heading, index) => (
@@ -434,7 +438,9 @@ function PMP_Certification({ certificationType }) {
         </div>
         <div className="resources_content center_div">
           {(certificationType === "pmp" ||
-            certificationType === "CSM_Certification" || certificationType === "Lean_Six_Sigma_Black_Belt_certification") && (
+            certificationType === "CSM_Certification" ||
+            certificationType ===
+              "Lean_Six_Sigma_Black_Belt_certification") && (
             <>
               <div className="resources_top_content common_center">
                 <span className="upper_case">resources</span>

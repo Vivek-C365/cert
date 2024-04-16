@@ -374,7 +374,7 @@ aside h3 span {
     align-items: center;
 }
 
-.title {
+.achieve_section .title {
     font-family: Red Hat Display, sans-serif;
     font-size: 48px;
     font-weight: 700;
@@ -382,6 +382,8 @@ aside h3 span {
     text-align: center;
     max-width: 768px;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .title-primary {
@@ -462,12 +464,16 @@ aside h3 span {
 
 }
 
+.Courses_img a{
+    text-decoration: none;
+}
+
 .Course_wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    width: 35vh;
+    width: 40vh;
     padding: 15px;
     border: 1px solid #a9a9a945;
     margin: 15px;
@@ -540,6 +546,9 @@ aside h3 span {
 
 
 /* PMP_Certification styling  start from here */
+
+
+
 
 .certification_top_section {
     display: flex;
@@ -1138,6 +1147,7 @@ aside h3 span {
     will-change: auto;
     border: 1px solid lightgray;
     background-color: white;
+    align-items: center;
 }
 
 
@@ -1287,33 +1297,35 @@ aside h3 span {
     padding: 5px;
 }
 
-.div-container-tablet{
+.div-container-tablet {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.figure-margin .figure{
+.figure-margin .figure {
     position: absolute;
     right: 8em;
     bottom: 1em;
 }
 
-.user_profile_content{
+.user_profile_content {
     display: flex;
     position: relative;
     width: 30vh;
     justify-content: space-evenly;
     max-width: 100%;
 }
-.span-flex{
+
+.span-flex {
     height: 100px;
     width: 100px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
 }
-.Link_content_profile{
+
+.Link_content_profile {
     display: flex;
     align-items: center;
     position: relative;
@@ -1321,11 +1333,11 @@ aside h3 span {
     justify-content: space-around;
 }
 
-.figure-margin{
+.figure-margin {
     width: 13vh;
 }
 
-.Link_content_profile .item{
+.Link_content_profile .item {
     margin: 13px;
     padding: 5px;
     border-radius: 50%;
@@ -1333,14 +1345,14 @@ aside h3 span {
 
 }
 
-.text-wrapper{
+.text-wrapper {
     font-size: 1.3rem;
     font-weight: 700;
     color: #192753;
 
 }
 
-.manager{
+.manager {
     background-color: rgba(53, 106, 230, 0.14);
     display: flex;
     justify-content: center;
@@ -1351,7 +1363,7 @@ aside h3 span {
     color: #1A3BA5;
 }
 
-.section-2{
+.section-2 {
     padding: 35px;
     display: flex;
     justify-content: space-evenly;
@@ -1361,7 +1373,7 @@ aside h3 span {
 
 }
 
-.div-single-grid{
+.div-single-grid {
     padding: 35px;
     display: flex;
     flex-direction: column;
@@ -1372,12 +1384,13 @@ aside h3 span {
 
 
 }
-.link-wrapper a{
+
+.link-wrapper a {
     color: gray;
     text-decoration: none;
 }
 
-.text-wrapper-2{
+.text-wrapper-2 {
     font-size: 1.5rem;
     font-weight: 600;
     color: #2D3748;
@@ -1385,21 +1398,22 @@ aside h3 span {
     border-bottom: 1px solid #5066905e;
 }
 
-.div-text-steel{
+.div-text-steel {
     padding-top: 10px;
     color: #506690;
 }
 
-.div-w{
+.div-w {
     display: inline-flex;
     color: #506690;
 
 }
 
-.div-w svg{
+.div-w svg {
     margin-right: 10px;
 }
-.div-single-grid .list{
+
+.div-single-grid .list {
     display: flex;
     position: relative;
     width: 70vh;
@@ -1416,93 +1430,91 @@ aside h3 span {
     justify-content: center;
     display: flex;
     flex-direction: column;
-  }
-  
-  .content-wrapper {
+}
+
+.content-wrapper {
     display: flex;
     width: 100%;
     flex-direction: column;
     padding: 64px 0;
-  }
-  
-  .content-container {
+}
+
+.content-container {
     max-width: 100%;
     justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
     align-self: center;
     width: 960px;
-  }
-  
-  .content-row {
+}
+
+.content-row {
     gap: 20px;
     display: flex;
-  }
-  
-  .content-column {
+}
+
+.content-column {
     display: flex;
     flex-direction: column;
     line-height: normal;
     width: 59%;
     margin-left: 0;
-  }
-  
-  .content-section {
+}
+
+.content-section {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-  }
-  
-  .heading-wrapper {
+}
+
+.heading-wrapper {
     display: flex;
     flex-direction: column;
     font-weight: 900;
     letter-spacing: -0.55px;
-    padding: 0 20px;
-  }
-  
-  .heading1 {
-    color: var(--dash-certscope-com-bunting, #192753);
-    font: 55px/100% "Red Hat Display", sans-serif;
-  }
-  
-  .heading2 {
+}
+
+.heading1 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #192753;
+}
+
+.heading2 {
     color: var(--dash-certscope-com-cerulean-blue, #2651c5);
     font: 72px/100% "Red Hat Display", sans-serif;
-  }
-  
-  .description {
+}
+
+.description {
     max-width: 450px;
     margin-top: 55px;
     color: var(--dash-certscope-com-oxford-blue, #2d3748);
     justify-content: center;
-    font: 400 16px/21px "Inter", sans-serif;
-  }
-  
-  .image-column {
+}
+
+.image-column {
     display: flex;
     flex-direction: column;
     line-height: normal;
     width: 41%;
     margin-left: 20px;
-  }
-  
-  .image-wrapper {
+}
+
+.image-wrapper {
     max-width: 350px;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
     justify-content: center;
-  }
-  
-  .image {
+}
+
+.image {
     aspect-ratio: 1.32;
-    object-fit: cover;
     object-position: center;
     width: 100%;
-  }
-  
-  .divider-wrapper {
+}
+
+.divider-wrapper {
     justify-content: center;
     align-items: center;
     border-color: rgba(217, 226, 239, 1);
@@ -1511,9 +1523,9 @@ aside h3 span {
     display: flex;
     width: 100%;
     padding: 80px 60px 0;
-  }
-  
-  .logo-wrapper {
+}
+
+.logo-wrapper {
     justify-content: center;
     align-items: center;
     border-radius: 30px;
@@ -1523,17 +1535,17 @@ aside h3 span {
     margin-top: 9px;
     width: 60px;
     padding: 12px 13px 0;
-  }
-  
-  .logo {
+}
+
+.logo {
     aspect-ratio: 1.85;
     object-fit: contain;
     object-position: center;
     width: 100%;
-  }
+}
 
-  
-  .hero-container {
+
+.hero-container {
     display: flex;
     font-size: 48px;
     color: var(--dash-certscope-com-cerulean-blue, #2651c5);
@@ -1543,41 +1555,42 @@ aside h3 span {
     padding: 48px 56px 0;
     align-items: center;
     flex-direction: column;
-  
+
     @media (max-width: 991px) {
-      font-size: 40px;
-      line-height: 45px;
-      padding: 0 20px;
+        font-size: 40px;
+        line-height: 45px;
+        padding: 0 20px;
     }
-  }
-  
-  .hero-content {
+}
+
+.hero-content {
     font-family: Red Hat Display, sans-serif;
     max-width: 768px;
     align-items: center;
     justify-content: center;
     padding: 0 60px;
-  
+
     @media (max-width: 991px) {
-      max-width: 100%;
-      font-size: 40px;
-      line-height: 45px;
-      padding: 0 20px;
+        max-width: 100%;
+        font-size: 40px;
+        line-height: 45px;
+        padding: 0 20px;
     }
-  }
-  
-  .hero-text {
-    color: rgba(25, 39, 83, 1);
-  }
-  
-  .highlight-text {
+}
+
+.hero-text {
+    font-weight: 700;
+    color: midnightblue;
+}
+
+.highlight-text {
     color: rgba(38, 81, 197, 1);
-  }
+}
 
 
 
 
-  /* Add your styles here */
+/* Add your styles here */
 
 .training-section-wrapper {
     display: flex;
@@ -1585,109 +1598,109 @@ aside h3 span {
     align-items: center;
     background-color: #fff;
     padding: 80px 60px;
-  
+
     @media (max-width: 991px) {
-      padding: 0 20px;
+        padding: 0 20px;
     }
-  }
-  
-  .training-section-content {
+}
+
+.training-section-content {
     width: 880px;
     max-width: 100%;
     padding: 16px 0;
     margin-top: 8px;
     justify-content: center;
-  }
-  
-  .training-details {
+}
+
+.training-details {
     display: flex;
     gap: 20px;
-  
+
     @media (max-width: 991px) {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
     }
-  }
-  
-  .image-column {
+}
+
+.image-column {
     display: flex;
     flex-direction: column;
     line-height: normal;
     width: 39%;
     margin-left: 0;
-  
+
     @media (max-width: 991px) {
-      width: 100%;
+        width: 100%;
     }
-  }
-  
-  .image-wrapper {
+}
+
+.image-wrapper {
     max-width: 300px;
     display: flex;
     flex-direction: column;
     align-self: stretch;
     justify-content: center;
     margin: auto 0;
-  
+
     @media (max-width: 991px) {
-      margin-top: 40px;
+        margin-top: 40px;
     }
-  }
-  
-  .training-image {
+}
+
+.training-image {
     aspect-ratio: 1.33;
     object-fit: auto;
     object-position: center;
     width: 100%;
-  }
-  
-  .description-column {
+}
+
+.description-column {
     display: flex;
     flex-direction: column;
     line-height: normal;
     width: 61%;
     margin-left: 20px;
-  
+
     @media (max-width: 991px) {
-      width: 100%;
+        width: 100%;
     }
-  }
-  
-  .description-wrapper {
+}
+
+.description-wrapper {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-  
+
     @media (max-width: 991px) {
-      max-width: 100%;
-      margin-top: 40px;
+        max-width: 100%;
+        margin-top: 40px;
     }
-  }
-  
-  .training-title {
+}
+
+.training-title {
     color: var(--dash-certscope-com-persian-blue, #1a3ba5);
     justify-content: center;
-    font: 700 28px/28px Red Hat Display, -apple-system, Roboto, Helvetica, sans-serif;
-  
+    font: 500 28px/28px Red Hat Display, -apple-system, Roboto, Helvetica, sans-serif;
+
     .title-part-1 {
-      color: rgba(33, 50, 90, 1);
+        color: rgba(33, 50, 90, 1);
     }
-  
+
     .title-part-2 {
-      color: rgba(26, 59, 165, 1);
+        color: rgba(26, 59, 165, 1);
     }
-  
+
     .title-part-3 {
-      color: rgba(33, 50, 90, 1);
+        color: rgba(33, 50, 90, 1);
     }
-  
+
     @media (max-width: 991px) {
-      max-width: 100%;
+        max-width: 100%;
     }
-  }
-  
-  .training-description {
+}
+
+.training-description {
     display: flex;
     margin-top: 32px;
     flex-direction: column;
@@ -1695,33 +1708,31 @@ aside h3 span {
     color: var(--dash-certscope-com-kashmir-blue, #506690);
     font-weight: 400;
     line-height: 20px;
-  
+
     @media (max-width: 991px) {
-      max-width: 100%;
+        max-width: 100%;
     }
-  }
-  
-  .training-description-text {
-    font-family: Inter, sans-serif;
+}
+
+.training-description-text {
     justify-content: center;
     padding: 1px 0;
-  
+
     @media (max-width: 991px) {
-      max-width: 100%;
+        max-width: 100%;
     }
-  }
-  
-  .training-details-text {
-    font-family: Inter, sans-serif;
+}
+
+.training-details-text {
     margin-top: 15px;
     justify-content: center;
-  
+
     @media (max-width: 991px) {
-      max-width: 100%;
+        max-width: 100%;
     }
-  }
-  
-  .know-more-button {
+}
+
+.know-more-button {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
@@ -1735,14 +1746,14 @@ aside h3 span {
     text-transform: uppercase;
     letter-spacing: 0.22px;
     padding: 1px 21px;
-    font: 600 11px/34px Inter, sans-serif;
-  
-    @media (max-width: 991px) {
-      padding: 0 20px;
-    }
-  }
+    font: 400 11px/34px Inter, sans-serif;
 
-  
+    @media (max-width: 991px) {
+        padding: 0 20px;
+    }
+}
+
+
 
 /* Add your styles here */
 
@@ -1752,62 +1763,62 @@ aside h3 span {
     align-items: center;
     background-color: #fff;
     padding: 80px 60px;
-  
+
     @media (max-width: 991px) {
-      padding: 0 20px;
+        padding: 0 20px;
     }
-  }
-  
-  .certification-container {
+}
+
+.certification-container {
     width: 880px;
     max-width: 100%;
     margin-top: 18px;
     padding: 16px 0;
     justify-content: center;
-  }
-  
-  .certification-content {
+}
+
+.certification-content {
     display: flex;
     gap: 20px;
-  
+
     @media (max-width: 991px) {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
     }
-  }
-  
-  .certification-info {
+}
+
+.certification-info {
     display: flex;
     flex-direction: column;
     line-height: normal;
     width: 62%;
     margin-left: 0;
-  
+
     @media (max-width: 991px) {
-      width: 100%;
+        width: 100%;
     }
-  }
-  
-  .certification-title {
+}
+
+.certification-title {
     color: var(--dash-certscope-com-persian-blue, #1a3ba5);
     justify-content: center;
     font: 700 28px/28px Red Hat Display, -apple-system, Roboto, Helvetica, sans-serif;
-  
+
     @media (max-width: 991px) {
-      max-width: 100%;
+        max-width: 100%;
     }
-  }
-  
-  .title-text {
+}
+
+.title-text {
     color: rgba(33, 50, 90, 1);
-  
+
     &:nth-child(2) {
-      color: rgba(26, 59, 165, 1);
+        color: rgba(26, 59, 165, 1);
     }
-  }
-  
-  .certification-description {
+}
+
+.certification-description {
     display: flex;
     flex-direction: column;
     margin-top: 32px;
@@ -1815,33 +1826,31 @@ aside h3 span {
     color: var(--dash-certscope-com-kashmir-blue, #506690);
     font-weight: 400;
     line-height: 20px;
-  
+
     @media (max-width: 991px) {
-      max-width: 100%;
+        max-width: 100%;
     }
-  }
-  
-  .description-text {
-    font-family: Inter, sans-serif;
+}
+
+.description-text {
     justify-content: center;
     padding: 1px 0;
-  
+
     @media (max-width: 991px) {
-      max-width: 100%;
+        max-width: 100%;
     }
-  }
-  
-  .details-text {
-    font-family: Inter, sans-serif;
+}
+
+.details-text {
     margin-top: 15px;
     justify-content: center;
-  
+
     @media (max-width: 991px) {
-      max-width: 100%;
+        max-width: 100%;
     }
-  }
-  
-  .cta-button {
+}
+
+.cta-button {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
@@ -1854,169 +1863,167 @@ aside h3 span {
     text-transform: uppercase;
     letter-spacing: 0.22px;
     padding: 1px 21px;
-    font: 600 11px/34px Inter, sans-serif;
-  
+    font: 400 11px/34px Inter, sans-serif;
+
     @media (max-width: 991px) {
-      padding: 0 20px;
+        padding: 0 20px;
     }
-  }
-  
-  .certification-image {
+}
+
+.certification-image {
     display: flex;
     flex-direction: column;
     line-height: normal;
     width: 38%;
     margin-left: 20px;
-  
+
     @media (max-width: 991px) {
-      width: 100%;
+        width: 100%;
     }
-  }
-  
-  .image-wrapper {
+}
+
+.image-wrapper {
     max-width: 300px;
     display: flex;
     flex-direction: column;
     align-self: stretch;
     justify-content: center;
     margin: auto 0;
-  
+
     @media (max-width: 991px) {
-      margin-top: 40px;
+        margin-top: 40px;
     }
-  }
-  
-  .cert-image {
+}
+
+.cert-image {
     aspect-ratio: 1.32;
     object-fit: auto;
     object-position: center;
     width: 100%;
-  }
+}
 
-  
 
-  .mentorship-wrapper {
+
+.mentorship-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fff;
     padding: 62px 60px;
-  
+
     @media (max-width: 991px) {
-      padding: 0 20px;
+        padding: 0 20px;
     }
-  }
-  
-  .Mentorship_content_wrapper {
+}
+
+.Mentorship_content_wrapper {
     width: 880px;
     max-width: 100%;
     padding: 16px 0;
-  }
-  
-  .item-wrapper {
+}
+
+.item-wrapper {
     display: flex;
     gap: 20px;
-  
+
     @media (max-width: 991px) {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
     }
-  }
-  
-  .image-column {
+}
+
+.image-column {
     width: 39%;
     margin-left: 0;
-  
+
     @media (max-width: 991px) {
-      width: 100%;
+        width: 100%;
     }
-  }
-  
-  .image-wrapper {
+}
+
+.image-wrapper {
     max-width: 300px;
     display: flex;
     flex-direction: column;
     align-self: stretch;
     justify-content: center;
     margin: auto 0;
-  
+
     @media (max-width: 991px) {
-      margin-top: 40px;
+        margin-top: 40px;
     }
-  }
-  
-  .image {
+}
+
+.image {
     aspect-ratio: 1.19;
-    object-fit: cover;
     width: 100%;
-  }
-  
-  .content-column {
+}
+
+.content-column {
     width: 61%;
     margin-left: 20px;
-  
+
     @media (max-width: 991px) {
-      width: 100%;
+        width: 100%;
     }
-  }
-  
-  .title {
+}
+
+.title {
     color: var(--dash-certscope-com-persian-blue, #1a3ba5);
     justify-content: center;
     font: 700 28px/28px Red Hat Display, -apple-system, Roboto, Helvetica, sans-serif;
-        display: flex;
+    display: flex;
     justify-content: flex-start;
+
     @media (max-width: 991px) {
-      max-width: 100%;
+        max-width: 100%;
     }
-  }
-  
-  .title-text {
+}
+
+.title-text {
     color: rgba(33, 50, 90, 1);
-  
+
     &:nth-child(2) {
-      color: rgba(26, 59, 165, 1);
+        color: rgba(26, 59, 165, 1);
     }
-  }
-  
-  .description {
+}
+
+.description {
     display: flex;
     flex-direction: column;
     margin-top: 32px;
     font-size: 14px;
     color: var(--dash-certscope-com-kashmir-blue, #506690);
     line-height: 20px;
-  
+
     @media (max-width: 991px) {
-      max-width: 100%;
+        max-width: 100%;
     }
-  }
-  
-  .description-text {
-    font-family: Inter, sans-serif;
+}
+
+.description-text {
     font-weight: 400;
     justify-content: center;
     padding: 1px 0;
-  
+
     @media (max-width: 991px) {
-      max-width: 100%;
+        max-width: 100%;
     }
-  }
-  
-  .call-to-action {
-    font-family: Inter, sans-serif;
+}
+
+.call-to-action {
     margin-top: 15px;
     font-weight: 500;
     justify-content: center;
-  
+
     @media (max-width: 991px) {
-      max-width: 100%;
-      padding-right: 20px;
+        max-width: 100%;
+        padding-right: 20px;
     }
-  }
-  
-  .button {
+}
+
+.button {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
@@ -2029,16 +2036,16 @@ aside h3 span {
     text-transform: uppercase;
     letter-spacing: 0.22px;
     padding: 1px 21px;
-    font: 600 11px/34px Inter, sans-serif;
-  
+    font: 400 11px/34px Inter, sans-serif;
+
     @media (max-width: 991px) {
-      padding: 0 20px;
+        padding: 0 20px;
     }
-  }
+}
 
 
 
-.Hamcom_flex{
+.Hamcom_flex {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2049,7 +2056,7 @@ aside h3 span {
 
 /* Account Settings Start Here */
 
-.account_setting{
+.account_setting {
     display: flex;
     justify-content: center;
     padding: 5rem;
@@ -2058,7 +2065,7 @@ aside h3 span {
 
 }
 
-.profile-form-container{
+.profile-form-container {
     position: relative;
     width: 100vh;
     border: 1px solid lightgray;
@@ -2067,23 +2074,23 @@ aside h3 span {
 
 }
 
-.profile-form-container h3{
+.profile-form-container h3 {
     margin-bottom: 30px;
 
 }
 
-.accordion-container{
+.accordion-container {
     margin-bottom: 30px;
 }
 
-.accordion-container .MuiButtonBase-root{
+.accordion-container .MuiButtonBase-root {
     border: 1px solid lightgrey;
     border-radius: 2px;
     color: darkblue;
 
 }
 
-.accordion-container .MuiButtonBase-root:hover{
+.accordion-container .MuiButtonBase-root:hover {
     background-color: #f7f9fc;
 }
 
@@ -2093,9 +2100,10 @@ aside h3 span {
     border: 1px solid lightgray;
 }
 
-.css-1086bdv-MuiPaper-root-MuiAccordion-root{
+.css-1086bdv-MuiPaper-root-MuiAccordion-root {
     box-shadow: none !important;
 }
+
 .css-ahj2mt-MuiTypography-root {
     margin: 0;
     font-weight: 400;
@@ -2107,10 +2115,321 @@ aside h3 span {
     color: darkgray;
 }
 
-.css-eqpfi5-MuiAccordionSummary-content{
+.css-eqpfi5-MuiAccordionSummary-content {
     font-size: 14px;
 }
 
-.css-wb57ya-MuiFormControl-root-MuiTextField-root{
+.css-wb57ya-MuiFormControl-root-MuiTextField-root {
     margin-bottom: 15px !important;
+}
+
+.LearningManagementSystemSection {
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    padding: 21px 60px;
+}
+
+.LearningManagementSystemContainer {
+    justify-content: center;
+    width: 720px;
+    max-width: 100%;
+    padding: 16px 0;
+}
+
+.LearningManagementSystemContent {
+    gap: 20px;
+    display: flex;
+}
+
+.ImageColumn {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 0px;
+}
+
+.ImageWrapper {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    justify-content: center;
+    margin: auto 0;
+}
+
+.LearningManagementSystemImage {
+    aspect-ratio: 1.39;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+}
+
+.DescriptionColumn {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 20px;
+}
+
+.DescriptionWrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.Title {
+    color: var(--certscope-com-electric-violet, #754ffe);
+    justify-content: center;
+    font: 700 28px/28px Red Hat Display, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.Title .title-text {
+    color: rgba(33, 50, 90, 1);
+}
+
+.Title .title-highlight {
+    color: rgba(117, 79, 254, 1);
+}
+
+.Description {
+    display: flex;
+    margin-top: 31px;
+    flex-direction: column;
+    font-size: 14px;
+    color: var(--certscope-com-kashmir-blue, #506690);
+    font-weight: 400;
+}
+
+.DescriptionText {
+    font-family: Inter, sans-serif;
+    line-height: 20px;
+    justify-content: center;
+    padding: 1px 0;
+}
+
+.FeatureList {
+    padding-bottom: 10px;
+    display: flex;
+    margin-top: 31px;
+    flex-direction: column;
+    line-height: 114%;
+}
+
+.FeatureItem {
+    align-content: flex-start;
+    display: flex;
+    gap: 0px;
+    padding: 4px 0;
+}
+
+.FeatureIcon {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 16px;
+}
+
+.FeatureText {
+    font-family: Inter, sans-serif;
+    align-items: start;
+    justify-content: center;
+    padding: 0 16px;
+}
+
+.Note {
+    display: flex;
+    margin-top: 31px;
+    flex-direction: column;
+    font-size: 13px;
+    line-height: 17px;
+    justify-content: center;
+}
+
+.NoteText {
+    font-family: Inter, sans-serif;
+    justify-content: center;
+}
+
+
+
+
+
+/* MentorshipSteps.css */
+
+.mentorship-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 59px 60px;
+}
+
+.mentorship-wrapper {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mentorship-title {
+    max-width: 880px;
+    display: flex;
+    flex-direction: column;
+    font-size: 48px;
+    color: #192753;
+    font-weight: 700;
+    text-align: center;
+    line-height: 48px;
+    justify-content: center;
+    padding: 0 56px;
+    font-family: Red Hat Display, sans-serif;
+}
+
+.mentorship-title .highlight {
+    color: #1a3ba5;
+}
+
+.mentorship-steps-wrapper {
+    max-width: 100%;
+    align-self: center;
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+}
+
+.mentorship-divider {
+    border-radius: 12px;
+    background-color: #d8002f;
+    align-self: center;
+    width: 24px;
+    height: 4px;
+}
+
+.mentorship-step-card {
+    border-radius: 4px;
+    border: 1px solid #d9e2ef;
+    background-color: #fff;
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+    padding: 25px 41px;
+    align-items: center;
+}
+
+.mentorship-step-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 60px 32px;
+}
+
+.mentorship-step-icon img {
+    width: 50px;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+
+.mentorship-step-title {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    color: #4545a2;
+    font-weight: 700;
+    line-height: 120%;
+    padding: 0 60px 20px;
+    font-family: Red Hat Display, sans-serif;
+}
+
+.mentorship-step-description .main_text {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #192753;
+    font-weight: 400;
+    line-height: 19px;
+    font-family: Inter, sans-serif;
+}
+
+.mentorship-step-description p {
+    margin-bottom: 15px;
+}
+
+.mentorship-step-description .note {
+    color: #356ae6;
+    font-size: 13px;
+    line-height: 17px;
+    margin-top: 24px;
+}
+
+.mentorship-step-description a {
+    color: #356ae6;
+}
+
+
+.mentorship-section-container .mentorship-wrapper {
+    padding: 0;
+}
+
+
+
+
+
+#taxonomy-term-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px;
+}
+
+@media screen and (min-width: 64em) {
+
+    .spacer {
+        padding: 4rem;
+        padding-bottom: 5.5rem;
+    }
+}
+
+.page-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-bottom .text-title {
+    font-size: 2.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.course-items-list ol {
+    display: flex;
+    align-items: center;
+}
+.page-bottom spacer .text-primary-active{
+    color: #1a3ba5;
+}
+.course-items-list li {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    width: 55%;
+    border: 1px solid #d9e2ef;
+}
+
+.course-items-list li p{
+    font-size: 14px;
+    color: #506690;
+
+}
+
+.course-items-list li button{
+    margin: 0;
+    border-radius: 4px;
+    background-color: rgba(53, 106, 230, 0.15);
+    border: 1px solid;
+    color: #1a3ba5;
 }

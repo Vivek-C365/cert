@@ -22,6 +22,7 @@ import HelpIcon from "@mui/icons-material/Help";
 import FolderIcon from "@mui/icons-material/Folder";
 import ContactsIcon from "@mui/icons-material/Contacts";
 import InfoIcon from "@mui/icons-material/Info";
+import course from "../../course.json";
 
 class Nav extends Component {
   constructor(props) {
@@ -30,148 +31,7 @@ class Nav extends Component {
       isOpen: false,
       isPathOpen: false,
       openDrawer: false,
-      pathway: [
-        {
-          title: "Agile and Scrum",
-          certificates: [
-            {
-              title: "CSM Certificate",
-              link: "/agile-and-scrum/csm_certification",
-            },
-            {
-              title: "CSPO Certification",
-              link: "/agile-and-scrum/cspo_certification",
-            },
-            {
-              title: "PMI-ACP Certification",
-              link: "/agile-and-scrum/PMI_ACP_Certification",
-            },
-          ],
-        },
-        {
-          title: "Big Data",
-          certificates: [
-            {
-              title: "Big Data Administrator Certification",
-              link: "big-data/big-data-administrator-certification",
-            },
-          ],
-        },
-        {
-          title: "Cloud  Computing",
-          certificates: [
-            {
-              title: "AWS Solution Architect Certification",
-              link: "cloud-computing/aws-solution-architect-certification",
-            },
-            {
-              title: "AWS Developer Associate Certification",
-              link: "cloud-computing/aws-developer-associate-certification",
-            },
-          ],
-        },
-        {
-          title: "Cyber Security",
-          certificates: [
-            {
-              title: "CEH Certification",
-              link: "cyber-security/ceh-certification",
-            },
-            {
-              title: "CISSP Certification",
-              link: "cyber-security/cissp-certification",
-            },
-          ],
-        },
-        {
-          title: "Data Science",
-          certificates: [
-            {
-              title: "Data Science with Python Certification",
-              link: "data-science/data-science-python-certification",
-            }
-          ],
-        },
-        {
-          title: "DevOps",
-          certificates: [
-            {
-              title: "DevOps Certification",
-              link: "devops/devops-certification",
-            }
-          ],
-        },
-        {
-          title: "Digital Marketing",
-          certificates: [
-            {
-              title: "Digital Marketing Expert Certification",
-              link: "digital-marketing/digital-marketing-expert-certification",
-            }
-          ],
-        },
-        {
-          title: "ISO Certifications",
-          certificates: [
-            {
-              title: "ISO 27001 Lead Auditor Certification",
-              link: "iso-certifications/iso-27001-lead-auditor-certification",
-            }
-          ],
-        },
-        {
-          title: "IT Service Management",
-          certificates: [
-            {
-              title: "ITIL-4 Foundation Certification",
-              link: "it-service-management/itil-4-foundation-certification",
-            }
-          ],
-        },
-        {
-          title: "Project Management",
-          certificates: [
-            {
-              title: "PMP Certification",
-              link: "/project_management/pmp_certification",
-            },
-            {
-              title: "PfMP Certification",
-              link: "project-management/pfmp-certification",
-            },
-            {
-              title: "PgMP Certification",
-              link: "project-management/pgmp-certification",
-            },
-          ],
-        },
-        {
-          title: "Quality Management",
-          certificates: [
-            {
-              title: "Lean Six Sigma Yellow Belt Certification",
-              link: "quality-management/lean-six-sigma-yellow-belt-certification",
-            },
-            {
-              title: "Lean Six Sigma Black Belt certification",
-              link: "quality-management/lean-six-sigma-black-belt-certification",
-            },
-            {
-              title: "Lean Six Sigma Green Belt certification",
-              link: "quality-management/lean-six-sigma-green-belt-certification",
-            },
-          ],
-        },
-        {
-          title: "UX and Design Thinking ",
-          certificates: [
-            {
-              title: "Design Thinking Certification",
-              link: "ux-and-design-thinking/design-thinking-certification",
-            }
-          ],
-        },
-      ],
+      pathway: course.pathway,
       selectedPathway: null,
     };
   }
@@ -210,12 +70,12 @@ class Nav extends Component {
     {
       logo: <PeopleAltIcon />,
       title: "Mentorship Program",
-      link: "business",
+      link: "mentor/mentorship-program",
     },
     {
       logo: <CalendarTodayIcon />,
       title: "Training Calender",
-      link: "business",
+      link: "training-calendar",
     },
     {
       logo: <MenuBookIcon />,
@@ -331,7 +191,7 @@ class Nav extends Component {
                       onClick={() => this.toggleDrawer(false)}
                     >
                       <List>
-                        {pathway.map((item) => (
+                        {course.pathway.map((item) => (
                           <div key={item.title}>
                             <ListItem disablePadding>
                               <ListItemButton
