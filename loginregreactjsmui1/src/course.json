@@ -1,0 +1,183 @@
+{
+  "pathway": [
+    {
+      "title": "Agile and Scrum",
+      "description":"Agile Frameworks are adopted by organisations to make software development projects more efficient. We provide training in various Agile methodologies to help professionals in understanding those different frameworks.",
+      "link":"agile-and-scrum",
+      "Courses_image": "/images/Courses/Scrum.png",
+      "certificates": [
+        {
+          "title": "CSM Certification",
+          "link": "/agile-and-scrum/csm_certification",
+          "description": "CSM Certification Training by CertScope; Certified Scrum Master Certification is granted by Scrum Alliance USA, CSM is the most demanded Agile certification in the market. CSM training is delivered only by Certified Scrum Trainers across the globe which makes it very niche in the market."
+        },
+        {
+          "title": "CSPO Certification",
+          "link": "/agile-and-scrum/cspo_certification",
+          "description": "CSPO certification training from CertScope will help you to improve lead the scrum teams, with focus on product features, delivery of a product and overall efficiency which helps in better ROI. Certified Scrum Product Owner credential is offered by Scrum Alliance."
+        },
+        {
+          "title": "PMI-ACP Certification",
+          "link": "/agile-and-scrum/PMI_ACP_Certification",
+          "description": "The PMI-ACP certification training by CertScope will help you gain knowledge of Agile principles and Agile techniques , PMI-ACP has various approaches to Agile such as Kanban, Lean, Scrum which makes you versatile in handling projects. It is offered by PMI-USA."
+        }
+      ]
+    },
+    {
+      "title": "Big Data",
+      "description":"Training and Certification courses in Big Data are for the beginner’s and experts who would like to understand the basic concepts of Big Data and Hadoop, implementation of big data, the practical significance of big data, professionals will also learn the crucial components of big data and Hadoop system.",
+      "link":"big-data",
+      "Courses_image": "/images/Courses/Big_data.png",
+      "certificates": [
+        {
+          "title": "Big Data Administrator Certification",
+          "link": "/big-data/big-data-administrator-certification",
+          "description": "The Big Data Administration Certification training course by CertScope provides the participants with a comprehensive understanding of the nuts and bolts of the Hadoop cluster that further enables them to install, deploy, configure, upgrade, manage, monitor, tune, and secure a distributed Hadoop cluster."
+        }
+      ]
+    },
+    {
+      "title": "Cloud  Computing",
+      "description":"At CertScope, you will find the right pace required to escalate your career as a professional Cloud Solutions Architect or a Cloud System Engineer or a Cloud Developer. You will learn the concepts like installation, deployment, up-gradation, configuration, management of the cloud services.",
+      "link":"cloud-computing",
+      "Courses_image": "/images/Courses/Cloud_compute.png",
+      "certificates": [
+        {
+          "title": "AWS Solution Architect Certification",
+          "link": "/cloud-computing/aws-solution-architect-certification",
+          "description": "Amazon Web Services Solution Architect training assists you to design and scale AWS Cloud implementations with recommended practices by Amazon, it is a comprehensive course Amazon web services architectural principles, the content is aligned with exam announced by Amazon Web Services."
+        },
+        {
+          "title": "AWS Developer Associate Certification",
+          "link": "/cloud-computing/aws-developer-associate-certification",
+          "description": "The AWS Certified Developer Training is meant for the professionals who are into development role and practical experience of a year or more in developing and maintaining an AWS based application."
+        }
+      ]
+    },
+    {
+      "title": "Cyber Security",
+      "certificates": [
+        {
+          "title": "CEH Certification",
+          "link": "cyber-security/ceh-certification"
+        },
+        {
+          "title": "CISSP Certification",
+          "link": "cyber-security/cissp-certification"
+        }
+      ]
+    },
+    {
+      "title": "Data Science",
+      "certificates": [
+        {
+          "title": "Data Science with Python Certification",
+          "link": "data-science/data-science-python-certification"
+        }
+      ]
+    },
+    {
+      "title": "DevOps",
+      "certificates": [
+        {
+          "title": "DevOps Certification",
+          "link": "devops/devops-certification"
+        }
+      ]
+    },
+    {
+      "title": "Digital Marketing",
+      "description":"ITSM is a set of activities performed by an organisation to manage IT services and make them more efficient; it streamlines the primary phases which are designing, planning, delivering, managing and improvement of processes.",
+      "link":"digital-marketing",
+      "Courses_image": "/images/Courses/Digital_market.png",
+      "certificates": [
+        {
+          "title": "Digital Marketing Expert Certification",
+          "link": "/digital-marketing/digital-marketing-expert-certification",
+          "description": "Digital Marketing Expert Certification Training by CertScope is a comprehensive training courses where our expert trainers will provide hands –on session on SEO, SEM, web analytics , search engine analytics, mobile marketing, email marketing etc."
+        }
+      ]
+    },
+    {
+      "title": "ISO Certifications",
+      "certificates": [
+        {
+          "title": "ISO 27001 Lead Auditor Certification",
+          "link": "iso-certifications/iso-27001-lead-auditor-certification"
+        }
+      ]
+    },
+    {
+      "title": "IT Service Management",
+      "description":"ITSM is a set of activities performed by an organisation to manage IT services and make them more efficient; it streamlines the primary phases which are designing, planning, delivering, managing and improvement of processes.",
+      "link":"it-service-management",
+      "Courses_image": "/images/Courses/IT.png",
+      "certificates": [
+        {
+          "title": "ITIL-4 Foundation Certification",
+          "link": "/it-service-management/itil-4-foundation-certification",
+          "description": "ITIL 4 Foundation Certification from CertScope is a comprehensive session on ITIL 4 , understand Service Strategy, Design, Transition, Operation and Continual service improvement of ITIL 4 and master the skills to clear the exam in the first attempt."
+        }
+      ]
+    },
+    {
+      "title": "Project Management",
+      "description":"A project manager needs to follow the global standards of the project management cycle. We at CertScope offer project management courses from Foundation to Expert level from various governing bodies like PMI and AXELOS.",
+      "link":"project-management",
+      "Courses_image": "/images/Courses/Project_management.svg",
+      "certificates": [
+        {
+          "title": "PMP Certification",
+          "link": "/project_management/pmp_certification",
+          "description": "PMP® Certification pathway from CertScope will help you to understand PMP process groups and Knowledge areas as per updated PMBOK edition and assist in passing the Project Management Professional® exam in the first attempt."
+        },
+        {
+          "title": "PfMP Certification",
+          "link": "/project-management/pfmp-certification",
+          "description": "Portfolio management is a highly effective approach for implementing strategic initiatives as it helps bridge the gap between strategy and execution. The research found that organizations with effective portfolio management achieved more than 62% success rate in meeting or exceeding expected return on investment for their products. Portfolio managers ensure that projects, programs, and operations are aligned with strategic objectives, and they invest resources in the right areas to deliver expected value."
+        },
+        {
+          "title": "PgMP Certification",
+          "link": "/project-management/pgmp-certification",
+          "description": "The Program Management Professional (PgMP) certification is a globally recognized credential that is designed for program managers who have a proven track record of leading and delivering complex projects and programs. This certification demonstrates an individual's mastery of the knowledge, skills, and practices required to effectively manage programs and achieve strategic objectives."
+        }
+      ]
+    },
+    {
+      "title": "Quality Management",
+      "description":"Quality Management is a discipline which focuses on management and improvement of quality processes and overall efficiency within the organisation. We offer various quality management courses to enhance your operations.",
+      "link":"quality-management",
+      "Courses_image": "/images/Courses/Quality.svg",
+      "certificates": [
+        {
+          "title": "Lean Six Sigma Yellow Belt Certification",
+          "link": "/quality-management/lean-six-sigma-yellow-belt-certification",
+          "description": "Lean Six Sigma Yellow-Belt certification from CertScope helps you learn DMAIC methodologies with lean integration using real life case studies, It is an interactive classroom session delivered by highly qualified instructors with examination and certification included in the course"
+        },
+        {
+          "title": "Lean Six Sigma Black Belt certification",
+          "link": "/quality-management/lean-six-sigma-black-belt-certification",
+          "description": "Lean Six Sigma Black Belt training and Certification from CertScope helps you understanding the practical implementation of Lean and Six Sigma design, this course integrates lean and DMAIC methodologies: Six Sigma Define, Measure, Analyze, Improve and Control (DMAIC)"
+        },
+        {
+          "title": "Lean Six Sigma Green Belt certification",
+          "link": "/quality-management/lean-six-sigma-green-belt-certification",
+          "description": "Lean Six Sigma Green Belt training and Certification from CertScope helps you in understanding various Six Sigma and lean techniques for process improvement. This includes the practical implementation of statistical tools like mini-tab used for quality management, process improvement and overall efficiency."
+        }
+      ]
+    },
+    {
+      "title": "UX and Design Thinking ",
+      "description":"Learn the key concepts of UX and Design thinking from CertScope and make your projects strategically successful, professionals in the areas of Marketing and Strategy Innovation, IT and organisational change stand to gain the most from this programme.",
+      "link":"ux-and-design-thinking",
+      "Courses_image": "/images/Courses/UX_design.svg",
+      "certificates": [
+        {
+          "title": "Design Thinking Certification",
+          "link": "/ux-and-design-thinking/design-thinking-certification",
+          "description": "This Design Thinking certification course from CertScope will make you an expert in business strategy and innovation, empowering you to drive a design thinking culture in your organization, design Thinking is the robust process of problem-solving that involves understanding customer needs on a deeper level. this course will help you to master the business-critical process and unleash its potential within your organization."
+        }
+      ]
+    }
+  ]
+}

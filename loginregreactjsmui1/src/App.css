@@ -183,3 +183,8 @@ h1{
 }
 
 
+.certification .presentation .MuiTypography-root {
+  position: relative;
+  width: 68vw !important;
+  margin-bottom: 35px;
+}

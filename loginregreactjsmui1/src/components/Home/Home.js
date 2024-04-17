@@ -15,6 +15,8 @@ import Big_data from "../../Assets/PNG/Big_data.png";
 import Flexible_pathway from "../../Assets/PNG/svgexport-20.png";
 import teaching from "../../Assets/PNG/teaching.png";
 import Resources from "../../Assets/PNG/Resources/Resources.png";
+import course from "../../course.json";
+import { NavLink } from "react-router-dom";
 
 const achieveData = [
   {
@@ -40,45 +42,6 @@ const achieveData = [
     title: "Upskill your team",
     description:
       "With our tailored training approaches, give your team the latest skillsets needed for the optimum productivity; stay ahead of the competition.",
-  },
-];
-
-const Courses_img_data = [
-  {
-    Courses_image: IT,
-    title: "IT Service Management",
-  },
-  {
-    Courses_image: ISO,
-    title: "ISO Certifications",
-  },
-  {
-    Courses_image: Digital_market,
-    title: "Digital Marketing",
-  },
-  {
-    Courses_image: cyber,
-    title: "Cyber Security",
-  },
-  {
-    Courses_image: data_science,
-    title: "Data Science",
-  },
-  {
-    Courses_image: Cloud_compute,
-    title: "Cloud Computing",
-  },
-  {
-    Courses_image: Scrum,
-    title: "Agile and Scrum",
-  },
-  {
-    Courses_image: DevOps,
-    title: "DevOps",
-  },
-  {
-    Courses_image: Big_data,
-    title: "Big Data",
   },
 ];
 
@@ -200,12 +163,18 @@ function Home() {
           </div>
         </div>
         <div className="Courses_img">
-          {Courses_img_data.map((images, index) => (
-            <div className="Course_wrapper" key={index}>
-              <img src={images.Courses_image} alt="" />
-              <h3 className="achieve_title">{images.title}</h3>
-            </div>
-          ))}
+          {course.pathway.map(
+            (heading, index) =>
+              // Check if heading.link is defined before rendering NavLink
+              heading.link && (
+                <NavLink to={heading.link} key={index}>
+                  <div className="Course_wrapper">
+                    <img src={heading.Courses_image} alt="" />
+                    <h3 className="achieve_title">{heading.title}</h3>
+                  </div>
+                </NavLink>
+              )
+          )}
         </div>
       </section>
       <div className="divider"></div>
@@ -261,7 +230,11 @@ function Home() {
               {services_data.map((list, index) => (
                 <>
                   <div className="list_details" key={index}>
-                    <li> <CheckBoxTwoToneIcon />{list.name}</li>
+                    <li>
+                      {" "}
+                      <CheckBoxTwoToneIcon />
+                      {list.name}
+                    </li>
                   </div>
                 </>
               ))}

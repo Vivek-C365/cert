@@ -3790,5 +3790,181 @@
         "description": "Receive a certificate from  CertScope's Certification team"
       }
     ]
+  },
+  "Design_Thinking_Certification": {
+    "heading": [
+      {
+        "heading_title": "UX AND DESIGN THINKING",
+        "title": "Design Thinking Certification",
+        "description": "This Design Thinking certification course from CertScope will make you an expert in business strategy and innovation, empowering you to drive a design thinking culture in your organization, design Thinking is the robust process of problem-solving that involves understanding customer needs on a deeper level. this course will help you to master the business-critical process and unleash its potential within your organization."
+      }
+    ],
+    "certification_overview": [
+      {
+        "title": "Multiple delivery options",
+
+        "description": "Blended learning delivery model (self-paced e-learning and/or instructor-led options)"
+      },
+      {
+        "title": "Case studies",
+        "description": "Seven (07) Industry Case Studies with more than 15 industry based scenarios."
+      },
+      {
+        "title": "Hands-on projects and practice tests",
+        "description": "Five (05) hands-on projects and access to five (05) practice tests with 200 questions each."
+      },
+      {
+        "title": "Practical Assignments",
+        "description": "Practical Assignments taught during the program"
+      }
+    ],
+
+    "Delivery_Methods": [
+      {
+        "Classroom": {
+          "title": "CLASSROOM",
+          "list": [
+            "Comprehensive Classroom Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Hard copy of Course Material",
+            "Centralized Venues",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies"
+          ],
+          "timeliness": "On-time training",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Live_online": {
+          "title": "LIVE ONLINE",
+          "list": [
+            "Live Online Instructor-led Training",
+            "Exam and Certification Included",
+            "Certified Instructors",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support"
+          ],
+          "timeliness": "Top instructors",
+          "view": "VIEW BATCHES"
+        }
+      },
+      {
+        "Self_placed": {
+          "title": "SELF PLACED",
+          "list": [
+            "Access to Audio/Video Learning",
+            "Exam and Certification Included",
+            "Soft copy of the course material",
+            "Three simulation practice tests of 200 questions each",
+            "Industry Case Studies",
+            "24x7 learner assistance and support",
+            "Learn anytime anywhere"
+          ],
+          "timeliness": "Interested?",
+          "view": "GET IN TOUCH"
+        }
+      }
+    ],
+
+    "know_more_title": [
+      {
+        "title": "Know more about Design Thinking Certification"
+      }
+    ],
+
+    "steps": [
+      {
+        "label": "Who Should Enroll in this Program",
+        "description": "The Design Thinking Certification course is tailored for individuals and organizations aiming to boost business efficiency. It's ideal for CXOs, Functional Heads, Entrepreneurs, Top/Middle Management Professionals, Product Managers, Sales, and Marketing teams. By embracing Design Thinking principles, participants can drive innovation, address complex challenges, and foster creativity in their respective domains."
+      },
+      {
+        "label": "Program Features",
+        "description": "The Design Thinking Certification course spans 16 hours of instructor-led online training, conveniently structured over 2 days. Upon completion, participants receive an industry-recognized certificate. Through hands-on projects, assignments, and real-life case studies, learners gain practical insights and skills to apply Design Thinking principles effectively in their professional endeavors."
+      }
+    ],
+    "Enterprise_Solutions": [
+      {
+        "title": "Learning delivery model as per your organisational requirements"
+      },
+      {
+        "title": "Enterprise-grade Learning Management System (LMS), dashboard and tools."
+      },
+      {
+        "title": "Flexible pricing options and models."
+      },
+      {
+        "title": "24x7 learner assistance and support"
+      }
+    ],
+
+    "learning_overview_desc": [
+      {
+        "description": "Get an overview of the training structure, modules, and methodology for Design Thinking Certification training by CertScope training solutions."
+      }
+    ],
+    "faqs": [
+      {
+        "Title": "Fundamenta;s of Design Thinking",
+        "list": [
+          "5D Design Thinking Framework",
+          "Design Thinking Case Study",
+          "Design Thinking for Everyone in the Organization"
+        ]
+      },
+      {
+        "Title": "Discover Design Problems",
+        "list": [
+          "Define Project Stakeholders",
+          "Methods within Discover",
+          "Stakeholder Requirement Gathering",
+          "User Research",
+          "Competitor Analysis",
+          "Case Study "
+        ]
+      },
+      {
+        "Title": "Define",
+        "list": [
+          "Frame the Design Problems",
+          "Methods within Define",
+          "Analyze user Research",
+          "Empathy Mapping and Personas",
+          "Scenario and Storyboard",
+          "Customer Journey Mapping: AS-IS and TO-BE Process",
+          "Define Moments of Truth and Digital Touch-Points",
+          "Case Study – 'How to Define Phase Helped Prioritize Problems'"
+        ]
+      }
+    ],
+
+    "learning_outcomes": [
+      {
+        "description": [
+          "Define project stakeholders and determine design problems",
+          "Understand and define customer requirements",
+          "Set precise, actionable and measurable goals",
+          "Increase engagement rates, conversion rates, and retention rates",
+          "Create innovative and unique solutions"
+        ]
+      }
+    ],
+    "certificationSteps": [
+      {
+        "title": "Enroll for the course",
+        "description": "Enroll for the course and your account manager will guide you will all the details of the online/classroom/self paced session, you will get online access before the actual training date."
+      },
+      {
+        "title": "Complete the Assignments given by the trainer",
+        "description": "You will be given assignments by the trainer; you will have to complete the same in the given timeframe. You would need to ensure 100% attendance in the training."
+      },
+      {
+        "title": "Appear in the exam online",
+        "description": "At the end of the training, you will have to register for exam online, the trainer  will take you through the complete application process and will help you to write the exam."
+      }
+    ]
   }
 }
