@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        {access_token ? <Nav2 /> : <Nav />}
+        <Nav2 />
         <Routes>
           <Route index element={<Layout />} />
           <Route

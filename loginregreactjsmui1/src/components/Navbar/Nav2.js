@@ -1,11 +1,18 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 import "../../Assets/CSS/Nav.css";
+import Stack from "@mui/material/Stack";
 import menu from "../../Assets/PNG/menu.png";
 import logo from "../../Assets/PNG/logo.png";
 import Book from "../../Assets/PNG/book.png";
 import Search from "../../Assets/PNG/search.svg";
 import Profile from "../../Assets/PNG/profile.svg";
+import Box from "@mui/material/Box";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices";
 import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
@@ -18,72 +25,68 @@ import InfoIcon from "@mui/icons-material/Info";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-
+import WidgetsIcon from '@mui/icons-material/Widgets';
 import { removeToken } from "../../services/LocalStorageService";
-import { useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
 import { unSetUserToken } from "../../features/authSlice";
-import { setUserInfo, unsetUserInfo } from "../../features/userSlice";
+import { unsetUserInfo } from "../../features/userSlice";
+import course from "../../course.json";
 
 const Nav = () => {
+  const { access_token } = useSelector((state) => state.auth);
   const [isOpen, setIsOpen] = useState(false);
   const [isPathOpen, setIsPathOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
+  const [openDrawer, setOpenDrawer] = useState(false);
+  const [selectedPathway, setSelectedPathway] = useState(null);
 
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
-  const pathway = [
+  const redirects = [
     {
-      title: "Agile and Scrum",
-      link: "/project_management/csm_certification",
+      logo: <BusinessCenterIcon />,
+      title: "Enterprise",
+      link: "business",
     },
     {
-      title: "Big Data",
-      link: "/big_data",
+      logo: <MiscellaneousServicesIcon />,
+      title: "Services",
+      link: "service",
     },
     {
-      title: "Cloud Computing",
-      link: "/cloud_computing",
+      logo: <PeopleAltIcon />,
+      title: "Mentorship Program",
+      link: "mentor/mentorship-program",
     },
     {
-      title: "Cyber Security",
-      link: "/project_management/ceh_certification",
+      logo: <CalendarTodayIcon />,
+      title: "Training Calendar",
+      link: "training-calendar",
     },
     {
-      title: "Data Science",
-      link: "/data_science",
+      logo: <MenuBookIcon />,
+      title: "Resources",
+      link: "business",
     },
     {
-      title: "DevOps",
-      link: "/devops",
+      logo: <HelpIcon />,
+      title: "Help and Support",
+      link: "business",
     },
     {
-      title: "Digital Marketing",
-      link: "/digital_marketing",
+      logo: <FolderIcon />,
+      title: "Policies",
+      link: "business",
     },
     {
-      title: "Health and Safety",
-      link: "/health_and_safety",
+      logo: <ContactsIcon />,
+      title: "Contact Us",
+      link: "business",
     },
     {
-      title: "ISO Certifications",
-      link: "/iso_certifications",
-    },
-    {
-      title: "IT Service Management",
-      link: "/project_management/itil_4_foundation_certification",
-    },
-    {
-      title: "Project Management",
-      link: "/project_management/pmp_certification",
-    },
-    {
-      title: "Quality Management",
-      link: "/quality_management",
-    },
-    {
-      title: "UX and Design Thinking",
-      link: "/ux_and_design_thinking",
+      logo: <InfoIcon />,
+      title: "About us",
+      link: "business",
     },
   ];
 
@@ -98,9 +101,14 @@ const Nav = () => {
     document.getElementById("backdrop").style.display = "none";
   };
 
-  const openPath = () => {
+  const openPath = (selectedPathway) => {
     setIsPathOpen(true);
+    setSelectedPathway(selectedPathway);
     document.getElementById("backdrop").style.display = "block";
+  };
+
+  const toggleDrawer = (newOpen) => {
+    setOpenDrawer(newOpen);
   };
 
   const handleClick = (event) => {
@@ -110,8 +118,6 @@ const Nav = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
-
-  const dispatch = useDispatch();
 
   const handleLogout = () => {
     dispatch(unsetUserInfo({ name: "", email: "" }));
@@ -123,6 +129,7 @@ const Nav = () => {
   const profile = () => {
     navigate("/dashboard/profile");
   };
+
   const Account_setting = () => {
     navigate("/dashboard/Account_setting");
   };
@@ -144,84 +151,43 @@ const Nav = () => {
               </div>
               <div id="mySidenav" className={`sidenav ${isOpen ? "open" : ""}`}>
                 <div className="div-flex_sidebar">
-                  <a
-                    href="https://certscope.com/"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
+                  <NavLink to="/">
                     <img className="side_logo" alt="Link" src={logo} />
-                  </a>
+                  </NavLink>
                 </div>
 
                 <div className="side_bar_tabs">
-                  <div className="content">
-                    <div className="content_img">
-                      <BusinessCenterIcon />
-                    </div>
-                    <span>Enterprise</span>
-                  </div>
-                  <div className="content">
-                    <div className="content_img">
-                      <MiscellaneousServicesIcon />
-                    </div>
-                    <span>Services</span>
-                  </div>
-                  <div className="content">
-                    <div className="content_img">
-                      <PeopleAltIcon />
-                    </div>
-                    <span>Mentorship Program</span>
-                  </div>
-                  <div className="content">
-                    <div className="content_img">
-                      <CalendarTodayIcon />
-                    </div>
-                    <span>Training Calender</span>
-                  </div>
-                  <div className="content">
-                    <div className="content_img">
-                      <MenuBookIcon />
-                    </div>
-                    <span>Resources</span>
-                  </div>
-                  <div className="content">
-                    <div className="content_img">
-                      <HelpIcon />
-                    </div>
-                    <span>Help and Support</span>
-                  </div>
-                  <div className="content">
-                    <div className="content_img">
-                      <FolderIcon />
-                    </div>
-                    <span>Policies</span>
-                  </div>
-                  <div className="content">
-                    <div className="content_img">
-                      <ContactsIcon />
-                    </div>
-                    <span>Contact Us</span>
-                  </div>
-                  <div className="content">
-                    <div className="content_img">
-                      <InfoIcon />
-                    </div>
-                    <span>About us</span>
-                  </div>
+                  {redirects.map((items, index) => (
+                    <NavLink key={index} to={items.link}>
+                      <div className="content">
+                        <div className="content_img">{items.logo}</div>
+                        <span>{items.title}</span>
+                      </div>
+                    </NavLink>
+                  ))}
                 </div>
+                {!access_token && (
+                  <Stack spacing={2} direction="row">
+                    <NavLink className="Login_btn credential_btn" to="/Login">
+                      <Button variant="contained">Login</Button>
+                    </NavLink>
+                    <NavLink to="/Registration" className="credential_btn">
+                      <Button variant="outlined">SignUp</Button>
+                    </NavLink>
+                  </Stack>
+                )}
               </div>
               <div className="div-flex">
-                <a
-                  href="https://certscope.com/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
+                <NavLink to="/">
                   <img className="link" alt="Link" src={logo} />
-                </a>
+                </NavLink>
               </div>
             </div>
             <div className="div">
-              <div className="button-browse" src={menu} onClick={openPath}>
+              <div
+                className="button-browse"
+                onClick={() => openPath(course.pathway[0])}
+              >
                 <img className="SVG" alt="Svg" src={Book} />
                 <div className="span-ttu">
                   <div className="pathways">PATHWAYS</div>
@@ -242,47 +208,105 @@ const Nav = () => {
                 </div>
 
                 <div className="side_bar_tabs">
-                  {pathway.map((item, index) => (
-                    <NavLink to={item.link} key={index}>
-                      <div className="content">
-                        <span>{item.title}</span>
-                      </div>
-                    </NavLink>
-                  ))}
+                  {/* Render PathwayList */}
+                  <Box
+                    sx={{ width: 250 }}
+                    role="presentation"
+                    onClick={() => toggleDrawer(false)}
+                  >
+                    <List>
+                      {course.pathway.map((item, index) => (
+                        <div key={index}>
+                          <ListItem disablePadding>
+                            <ListItemButton onClick={() => openPath(item)}>
+                              <ListItemText primary={item.title} />
+                            </ListItemButton>
+                          </ListItem>
+                          {selectedPathway &&
+                            selectedPathway.title === item.title && (
+                              <List>
+                                {selectedPathway.certificates.map(
+                                  (certificate, index) => (
+                                    <ListItem key={index} disablePadding>
+                                      <ListItemButton
+                                        component={NavLink}
+                                        to={certificate.link}
+                                      >
+                                        <ListItemText
+                                          primary={certificate.title}
+                                        />
+                                      </ListItemButton>
+                                    </ListItem>
+                                  )
+                                )}
+                              </List>
+                            )}
+                        </div>
+                      ))}
+                    </List>
+                  </Box>
                 </div>
               </div>
             </div>
           </div>
+
           <div className="div-flex-middle-2">
-            <img className="search_icon" alt="Button search" src={Search} />
-            <div>
-              <Button
-                id="basic-button"
-                aria-controls={anchorEl ? "basic-menu" : undefined}
-                aria-haspopup="true"
-                aria-expanded={anchorEl ? "true" : undefined}
-                onClick={handleClick}
-              >
-                <img
-                  className="link-log-in-to-your"
-                  alt="Link log in to your"
-                  src={Profile}
-                />
-              </Button>
-              <Menu
-                id="basic-menu"
-                anchorEl={anchorEl}
-                open={Boolean(anchorEl)}
-                onClose={handleClose}
-                MenuListProps={{
-                  "aria-labelledby": "basic-button",
-                }}
-              >
-                <MenuItem onClick={profile}>Profile</MenuItem>
-                <MenuItem onClick={Account_setting}>My account</MenuItem>
-                <MenuItem onClick={handleLogout}>Logout</MenuItem>
-              </Menu>
-            </div>
+            {access_token ? (
+              <>
+                <img className="search_icon" alt="Button search" src={Search} />
+                <WidgetsIcon/>
+                <div>
+                  <Button
+                    id="basic-button"
+                    aria-controls={anchorEl ? "basic-menu" : undefined}
+                    aria-haspopup="true"
+                    aria-expanded={anchorEl ? "true" : undefined}
+                    onClick={handleClick}
+                  >
+                    <img
+                      className="link-log-in-to-your"
+                      alt="Link log in to your"
+                      src={Profile}
+                    />
+                  </Button>
+                  <Menu
+                    id="basic-menu"
+                    anchorEl={anchorEl}
+                    open={Boolean(anchorEl)}
+                    onClose={handleClose}
+                    MenuListProps={{
+                      "aria-labelledby": "basic-button",
+                    }}
+                  >
+                    <MenuItem onClick={profile}>Profile</MenuItem>
+                    <MenuItem onClick={Account_setting}>My account</MenuItem>
+                    <MenuItem onClick={handleLogout}>Logout</MenuItem>
+                  </Menu>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="div-getstarted">
+                  <div className="link-register-an">
+                    <NavLink
+                      className="get-started"
+                      rel="noopener noreferrer"
+                      to="/Registration"
+                    >
+                      GET STARTED
+                    </NavLink>
+                  </div>
+                </div>
+                <img className="search_icon" alt="Button search" src={Search} />
+                <NavLink to="/Login">
+                  <img
+                    className="link-log-in-to-your"
+                    alt="Link log in to your"
+                    src={Profile}
+                  />
+                </NavLink>
+              </>
+            )}
           </div>
         </div>
       </div>

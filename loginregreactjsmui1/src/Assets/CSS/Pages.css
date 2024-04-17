@@ -2433,3 +2433,18 @@ aside h3 span {
     border: 1px solid;
     color: #1a3ba5;
 }
+
+
+/* training Calender css */
+
+.calender_heading{
+    padding: 5rem 10rem 2rem 10rem;
+}
+
+.calender_search input{
+    position: relative;
+    width: 100vh;
+}
+.calender_main_content{
+    padding: 2rem 5rem 2rem 5rem;
+}
