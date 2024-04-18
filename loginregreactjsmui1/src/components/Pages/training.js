@@ -38,7 +38,7 @@ function training() {
           <div className="certificate_card">
             <div className="title_content">
               <div className="img">
-                <img src="" alt="not presernt" />
+                <img src="https://a1306064c4.cbaul-cdnwnd.com/a24fec02d939da8df4c9f6078191c880/200000235-6bd8a6bd8d/450/003-quality-control.webp?ph=a1306064c4" alt="not presernt" />
               </div>
               <div className="card_main_title">
                 <h3>QUALITY MANAGEMENT</h3>
