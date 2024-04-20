@@ -80,3 +80,57 @@ class ProfileImage(models.Model):
 
     def __str__(self):
         return self.image.url
+    
+class course (models.Model):
+    id = models.AutoField(primary_key=True)  # a unique
+    title = models.CharField(max_length=255, default="")
+    description = models.TextField(default="")
+    image = models.ImageField(upload_to="course/images" , default="")
+    
+    def __str__(self):
+        return self.title
+
+
+class certificate (models.Model):
+    id = models.AutoField(primary_key=True)  
+    certificate_title = models.CharField(max_length=255)
+    description = models.TextField()
+    courses = models.ForeignKey(course, on_delete=models.CASCADE)
+    
+    def __str__(self):
+        return self.certificate_title
+    
+
+class TrainingCalendar(models.Model):
+    id = models.AutoField(primary_key=True)  
+    
+    certificate = models.ForeignKey(certificate, on_delete=models.CASCADE)
+    courses = models.ForeignKey(course, on_delete=models.CASCADE)  # Add default value here
+    LIVE_ONLINE = 'Live online'
+    SELF_PLACED = 'Self-placed'
+    DELIVERY_CHOICES = [
+        (LIVE_ONLINE, 'Live online'),
+        (SELF_PLACED, 'Self-placed'),
+    ]
+    delivery = models.CharField(
+        max_length=255,
+        choices=DELIVERY_CHOICES,
+        null=False,
+        blank=False,
+    )
+    start_date = models.DateField(default="")
+    end_date = models.DateField(default="")
+    time_zone = models.CharField(default="Asia/Kolkata" , max_length=255)
+    MRP = models.DecimalField(max_digits=8, decimal_places=2, default=0)
+    price = models.DecimalField(max_digits=8, decimal_places=2, default=0)
+
+    class Meta:
+        ordering = ['start_date']
+
+    def __str__(self):
+        return f"{self.courses.title} - {self.certificate.certificate_title} - {self.delivery} "
+
+        
+
+
+    

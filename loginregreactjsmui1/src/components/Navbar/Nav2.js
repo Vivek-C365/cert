@@ -25,11 +25,16 @@ import InfoIcon from "@mui/icons-material/Info";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import WidgetsIcon from '@mui/icons-material/Widgets';
+import WidgetsIcon from "@mui/icons-material/Widgets";
 import { removeToken } from "../../services/LocalStorageService";
 import { unSetUserToken } from "../../features/authSlice";
 import { unsetUserInfo } from "../../features/userSlice";
 import course from "../../course.json";
+
+import Badge from "@mui/material/Badge";
+import { styled } from "@mui/material/styles";
+import IconButton from "@mui/material/IconButton";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 const Nav = () => {
   const { access_token } = useSelector((state) => state.auth);
@@ -133,6 +138,15 @@ const Nav = () => {
   const Account_setting = () => {
     navigate("/dashboard/Account_setting");
   };
+
+  const StyledBadge = styled(Badge)(({ theme }) => ({
+    "& .MuiBadge-badge": {
+      right: -3,
+      top: 13,
+      border: `2px solid ${theme.palette.background.paper}`,
+      padding: "0 4px",
+    },
+  }));
 
   return (
     <>
@@ -254,7 +268,12 @@ const Nav = () => {
             {access_token ? (
               <>
                 <img className="search_icon" alt="Button search" src={Search} />
-                <WidgetsIcon/>
+                <IconButton aria-label="cart">
+                  <StyledBadge badgeContent={4} color="secondary">
+                    <ShoppingCartIcon />
+                  </StyledBadge>
+                </IconButton>
+                <WidgetsIcon />
                 <div>
                   <Button
                     id="basic-button"

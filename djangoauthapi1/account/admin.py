@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import User
+from .models import User , course , certificate ,TrainingCalendar
 from django.utils.safestring import mark_safe
 
 @admin.register(User)
@@ -28,3 +28,8 @@ class UserAdmin(admin.ModelAdmin):
             return ''
     profile_image_thumbnail.short_description = 'Profile Image'
     profile_image_thumbnail.allow_tags = True
+
+
+admin.site.register(course)
+admin.site.register(certificate)
+admin.site.register(TrainingCalendar)

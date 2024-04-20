@@ -1,7 +1,45 @@
-import React from "react";
-import "../../Assets/CSS/Pages.css"
+import React, { useEffect, useState } from "react";
+import { getTimezone } from "countries-and-timezones"; // Import countries-and-timezones
+import "../../Assets/CSS/Pages.css";
+import { useTrainingCalenderQuery } from "../../services/userAuthApi";
 
-function training() {
+function Training() {
+  const [trainingData, setTrainingData] = useState(null);
+  const { data: calenderData, error, isLoading } = useTrainingCalenderQuery();
+  const [liveOnlineCount, setLiveOnlineCount] = useState(0);
+  const [locationCounts, setLocationCounts] = useState({});
+
+  useEffect(() => {
+    if (calenderData) {
+      setTrainingData(calenderData);
+      const trainingOnlineCount = calenderData.reduce((acc, trainingItem) => {
+        if (trainingItem.delivery === "Live online") {
+          return acc + 1;
+        }
+        return acc;
+      }, 0);
+      setLiveOnlineCount(trainingOnlineCount);
+
+      const locationCountsObj = calenderData.reduce((acc, trainingItem) => {
+        const timeZone = trainingItem.time_zone;
+        const country = getTimezoneCountry(timeZone);
+        acc[country] = (acc[timeZone] || 0) + 1;
+        return acc;
+      }, {});
+      setLocationCounts(locationCountsObj);
+    }
+  }, [calenderData]);
+
+  const getTimezoneCountry = (timeZone) => {
+    const allTimezones = getTimezone();
+    for (const tz in allTimezones) {
+      if (allTimezones[tz].name === timeZone) {
+        return allTimezones[tz].country;
+      }
+    }
+    return timeZone;
+  };
+
   return (
     <>
       <section className="calender_heading">
@@ -21,59 +59,67 @@ function training() {
             <div className="filter_top_content">
               <h3>DELIVERY</h3>
               <p>
-                Live Online <span>70</span>
+                Live Online <span>{liveOnlineCount}</span>
               </p>
             </div>
             <div className="filter_location">
-            <h3>Location</h3>  
-              <p>
-                India <span>7</span>
-              </p>
-
+              <h3>Location</h3>
+              {Object.entries(locationCounts).map(([country, count]) => (
+                <p key={country}>
+                  {country} <span>{count}</span>
+                </p>
+              ))}
             </div>
           </div>
         </div>
 
-        <div className="certificate_sold">
-          <div className="certificate_card">
-            <div className="title_content">
-              <div className="img">
-                <img src="" alt="not presernt" />
+        {trainingData && (
+          <div className="certificate_sold">
+            {trainingData.map((trainingItem) => (
+              <div className="certificate_card" key={trainingItem.id}>
+                <div className="title_content">
+                  <div className="img">
+                    <img
+                      src={`http://127.0.0.1:8000/${trainingItem.courses.image}`}
+                      alt="Training"
+                    />
+                  </div>
+                  <div className="card_main_title">
+                    <h3>{trainingItem.courses.title}</h3>
+                    <h2>{trainingItem.certificate.certificate_title}</h2>
+                  </div>
+                </div>
+                <div className="description_content">
+                  {/* Render other details */}
+                  <p>
+                    Delivery <span>{trainingItem.delivery}</span>
+                  </p>
+                  <p>
+                    Starts on <span>{trainingItem.start_date}</span>
+                  </p>
+                  <p>
+                    Ends on <span>{trainingItem.end_date}</span>
+                  </p>
+                  <p>
+                    Time zone <span>{trainingItem.time_zone}</span>
+                  </p>
+                </div>
+                <div className="price_enroll">
+                  <div className="certificate_price">
+                    <span>{trainingItem.MRP}</span>
+                    <span>{trainingItem.price}</span>
+                  </div>
+                  <div className="enroll_btn">
+                    <button>Enroll Now</button>
+                  </div>
+                </div>
               </div>
-              <div className="card_main_title">
-                <h3>QUALITY MANAGEMENT</h3>
-                <h2>Lean Six Sigma Black Belt certification</h2>
-              </div>
-            </div>
-            <div className="description_content">
-              <p>
-                Delivery <span>Live Online</span>
-              </p>
-              <p>
-                Starts on <span>Apr 23, 2024</span>
-              </p>
-              <p>
-                Ends on <span>Apr 26, 2024</span>
-              </p>
-              <p>
-                Time zone <span>America/New_York</span>
-              </p>
-            </div>
-
-            <div className="price_enroll">
-              <div className="certificate_price">
-                <span>$1,099</span>
-                <span>$999</span>
-              </div>
-              <div className="enroll_btn">
-                <button>Enroll Now</button>
-              </div>
-            </div>
+            ))}
           </div>
-        </div>
+        )}
       </section>
     </>
   );
 }
 
-export default training;
+export default Training;
