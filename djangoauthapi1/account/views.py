@@ -1,7 +1,8 @@
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.views import APIView
-from .serializers import SendPasswordResetEmailSerializer, UserChangePasswordSerializer, UserLoginSerializer, UserPasswordResetSerializer, UserProfileSerializer, UserRegistrationSerializer  
+from .models import TrainingCalendar
+from .serializers import SendPasswordResetEmailSerializer, UserChangePasswordSerializer, UserLoginSerializer, UserPasswordResetSerializer, UserProfileSerializer, UserRegistrationSerializer  ,TrainingCalenderSerializer
 from django.contrib.auth import authenticate
 from .renderers import UserRenderer  # Adjust import path for UserRenderer if necessary
 from rest_framework_simplejwt.tokens import RefreshToken
@@ -102,3 +103,12 @@ class UserProfileUpdateView(APIView):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class TrainingCalendarList(APIView):
+    permission_classes = [AllowAny]
+
+    def get(self, request, format=None):
+        training_calendars = TrainingCalendar.objects.all()
+        serializer = TrainingCalenderSerializer(training_calendars, many=True)
+        return Response(serializer.data)

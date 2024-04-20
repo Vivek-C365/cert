@@ -25,6 +25,16 @@ export const userAuthApi = createApi({
         },
       }),
     }),
+    trainingCalender: builder.query({
+      query: () => ({
+        url: "training_calender/",
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }),
+    }),
+    
     loginUser: builder.mutation({
       query: (user) => ({
         url: "login/",
@@ -85,4 +95,5 @@ export const {
   useSendPasswordResetEmailMutation,
   useResetPasswordMutation,
   useUpdateProfileMutation,
+  useTrainingCalenderQuery,
 } = userAuthApi;

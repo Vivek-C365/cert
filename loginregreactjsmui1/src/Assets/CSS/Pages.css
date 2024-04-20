@@ -2466,12 +2466,17 @@ aside h3 span {
 
 .certificate_sold{
     padding: 15px 0px;
-    border: 1px solid gray;
     border-radius: 3px;
     width: 100vh;
     display: flex;
     flex-direction: column;
 
+}
+
+.certificate_sold .certificate_card{
+    border: 1px solid gray;
+    padding: 15px 0px;
+    margin-bottom: 5rem;
 }
 
 .title_content{
