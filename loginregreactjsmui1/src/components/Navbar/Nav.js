@@ -175,7 +175,6 @@ const Nav = () => {
                 </div>
 
                 <div className="side_bar_tabs">
-                  {/* Render PathwayList */}
                   <Box
                     sx={{ width: 250 }}
                     role="presentation"

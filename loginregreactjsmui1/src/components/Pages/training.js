@@ -2,12 +2,16 @@ import React, { useEffect, useState } from "react";
 import { getTimezone } from "countries-and-timezones"; // Import countries-and-timezones
 import "../../Assets/CSS/Pages.css";
 import { useTrainingCalenderQuery } from "../../services/userAuthApi";
+import { useSelector } from "react-redux";
+import UserLogin from "../../pages/auth/UserLogin";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 function Training() {
   const [trainingData, setTrainingData] = useState(null);
   const { data: calenderData, error, isLoading } = useTrainingCalenderQuery();
   const [liveOnlineCount, setLiveOnlineCount] = useState(0);
   const [locationCounts, setLocationCounts] = useState({});
+  const { access_token } = useSelector((state) => state.auth);
 
   useEffect(() => {
     if (calenderData) {
@@ -48,7 +52,12 @@ function Training() {
             <h1>Training Calendar</h1>
           </div>
           <div className="calender_search">
-            <input type="search" name="" id="" />
+            <input
+              type="search"
+              placeholder="Find something to learn today..."
+              name=""
+              id=""
+            />
             <button>Search</button>
           </div>
         </div>
@@ -62,7 +71,7 @@ function Training() {
                 Live Online <span>{liveOnlineCount}</span>
               </p>
             </div>
-            <div className="filter_location">
+            <div className="filter_location border_divider">
               <h3>Location</h3>
               {Object.entries(locationCounts).map(([country, count]) => (
                 <p key={country}>
@@ -77,7 +86,7 @@ function Training() {
           <div className="certificate_sold">
             {trainingData.map((trainingItem) => (
               <div className="certificate_card" key={trainingItem.id}>
-                <div className="title_content">
+                <div className="title_content border-bottom">
                   <div className="img">
                     <img
                       src={`http://127.0.0.1:8000/${trainingItem.courses.image}`}
@@ -89,10 +98,10 @@ function Training() {
                     <h2>{trainingItem.certificate.certificate_title}</h2>
                   </div>
                 </div>
-                <div className="description_content">
-                  {/* Render other details */}
+                <div className="description_content border-bottom">
                   <p>
-                    Delivery <span>{trainingItem.delivery}</span>
+                    Delivery{" "}
+                    <span className="live_online">{trainingItem.delivery}</span>
                   </p>
                   <p>
                     Starts on <span>{trainingItem.start_date}</span>
@@ -106,10 +115,15 @@ function Training() {
                 </div>
                 <div className="price_enroll">
                   <div className="certificate_price">
-                    <span>{trainingItem.MRP}</span>
-                    <span>{trainingItem.price}</span>
+                    <span className="mrp_price">${trainingItem.MRP}</span>
+                    <span className="price">${trainingItem.price}</span>
                   </div>
                   <div className="enroll_btn">
+                    {/* {access_token ? (
+                      <button>Enroll Now</button>
+                    ) : (
+                      <Navigate to="/login" />
+                    )} */}
                     <button>Enroll Now</button>
                   </div>
                 </div>

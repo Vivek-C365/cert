@@ -56,7 +56,7 @@ function PMP_Certification({ certificationType }) {
     <>
       <section className="certification">
         <div className="certification_top_section">
-          <div role="presentation" onClick={handleClick}>
+          <div role="presentation" className="breadcrum" onClick={handleClick}>
             <Breadcrumbs aria-label="breadcrumb">
               <Link
                 underline="hover"
