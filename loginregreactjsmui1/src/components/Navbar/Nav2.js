@@ -268,11 +268,13 @@ const Nav = () => {
             {access_token ? (
               <>
                 <img className="search_icon" alt="Button search" src={Search} />
-                <IconButton aria-label="cart">
-                  <StyledBadge badgeContent={4} color="secondary">
-                    <ShoppingCartIcon />
-                  </StyledBadge>
-                </IconButton>
+                <NavLink to="/dashboard/Checkout">
+                  <IconButton aria-label="cart">
+                    <StyledBadge badgeContent={4} color="secondary">
+                      <ShoppingCartIcon />
+                    </StyledBadge>
+                  </IconButton>
+                </NavLink>
                 <WidgetsIcon />
                 <div>
                   <Button

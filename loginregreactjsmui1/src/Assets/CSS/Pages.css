@@ -2587,7 +2587,7 @@ aside h3 span {
 }
 
 .filter_content {
-    width: 35vh;
+    width: 40vh;
 }
 
 .filter_content h3 {
@@ -2601,6 +2601,7 @@ aside h3 span {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
+    margin-bottom: 8px;
 }
 
 .filter_content p span {

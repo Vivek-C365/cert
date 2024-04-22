@@ -4,6 +4,7 @@ import UserLogin from "./pages/auth/UserLogin";
 import ResetPassword from "./pages/auth/ResetPassword";
 import SendPasswordResetEmail from "./pages/auth/SendPasswordResetEmail";
 import Dashboard from "./pages/Dashboard";
+import store from "./app/store";
 import Layout from "./Layout";
 import { useSelector } from "react-redux";
 import Certification from "./components/Pages/PMP_Certification";
@@ -16,6 +17,8 @@ import Account_setting from "./pages/User_profile/Account_setting";
 import Enterprise from "./components/Pages/Enterprise";
 import Training from "./components/Pages/training";
 import CourseContent from "./components/Pages/Course";
+import Test from "./test";
+import Checkout from "./components/Pages/Checkout";
 import course from "./course.json";
 function App() {
   const { access_token } = useSelector((state) => state.auth);
@@ -49,6 +52,14 @@ function App() {
           <Route
             path="/dashboard/Account_setting"
             element={access_token ? <Account_setting /> : <UserLogin />}
+          />
+          <Route
+            path="/dashboard/Account_setting"
+            element={access_token ? <Account_setting /> : <UserLogin />}
+          />
+          <Route
+            path="/dashboard/Checkout"
+            element={access_token ? <Checkout /> : <UserLogin />}
           />
           <Route path="*" element={<Error_page />} />
 
@@ -178,7 +189,14 @@ function App() {
               <Certification certificationType="Design_Thinking_Certification" />
             }
           />
+          <Route
+            path="/test"
+            element={
+              <Test/>
+            }
+          />
           {/* Certification Links Ends Here */}
+=
         </Routes>
       </BrowserRouter>
     </>

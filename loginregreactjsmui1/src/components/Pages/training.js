@@ -1,17 +1,22 @@
+// Training.js
 import React, { useEffect, useState } from "react";
-import { getTimezone } from "countries-and-timezones"; // Import countries-and-timezones
+import { getTimezone } from "countries-and-timezones";
 import "../../Assets/CSS/Pages.css";
 import { useTrainingCalenderQuery } from "../../services/userAuthApi";
-import { useSelector } from "react-redux";
-import UserLogin from "../../pages/auth/UserLogin";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { addToCart } from "../../features/cartSlice";
+import { NavLink } from "react-router-dom";
 
 function Training() {
   const [trainingData, setTrainingData] = useState(null);
   const { data: calenderData, error, isLoading } = useTrainingCalenderQuery();
   const [liveOnlineCount, setLiveOnlineCount] = useState(0);
   const [locationCounts, setLocationCounts] = useState({});
-  const { access_token } = useSelector((state) => state.auth);
+  const [courseCounts, setCourseCounts] = useState({});
+  const [certificateCounts, setCertificateCounts] = useState({});
+  const [startDateCounts, setStartDateCounts] = useState({});
+  const [searchQuery, setSearchQuery] = useState("");
+  const dispatch = useDispatch();
 
   useEffect(() => {
     if (calenderData) {
@@ -27,10 +32,35 @@ function Training() {
       const locationCountsObj = calenderData.reduce((acc, trainingItem) => {
         const timeZone = trainingItem.time_zone;
         const country = getTimezoneCountry(timeZone);
-        acc[country] = (acc[timeZone] || 0) + 1;
+        acc[country] = (acc[country] || 0) + 1;
         return acc;
       }, {});
       setLocationCounts(locationCountsObj);
+
+      const courseCountsObj = calenderData.reduce((acc, trainingItem) => {
+        const courseName = trainingItem.courses.title;
+        acc[courseName] = (acc[courseName] || 0) + 1;
+        return acc;
+      }, {});
+      setCourseCounts(courseCountsObj);
+
+      const certificateCountsObj = calenderData.reduce((acc, trainingItem) => {
+        const certificateName = trainingItem.certificate.certificate_title;
+        acc[certificateName] = (acc[certificateName] || 0) + 1;
+        return acc;
+      }, {});
+      setCertificateCounts(certificateCountsObj);
+
+      const startDateCountsObj = calenderData.reduce((acc, trainingItem) => {
+        const startDate = new Date(trainingItem.start_date);
+        const month = startDate.toLocaleString("default", { month: "long" });
+        const day = startDate.getDate();
+        const year = startDate.getFullYear();
+        const formattedDate = `${month} ${day}, ${year}`;
+        acc[formattedDate] = (acc[formattedDate] || 0) + 1;
+        return acc;
+      }, {});
+      setStartDateCounts(startDateCountsObj);
     }
   }, [calenderData]);
 
@@ -42,6 +72,26 @@ function Training() {
       }
     }
     return timeZone;
+  };
+
+  const handleAddToCart = (trainingItem) => {
+    dispatch(addToCart(trainingItem));
+  };
+
+  const filteredTrainingData = trainingData
+    ? trainingData.filter(
+        (trainingItem) =>
+          trainingItem.courses.title
+            .toLowerCase()
+            .includes(searchQuery.toLowerCase()) ||
+          trainingItem.certificate.certificate_title
+            .toLowerCase()
+            .includes(searchQuery.toLowerCase())
+      )
+    : [];
+
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
   };
 
   return (
@@ -57,6 +107,8 @@ function Training() {
               placeholder="Find something to learn today..."
               name=""
               id=""
+              value={searchQuery} // Controlled input for search
+              onChange={handleSearchChange} // Handle search query change
             />
             <button>Search</button>
           </div>
@@ -79,12 +131,36 @@ function Training() {
                 </p>
               ))}
             </div>
+            <div className="filter_location border_divider">
+              <h3>Course</h3>
+              {Object.entries(courseCounts).map(([course, count]) => (
+                <p key={course}>
+                  {course} <span>{count}</span>
+                </p>
+              ))}
+            </div>
+            <div className="filter_location border_divider">
+              <h3>Certificate</h3>
+              {Object.entries(certificateCounts).map(([certificate, count]) => (
+                <p key={certificate}>
+                  {certificate} <span>{count}</span>
+                </p>
+              ))}
+            </div>
+            <div className="filter_location border_divider">
+              <h3>Starts</h3>
+              {Object.entries(startDateCounts).map(([date, count]) => (
+                <p key={date}>
+                  {date} <span>{count}</span>
+                </p>
+              ))}
+            </div>
           </div>
         </div>
 
-        {trainingData && (
+        {filteredTrainingData.length > 0 ? (
           <div className="certificate_sold">
-            {trainingData.map((trainingItem) => (
+            {filteredTrainingData.map((trainingItem) => (
               <div className="certificate_card" key={trainingItem.id}>
                 <div className="title_content border-bottom">
                   <div className="img">
@@ -119,17 +195,17 @@ function Training() {
                     <span className="price">${trainingItem.price}</span>
                   </div>
                   <div className="enroll_btn">
-                    {/* {access_token ? (
-                      <button>Enroll Now</button>
-                    ) : (
-                      <Navigate to="/login" />
-                    )} */}
-                    <button>Enroll Now</button>
+                  <NavLink to="/dashboard/Checkout">
+
+                    <button onClick={() => handleAddToCart(trainingItem)}>Enroll Now</button>
+                  </NavLink>
                   </div>
                 </div>
               </div>
             ))}
           </div>
+        ) : (
+          <div>No training found</div>
         )}
       </section>
     </>
