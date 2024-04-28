@@ -6,8 +6,10 @@ import { useTrainingCalenderQuery } from "../../services/userAuthApi";
 import { useSelector, useDispatch } from "react-redux";
 import { addToCart } from "../../features/cartSlice";
 import { NavLink } from "react-router-dom";
+import { getToken } from "../../services/LocalStorageService";
 
 function Training() {
+  const { access_token } = getToken();
   const [trainingData, setTrainingData] = useState(null);
   const { data: calenderData, error, isLoading } = useTrainingCalenderQuery();
   const [liveOnlineCount, setLiveOnlineCount] = useState(0);

@@ -1,136 +1,103 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-const TotalReceived = () => {
-    return (
-        <div className="box-right" style={{padding: '30px 25px', backgroundColor: 'white', borderRadius: '15px'}}>
-            <div className="col-md-8 ps-0">
-                <p className="ps-3 text-muted fw-bold h6 mb-0">TOTAL RECEIVED</p>
-                <p className="h1 fw-bold d-flex">
-                    <span className="fas fa-dollar-sign text-muted pe-1 h6 align-text-top mt-1"></span>
-                    84,254<span className="text-muted">.58</span>
-                </p>
-                <p className="ms-3 px-2 bg-green" style={{backgroundColor: '#d4f8f2', color: '#06e67a', padding: '3px 0', display: 'inline', borderRadius: '25px', fontSize: '11px'}}>+10% since last month</p>
-            </div>
-            <div className="col-md-4">
-                <p className="p-blue" style={{fontSize: '14px', color: '#1976d2'}}>
-                    <span className="fas fa-circle pe-2"></span>Pending
-                </p>
-                <p className="fw-bold mb-3">
-                    <span className="fas fa-dollar-sign pe-1"></span>1254<span className="text-muted">.50</span>
-                </p>
-                <p className="p-org" style={{fontSize: '14px', color: '#fbc02d'}}>
-                    <span className="fas fa-circle pe-2"></span>On drafts
-                </p>
-                <p className="fw-bold">
-                    <span className="fas fa-dollar-sign pe-1"></span>00<span className="text-muted">.00</span>
-                </p>
-            </div>
+function App() {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch('http://127.0.0.1:8000/api/user/csList/'); // Replace 'YOUR_BACKEND_URL' with the actual URL of your Django backend
+      const jsonData = await response.json();
+      setData(jsonData[0]); // Assuming you're fetching a single object, change the index if you're fetching an array of objects
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+
+  if (!data) {
+    return <div>Loading...</div>;
+  }
+
+  return (
+
+    <div>
+    <h2>{data.certificate.certificate_title}</h2>
+    <p>{data.certificate.description}</p>
+    <h2>{data.certificate.certificate_title}</h2>
+
+      <h2>{data.know_more_title}</h2>
+      <p>{data.learning_overview_desc}</p>
+
+      <h3>Certification Overview</h3>
+      <ul>
+        {data.certification_overview.map(item => (
+          <li key={item.title}>
+            <strong>{item.title}:</strong> {item.description}
+          </li>
+        ))}
+      </ul>
+
+      <h3>Delivery Methods</h3>
+      {data.Delivery_Methods.map(method => (
+        <div key={Object.keys(method)[0]}>
+          <h4>{method[Object.keys(method)[0]].title}</h4>
+          <ul>
+            {method[Object.keys(method)[0]].list.map(item => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+          <p>{method[Object.keys(method)[0]].timeliness}</p>
         </div>
-    );
-};
+      ))}
 
-const QuickPayNote = () => {
-    return (
-        <div className="box-right" style={{padding: '30px 25px', backgroundColor: 'white', borderRadius: '15px'}}>
-            <div className="d-flex pb-2">
-                <p className="fw-bold h7">
-                    <span className="text-muted">quickpay.to/</span>Publicnote
-                </p>
-                <p className="ms-auto p-blue">
-                    <span className="bg btn btn-primary fas fa-pencil-alt me-3"></span>
-                    <span className="bg btn btn-primary far fa-clone"></span>
-                </p>
-            </div>
-            <div className="bg-blue p-2" style={{backgroundColor: '#dfe9fc9c', borderRadius: '5px'}}>
-                <p className="h8 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum recusandae dolorem voluptas nemo, modi eos minus nesciunt.</p>
-                <p className="p-blue bg btn btn-primary h8">LEARN MORE</p>
-            </div>
+      <h3>Steps</h3>
+      <ol>
+        {data.steps.map(step => (
+          <li key={step.label}>
+            <strong>{step.label}:</strong> {step.description}
+          </li>
+        ))}
+      </ol>
+
+      <h3>Enterprise Solutions</h3>
+      <ul>
+        {data.Enterprise_Solutions.map(solution => (
+          <li key={solution.title}>{solution.title}</li>
+        ))}
+      </ul>
+
+      <h3>FAQs</h3>
+      {data.faqs.map(faq => (
+        <div key={faq.Title}>
+          <h4>{faq.Title}</h4>
+          <ul>
+            {faq.list.map(item => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
         </div>
-    );
-};
+      ))}
 
-const InvoiceDetails = () => {
-    return (
-        <div className="box-left" style={{padding: '20px 20px', backgroundColor: 'white', borderRadius: '15px'}}>
-            <p className="text-muted h8">Invoice</p>
-            <p className="fw-bold h7">Alex Parkinson</p>
-            <p className="text-muted h8">3897 Hickroy St, salt Lake city</p>
-            <p className="text-muted h8 mb-2">Utah, United States 84104</p>
-            <div className="h8">
-                <div className="row m-0 border mb-3">
-                    <div className="col-6 h8 pe-0 ps-2">
-                        <p className="text-muted py-2">Items</p>
-                        <span className="d-block py-2 border-bottom">Legal Advising</span>
-                        <span className="d-block py-2">Expert Consulting</span>
-                    </div>
-                    <div className="col-2 text-center p-0">
-                        <p className="text-muted p-2">Qty</p>
-                        <span className="d-block p-2 border-bottom">2</span>
-                        <span className="d-block p-2">1</span>
-                    </div>
-                    <div className="col-2 p-0 text-center h8 border-end">
-                        <p className="text-muted p-2">Price</p>
-                        <span className="d-block border-bottom py-2"><span className="fas fa-dollar-sign"></span>500</span>
-                        <span className="d-block py-2 "><span className="fas fa-dollar-sign"></span>400</span>
-                    </div>
-                    <div className="col-2 p-0 text-center">
-                        <p className="text-muted p-2">Total</p>
-                        <span className="d-block py-2 border-bottom"><span className="fas fa-dollar-sign"></span>1000</span>
-                        <span className="d-block py-2"><span className="fas fa-dollar-sign"></span>400</span>
-                    </div>
-                </div>
-                <div className="d-flex h7 mb-2">
-                    <p>Total Amount</p>
-                    <p className="ms-auto"><span className="fas fa-dollar-sign"></span>1400</p>
-                </div>
-            </div>
-            <div className="">
-                <p className="h7 fw-bold mb-1">Pay this Invoice</p>
-                <p className="text-muted h8 mb-2">Make payment for this invoice by filling in the details</p>
-                <div className="form">
-                    <div className="row">
-                        <div className="col-12">
-                            <div className="card border-0">
-                                <input className="form-control ps-5" type="text" placeholder="Card number" />
-                                <span className="far fa-credit-card"></span>
-                            </div>
-                        </div>
-                        <div className="col-6">
-                            <input className="form-control my-3" type="text" placeholder="MM/YY" />
-                        </div>
-                        <div className="col-6">
-                            <input className="form-control my-3" type="text" placeholder="cvv" />
-                        </div>
-                        <p className="p-blue h8 fw-bold mb-3">MORE PAYMENT METHODS</p>
-                    </div>
-                    <div className="btn btn-primary d-block h8">PAY <span className="fas fa-dollar-sign ms-2"></span>1400<span className="ms-3 fas fa-arrow-right"></span></div>
-                </div>
-            </div>
-        </div>
-    );
-};
+      <h3>Learning Outcomes</h3>
+      <ul>
+        {data.learning_outcomes[0].description.map(outcome => (
+          <li key={outcome}>{outcome}</li>
+        ))}
+      </ul>
 
-const YourComponent = () => {
-    return (
+      <h3>Certification Steps</h3>
+      <ol>
+        {data.certificationSteps.map(step => (
+          <li key={step.title}>
+            <strong>{step.title}:</strong> {step.description}
+          </li>
+        ))}
+      </ol>
+    </div>
+  );
+}
 
-        <div className="containers" style={{ backgroundColor: '#e8eaf6', padding: '35px'}}>
-            <div className="row m-0">
-                <div className="col-md-7 col-12">
-                    <div className="row">
-                        <div className="col-12 mb-4">
-                            <TotalReceived />
-                        </div>
-                        <div className="col-12 px-0 mb-4">
-                            <QuickPayNote />
-                        </div>
-                    </div>
-                </div>
-                <div className="col-md-5 col-12 ps-md-5 p-0">
-                    <InvoiceDetails />
-                </div>
-            </div>
-        </div>
-    );
-};
-
-export default YourComponent;
+export default App;

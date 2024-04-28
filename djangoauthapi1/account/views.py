@@ -1,13 +1,14 @@
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.views import APIView
-from .models import TrainingCalendar
-from .serializers import SendPasswordResetEmailSerializer, UserChangePasswordSerializer, UserLoginSerializer, UserPasswordResetSerializer, UserProfileSerializer, UserRegistrationSerializer  ,TrainingCalenderSerializer
+from .models import TrainingCalendar , course , certificate , TestModel
+from .serializers import SendPasswordResetEmailSerializer, UserChangePasswordSerializer, UserLoginSerializer, UserPasswordResetSerializer, UserProfileSerializer, UserRegistrationSerializer  ,TrainingCalenderSerializer , TrainingPostCalenderSerializer , CourseSerializer , CertificateSerializer,TestModelSerializer
 from django.contrib.auth import authenticate
 from .renderers import UserRenderer  # Adjust import path for UserRenderer if necessary
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import IsAuthenticated, AllowAny  # Import AllowAny
 from .models import User  # Import User model
+from rest_framework.generics import ListAPIView , CreateAPIView , UpdateAPIView , DestroyAPIView
 
 # Generate Token Manually
 def get_tokens_for_user(user):
@@ -112,3 +113,58 @@ class TrainingCalendarList(APIView):
         training_calendars = TrainingCalendar.objects.all()
         serializer = TrainingCalenderSerializer(training_calendars, many=True)
         return Response(serializer.data)
+    
+    def post(self, request, format=None):
+        serializer = TrainingPostCalenderSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+    
+class TestTrain(UpdateAPIView , DestroyAPIView):
+    permission_classes = [IsAuthenticated]
+    serializer_class = TrainingPostCalenderSerializer
+
+    def get_object(self):
+        # Assuming 'pk' is passed in URL kwargs
+        pk = self.kwargs.get('pk')
+        return TrainingCalendar.objects.get(pk=pk)
+
+    def update(self, request, *args, **kwargs):
+        instance = self.get_object()
+        serializer = self.get_serializer(instance, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+    def destroy(self, request, *args, **kwargs):
+        instance = self.get_object()
+        instance.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+    
+
+class CourseList(ListAPIView, CreateAPIView):
+    queryset = course.objects.all()  # Assuming 'course' is the name of your model
+    serializer_class = CourseSerializer
+
+    def get_permissions(self):
+        if self.request.method == 'GET':  # If it's a GET request (list view)
+            permission_classes = [AllowAny]
+        else:  # For any other request (create view)
+            permission_classes = [IsAuthenticated]
+        return [permission() for permission in permission_classes]
+
+
+class CertificateList(ListAPIView):
+    permission_classes = [AllowAny]
+    queryset = certificate.objects.all()
+    serializer_class = CertificateSerializer
+    
+
+class csList(ListAPIView):
+    permission_classes = [AllowAny]
+    queryset = TestModel.objects.all()
+    serializer_class = TestModelSerializer

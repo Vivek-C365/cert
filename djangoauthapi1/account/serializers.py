@@ -6,7 +6,7 @@ from django.utils.encoding import smart_str, force_bytes, DjangoUnicodeDecodeErr
 from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
 from account.utils import Util
-from .models import TrainingCalendar , course, certificate
+from .models import TrainingCalendar , course, certificate,TestModel
 class UserRegistrationSerializer(serializers.ModelSerializer):
     password2 = serializers.CharField(style={'input_type': 'password'}, write_only=True)
 
@@ -118,4 +118,17 @@ class TrainingCalenderSerializer(serializers.ModelSerializer):
     certificate = CertificateSerializer()
     class Meta:
         model = TrainingCalendar
+        fields = '__all__'
+
+class TrainingPostCalenderSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TrainingCalendar
+        fields = '__all__'
+        
+        
+class TestModelSerializer(serializers.ModelSerializer):
+    certificate = CertificateSerializer()
+    
+    class Meta:
+        model = TestModel
         fields = '__all__'

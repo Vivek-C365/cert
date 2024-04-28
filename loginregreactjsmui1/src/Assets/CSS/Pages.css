@@ -2643,3 +2643,13 @@ aside h3 span {
     color: white;
     font-weight: 400;
 }
+
+
+.live_class_back{
+    background-color: white;
+}
+
+.live_class_container{
+    position: relative;
+    width: 80%;
+}

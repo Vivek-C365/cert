@@ -40,10 +40,10 @@ const Nav = () => {
   const { access_token } = useSelector((state) => state.auth);
   const [isOpen, setIsOpen] = useState(false);
   const [isPathOpen, setIsPathOpen] = useState(false);
+  const [isWidgetsOpen, setIsWidgetsOpen] = useState(false); // State for new side navigation
   const [anchorEl, setAnchorEl] = useState(null);
   const [openDrawer, setOpenDrawer] = useState(false);
   const [selectedPathway, setSelectedPathway] = useState(null);
-
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -94,6 +94,36 @@ const Nav = () => {
       link: "business",
     },
   ];
+  // New set of data for Widgets side navigation
+  const widgetsData = [
+    {
+      title: "CONTENT MANAGEMENT",
+      items: [
+        {
+          title: "ADD COURSE",
+          link: "/Course",
+        },
+        {
+          title: "ADD RESOURCES",
+          link: "/resources",
+        },
+      ],
+    },
+    {
+      title: "TRAINING SCHEDULES",
+      items: [
+        {
+          title: "Live-Online schedules",
+          link: "/Classes",
+        },
+        {
+          title: "Add Live online",
+          link: "create/live-online",
+        },
+      ],
+    },
+    // Add more widgets as needed
+  ];
 
   const openNav = () => {
     setIsOpen(true);
@@ -103,12 +133,18 @@ const Nav = () => {
   const closeNav = () => {
     setIsOpen(false);
     setIsPathOpen(false);
+    setIsWidgetsOpen(false); // Close Widgets side navigation
     document.getElementById("backdrop").style.display = "none";
   };
 
   const openPath = (selectedPathway) => {
     setIsPathOpen(true);
     setSelectedPathway(selectedPathway);
+    document.getElementById("backdrop").style.display = "block";
+  };
+
+  const openWidgets = () => {
+    setIsWidgetsOpen(true); // Open Widgets side navigation
     document.getElementById("backdrop").style.display = "block";
   };
 
@@ -222,7 +258,6 @@ const Nav = () => {
                 </div>
 
                 <div className="side_bar_tabs">
-                  {/* Render PathwayList */}
                   <Box
                     sx={{ width: 250 }}
                     role="presentation"
@@ -275,7 +310,8 @@ const Nav = () => {
                     </StyledBadge>
                   </IconButton>
                 </NavLink>
-                <WidgetsIcon />
+                <WidgetsIcon onClick={openWidgets} />{" "}
+                {/* New icon for Widgets */}
                 <div>
                   <Button
                     id="basic-button"
@@ -329,6 +365,42 @@ const Nav = () => {
               </>
             )}
           </div>
+        </div>
+      </div>
+
+      <div
+        id="widgetsSidenav"
+        className={`sidenav ${isWidgetsOpen ? "open" : ""}`}
+      >
+        <div className="div-flex_sidebar">
+          <NavLink to="/">
+            <img className="side_logo" alt="Link" src={logo} />
+          </NavLink>
+        </div>
+
+        <div className="side_bar_tabs">
+          <Box
+            sx={{ width: 250 }}
+            role="presentation"
+            onClick={() => toggleDrawer(false)}
+          >
+            <List>
+              {widgetsData.map((category, index) => (
+                <div key={index}>
+                  <ListItem disablePadding>
+                    <ListItemText primary={category.title} />
+                  </ListItem>
+                  {category.items.map((item, subIndex) => (
+                    <ListItem key={subIndex} disablePadding>
+                      <ListItemButton component={NavLink} to={item.link}>
+                        <ListItemText primary={item.title} />
+                      </ListItemButton>
+                    </ListItem>
+                  ))}
+                </div>
+              ))}
+            </List>
+          </Box>
         </div>
       </div>
     </>

@@ -99,7 +99,25 @@ class certificate (models.Model):
     
     def __str__(self):
         return self.certificate_title
-    
+
+
+class TestModel(models.Model):
+    id = models.AutoField(primary_key=True)
+    certificate = models.ForeignKey(certificate, on_delete=models.CASCADE) 
+    certification_overview = models.JSONField(null=True , blank=True)
+    Delivery_Methods = models.JSONField(null=True , blank=True)
+    know_more_title = models.CharField(max_length=255,default='', null=True, blank=True)
+    steps = models.JSONField(null=True , blank=True)
+    Enterprise_Solutions = models.JSONField(null=True , blank=True)
+    faqs = models.JSONField(null=True , blank=True)
+    learning_overview_desc = models.TextField(null=True , blank=True)
+    learning_outcomes = models.JSONField(null=True , blank=True)
+    certificationSteps = models.JSONField(null=True , blank=True)
+    resources_data = models.JSONField(null=True , blank=True)
+
+
+
+
 
 class TrainingCalendar(models.Model):
     id = models.AutoField(primary_key=True)  
