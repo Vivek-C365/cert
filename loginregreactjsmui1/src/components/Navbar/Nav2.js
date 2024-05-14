@@ -101,7 +101,7 @@ const Nav = () => {
       items: [
         {
           title: "ADD COURSE",
-          link: "/Course",
+          link: "ADD-Course",
         },
         {
           title: "ADD RESOURCES",
@@ -114,7 +114,7 @@ const Nav = () => {
       items: [
         {
           title: "Live-Online schedules",
-          link: "/Classes",
+          link: "Live-Online-schedules",
         },
         {
           title: "Add Live online",

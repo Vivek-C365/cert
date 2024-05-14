@@ -16,11 +16,13 @@ import Account_setting from "./pages/User_profile/Account_setting";
 import Enterprise from "./components/Pages/Enterprise";
 import Training from "./components/Pages/training";
 import CourseContent from "./components/Pages/Course";
-import Test from "./test";
 import Checkout from "./components/Pages/Checkout";
 import course from "./course.json";
 import Live_classes from "./components/Pages/Live_classes";
-
+import Course_details from "./components/Pages/Course_details";
+import Schedules from "./components/Pages/Schedules_live_online"
+import Test from "./test";
+import Testdisplay from "./Testdisplay";
 function App() {
   const { access_token } = useSelector((state) => state.auth);
 
@@ -50,6 +52,8 @@ function App() {
           ))}
 
           <Route path="create/live-online" element={access_token ? <Live_classes /> : <UserLogin />} />
+          <Route path="Live-Online-schedules" element={access_token ? <Schedules /> : <UserLogin />} />
+          <Route path="ADD-Course" element={access_token ? <Course_details /> : <UserLogin />} />
 
           <Route path="/agile-and-scrum/csm_certification" element={<Certification certificationType="CSM_Certification" />} />
           <Route path="/agile-and-scrum/cspo_certification" element={<Certification certificationType="CSPO_Certification" />} />
@@ -75,6 +79,8 @@ function App() {
 
           
           <Route path="/test" element={<Test />} />
+          <Route path="/testdisplay" element={<Testdisplay />} />
+
         </Routes>
       </BrowserRouter>
     </>

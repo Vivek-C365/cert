@@ -2,7 +2,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.views import APIView
 from .models import TrainingCalendar , course , certificate , TestModel
-from .serializers import SendPasswordResetEmailSerializer, UserChangePasswordSerializer, UserLoginSerializer, UserPasswordResetSerializer, UserProfileSerializer, UserRegistrationSerializer  ,TrainingCalenderSerializer , TrainingPostCalenderSerializer , CourseSerializer , CertificateSerializer,TestModelSerializer
+from .serializers import *
 from django.contrib.auth import authenticate
 from .renderers import UserRenderer  # Adjust import path for UserRenderer if necessary
 from rest_framework_simplejwt.tokens import RefreshToken
@@ -158,13 +158,22 @@ class CourseList(ListAPIView, CreateAPIView):
         return [permission() for permission in permission_classes]
 
 
-class CertificateList(ListAPIView):
-    permission_classes = [AllowAny]
+class CertificateList(ListAPIView , CreateAPIView):
     queryset = certificate.objects.all()
     serializer_class = CertificateSerializer
+    def get_permissions(self):
+        if self.request.method == 'GET':  # If it's a GET request (list view)
+            permission_classes = [AllowAny]
+        else:  # For any other request (create view)
+            permission_classes = [IsAuthenticated]
+        return [permission() for permission in permission_classes]
     
 
-class csList(ListAPIView):
+class csList(ListAPIView, CreateAPIView):
     permission_classes = [AllowAny]
     queryset = TestModel.objects.all()
-    serializer_class = TestModelSerializer
+
+    def get_serializer_class(self):
+        if self.request.method == 'POST':
+            return TestModelPostSerializer
+        return TestModelSerializer

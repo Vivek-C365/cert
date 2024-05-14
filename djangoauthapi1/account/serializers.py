@@ -132,3 +132,9 @@ class TestModelSerializer(serializers.ModelSerializer):
     class Meta:
         model = TestModel
         fields = '__all__'
+
+class TestModelPostSerializer(serializers.ModelSerializer):
+    
+    class Meta:
+        model = TestModel
+        fields = '__all__'

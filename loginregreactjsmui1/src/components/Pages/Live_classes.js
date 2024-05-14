@@ -22,7 +22,7 @@ import { Country }  from 'country-state-city';
 function ProfileForm() {
   const [course, setCourse] = useState("");
   const [certificate, setCertificate] = useState("");
-  const [country, setCountry] = useState("");
+  const [time_zone, setTime_zone] = useState("");
   const [mrp, setMrp] = useState("");
   const [price, setPrice] = useState("");
   const [delivery, setDelivery] = useState("");
@@ -51,7 +51,7 @@ function ProfileForm() {
   };
 
   const handleCountryChange = (event) => {
-    setCountry(event.target.value);
+    setTime_zone(event.target.value);
   };
 
   const handleMrpChange = (event) => {
@@ -81,7 +81,7 @@ function ProfileForm() {
       delivery: delivery,
       start_date: startDate.format('YYYY-MM-DD'),
       end_date: endDate.format('YYYY-MM-DD'),
-      time_zone: "Asia/Kolkata",
+      time_zone: time_zone,
       MRP: mrp,
       price: price,
       certificate: parseInt(certificate),
@@ -105,7 +105,7 @@ function ProfileForm() {
       // Reset form fields if needed
       setCourse("");
       setCertificate("");
-      setCountry("");
+      setTime_zone("");
       setMrp("");
       setPrice("");
       setDelivery("");
@@ -215,7 +215,7 @@ function ProfileForm() {
                     <Select
                       labelId="demo-simple-select-label"
                       id="demo-simple-select-country"
-                      value={country}
+                      value={time_zone}
                       label="Country"
                       onChange={handleCountryChange}
                     >

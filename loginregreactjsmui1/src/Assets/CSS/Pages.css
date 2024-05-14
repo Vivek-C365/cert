@@ -2645,11 +2645,36 @@ aside h3 span {
 }
 
 
-.live_class_back{
+.live_class_back {
     background-color: white;
 }
 
-.live_class_container{
+.live_class_container {
     position: relative;
     width: 80%;
+}
+
+
+
+/* schedule classes */
+
+.MuiTableHead-root .MuiTableCell-head,
+.css-1nslmh4-MuiTableCell-root.MuiTableCell-head {
+    /* background-color: #000; */
+    color: #356ae6 !important;
+    background-color: #f7f9fc !important;
+}
+
+.css-1enotpu-MuiTableRow-root:nth-of-type(odd) {
+    background-color: white !important;
+}
+
+.css-132a6sb-MuiTableCell-root.MuiTableCell-body {
+    font-size: 14px;
+    color: #566378 !important;
+}
+
+.css-132a6sb-MuiTableCell-root {
+
+    border-bottom: 1px solid #d9e2ef !important;
 }
