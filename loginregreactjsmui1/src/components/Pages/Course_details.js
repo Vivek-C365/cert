@@ -34,14 +34,18 @@ function ProfileForm() {
   const [courseInfo, setCourseInfo] = useState({
     coursename: "",
     description: "",
+    link: "",
     image: null,
   });
-  const { data: courseData } = useCourselistQuery();
+
   const [certificateInfo, setCertificateInfo] = useState({
     certificatetitle: "",
     certificatedescription: "",
+    link: "",
     selectedCourse: "",
   });
+
+  const { data: courseData } = useCourselistQuery();
 
   const handleCourseChange = (event) => {
     setCourseInfo({
@@ -77,6 +81,7 @@ function ProfileForm() {
     const formData = new FormData();
     formData.append("title", courseInfo.coursename);
     formData.append("description", courseInfo.description);
+    formData.append("link", courseInfo.link);
     formData.append("image", courseInfo.image);
 
     const { access_token } = getToken();
@@ -94,6 +99,7 @@ function ProfileForm() {
         setCourseInfo({
           coursename: "",
           description: "",
+          link: "",
           image: null,
         });
       } else {
@@ -119,6 +125,7 @@ function ProfileForm() {
         body: JSON.stringify({
           certificate_title: certificateInfo.certificatetitle,
           description: certificateInfo.certificatedescription,
+          link: certificateInfo.link,
           courses: certificateInfo.selectedCourse,
         }),
       });
@@ -127,6 +134,7 @@ function ProfileForm() {
         setCertificateInfo({
           certificatetitle: "",
           certificatedescription: "",
+          link: "",
           selectedCourse: "",
         });
       } else {
@@ -169,6 +177,14 @@ function ProfileForm() {
                       label="Description"
                       variant="outlined"
                       value={courseInfo.description}
+                      onChange={handleCourseChange}
+                    />
+                    <TextField
+                      id="course-link"
+                      name="link"
+                      label="Course Link"
+                      variant="outlined"
+                      value={courseInfo.link}
                       onChange={handleCourseChange}
                     />
                     <VisuallyHiddenInput
@@ -243,6 +259,14 @@ function ProfileForm() {
                     label="Description"
                     variant="outlined"
                     value={certificateInfo.certificatedescription}
+                    onChange={handleCertificateChange}
+                  />
+                  <TextField
+                    id="certificate-link"
+                    name="link"
+                    label="Certificate Link"
+                    variant="outlined"
+                    value={certificateInfo.link}
                     onChange={handleCertificateChange}
                   />
                   <Button

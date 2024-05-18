@@ -1589,6 +1589,13 @@ aside h3 span {
 
 
 
+.inner_list span{
+    color: gray;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+
 
 /* Add your styles here */
 
@@ -2407,9 +2414,10 @@ aside h3 span {
 
 }
 
-.course-items-list ol {
+.course-items-list ul {
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .page-bottom spacer .text-primary-active {

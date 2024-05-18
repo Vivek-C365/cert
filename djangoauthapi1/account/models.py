@@ -95,6 +95,7 @@ class course (models.Model):
 class certificate (models.Model):
     id = models.AutoField(primary_key=True)  
     certificate_title = models.CharField(max_length=255)
+    link = models.CharField(max_length=255, default="")
     description = models.TextField()
     courses = models.ForeignKey(course, on_delete=models.CASCADE)
     

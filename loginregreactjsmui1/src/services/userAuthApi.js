@@ -44,6 +44,15 @@ export const userAuthApi = createApi({
         },
       }),
     }),
+    certificatedetailedlist: builder.query({
+      query: () => ({
+        url: "csList/",
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }),
+    }),
     certificatelist: builder.query({
       query: () => ({
         url: "Certificate/",
@@ -127,6 +136,7 @@ export const {
   useUpdateProfileMutation,
   useTrainingCalenderQuery,
   useCourselistQuery,
+  useCertificatedetailedlistQuery,
   useCertificatelistQuery,
   useTraininglistQuery
 } = userAuthApi;

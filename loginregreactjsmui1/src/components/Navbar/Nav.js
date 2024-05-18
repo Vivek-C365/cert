@@ -29,13 +29,12 @@ import WidgetsIcon from "@mui/icons-material/Widgets";
 import { removeToken } from "../../services/LocalStorageService";
 import { unSetUserToken } from "../../features/authSlice";
 import { unsetUserInfo } from "../../features/userSlice";
+import { useCourselistQuery, useCertificatelistQuery } from "../../services/userAuthApi";
 
 import Badge from "@mui/material/Badge";
 import { styled } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-
-import { useCourselistQuery, useCertificatelistQuery } from "../../services/userAuthApi";
 
 const Nav = () => {
   const { access_token } = useSelector((state) => state.auth);
@@ -43,129 +42,25 @@ const Nav = () => {
   const [isPathOpen, setIsPathOpen] = useState(false);
   const [isWidgetsOpen, setIsWidgetsOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
-  const [selectedPathway, setSelectedPathway] = useState(null);
   const [selectedCourse, setSelectedCourse] = useState("");
-  const [selectedCertificates, setSelectedCertificates] = useState([]);
+  const [filteredCertificates, setFilteredCertificates] = useState([]);
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
   const { data: courseData } = useCourselistQuery();
   const { data: certificateData } = useCertificatelistQuery();
 
   useEffect(() => {
     if (selectedCourse) {
       const filtered = certificateData.filter(cert => cert.courses === parseInt(selectedCourse));
-      setSelectedCertificates(filtered);
+      setFilteredCertificates(filtered);
     } else {
-      setSelectedCertificates([]);
+      setFilteredCertificates([]);
     }
   }, [selectedCourse, certificateData]);
 
-  const redirects = [
-    {
-      logo: <BusinessCenterIcon />,
-      title: "Enterprise",
-      link: "business",
-    },
-    {
-      logo: <MiscellaneousServicesIcon />,
-      title: "Services",
-      link: "service",
-    },
-    {
-      logo: <PeopleAltIcon />,
-      title: "Mentorship Program",
-      link: "mentor/mentorship-program",
-    },
-    {
-      logo: <CalendarTodayIcon />,
-      title: "Training Calendar",
-      link: "training-calendar",
-    },
-    {
-      logo: <MenuBookIcon />,
-      title: "Resources",
-      link: "business",
-    },
-    {
-      logo: <HelpIcon />,
-      title: "Help and Support",
-      link: "business",
-    },
-    {
-      logo: <FolderIcon />,
-      title: "Policies",
-      link: "business",
-    },
-    {
-      logo: <ContactsIcon />,
-      title: "Contact Us",
-      link: "business",
-    },
-    {
-      logo: <InfoIcon />,
-      title: "About us",
-      link: "business",
-    },
-  ];
-
-  const widgetsData = [
-    {
-      title: "CONTENT MANAGEMENT",
-      items: [
-        {
-          title: "ADD COURSE",
-          link: "ADD-Course",
-        },
-        {
-          title: "ADD RESOURCES",
-          link: "/resources",
-        },
-      ],
-    },
-    {
-      title: "TRAINING SCHEDULES",
-      items: [
-        {
-          title: "Live-Online schedules",
-          link: "Live-Online-schedules",
-        },
-        {
-          title: "Add Live online",
-          link: "create/live-online",
-        },
-      ],
-    },
-    // Add more widgets as needed
-  ];
-
-  const openPath = (selectedPathway) => {
-    setIsPathOpen(true);
-    setSelectedPathway(selectedPathway);
-    setIsWidgetsOpen(false); // Close Widgets side navigation
-    document.getElementById("backdrop").style.display = "block";
-    
-    const selectedCourse = courseData.find(course => course.title === selectedPathway.title);
-
-    if (selectedCourse) {
-      setSelectedCourse(selectedCourse.id);
-    } else {
-      setSelectedCourse("");
-    }
-  };
-
-  const closeNav = () => {
-    setIsOpen(false);
-    setIsPathOpen(false);
-    setIsWidgetsOpen(false);
-    document.getElementById("backdrop").style.display = "none";
-  };
-
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
+  const handleCourseChange = (courseId) => {
+    setSelectedCourse(courseId);
   };
 
   const handleLogout = () => {
@@ -183,6 +78,14 @@ const Nav = () => {
     navigate("/dashboard/Account_setting");
   };
 
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   const StyledBadge = styled(Badge)(({ theme }) => ({
     "& .MuiBadge-badge": {
       right: -3,
@@ -195,7 +98,7 @@ const Nav = () => {
   return (
     <>
       <div className="header">
-        <div className="backdrop" id="backdrop" onClick={closeNav}></div>
+        <div className="backdrop" id="backdrop" onClick={() => setIsOpen(false)}></div>
         <div className="div-flex-middle">
           <div className="div">
             <div className="div">
@@ -215,22 +118,21 @@ const Nav = () => {
                 </div>
 
                 <div className="side_bar_tabs">
-                  {redirects.map((items, index) => (
-                    <NavLink key={index} to={items.link}>
-                      <div className="content" onClick={closeNav}>
-                        <div className="content_img">{items.logo}</div>
-                        <span>{items.title}</span>
-                      </div>
-                    </NavLink>
-                  ))}
+                  <NavLink to="/about">
+                    <div className="content">
+                      <div className="content_img"><InfoIcon /></div>
+                      <span>About Us</span>
+                    </div>
+                  </NavLink>
+                  {/* Add other NavLink items here */}
                 </div>
                 {!access_token && (
                   <Stack spacing={2} direction="row">
                     <NavLink className="Login_btn credential_btn" to="/Login">
-                      <Button variant="contained" onClick={closeNav}>Login</Button>
+                      <Button variant="contained">Login</Button>
                     </NavLink>
                     <NavLink to="/Registration" className="credential_btn">
-                      <Button variant="outlined" onClick={closeNav}>SignUp</Button>
+                      <Button variant="outlined">SignUp</Button>
                     </NavLink>
                   </Stack>
                 )}
@@ -244,7 +146,7 @@ const Nav = () => {
             <div className="div">
               <div
                 className="button-browse"
-                onClick={() => openPath(courseData && courseData[0])}
+                onClick={() => setIsPathOpen(!isPathOpen)}
               >
                 <img className="SVG" alt="Svg" src={Book} />
                 <div className="span-ttu">
@@ -269,29 +171,24 @@ const Nav = () => {
                   <Box
                     sx={{ width: 250 }}
                     role="presentation"
-                    onClick={() => setIsWidgetsOpen(false)}
+                    onClick={() => setIsPathOpen(false)}
                   >
                     <List>
-                      {courseData && courseData.map((item, index) => (
-                        <div key={index}>
-                          <ListItem disablePadding>
-                            <ListItemButton onClick={() => openPath(item)}>
-                              <ListItemText primary={item.title}/>
-                            </ListItemButton>
-                          </ListItem>
-                          {selectedPathway &&
-                            selectedPathway.title === item.title && (
-                              <List>
-                                {selectedCertificates.map((certificateItem, index) => (
-                                  <MenuItem key={index} value={certificateItem.id} onClick={closeNav}>
-                                    {certificateItem.certificate_title}
-                                  </MenuItem>
-                                ))}
-                              </List>
-                            )}
-                        </div>
+                      {courseData && courseData.map(courseItem => (
+                        <MenuItem key={courseItem.id} value={courseItem.id} onClick={() => handleCourseChange(courseItem.id)}>
+                          {courseItem.title}
+                        </MenuItem>
                       ))}
                     </List>
+                    {filteredCertificates.length > 0 && (
+                      <List>
+                        {filteredCertificates.map(certificateItem => (
+                          <MenuItem key={certificateItem.id} value={certificateItem.id}>
+                            {certificateItem.certificate_title}
+                          </MenuItem>
+                        ))}
+                      </List>
+                    )}
                   </Box>
                 </div>
               </div>
@@ -309,7 +206,7 @@ const Nav = () => {
                     </StyledBadge>
                   </IconButton>
                 </NavLink>
-                <WidgetsIcon onClick={() => setIsWidgetsOpen(true)} />
+                <WidgetsIcon onClick={() => setIsWidgetsOpen(!isWidgetsOpen)} />
                 <div>
                   <Button
                     id="basic-button"
@@ -383,20 +280,7 @@ const Nav = () => {
             onClick={() => setIsWidgetsOpen(false)}
           >
             <List>
-              {widgetsData.map((category, index) => (
-                <div key={index}>
-                  <ListItem disablePadding>
-                    <ListItemText primary={category.title} />
-                  </ListItem>
-                  {category.items.map((item, subIndex) => (
-                    <ListItem key={subIndex} disablePadding>
-                      <ListItemButton component={NavLink} to={item.link} onClick={closeNav}>
-                        <ListItemText primary={item.title} />
-                      </ListItemButton>
-                    </ListItem>
-                  ))}
-                </div>
-              ))}
+              {/* Add widgets items here */}
             </List>
           </Box>
         </div>

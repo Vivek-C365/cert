@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import "../../Assets/CSS/Nav.css";
@@ -30,6 +30,10 @@ import { removeToken } from "../../services/LocalStorageService";
 import { unSetUserToken } from "../../features/authSlice";
 import { unsetUserInfo } from "../../features/userSlice";
 import course from "../../course.json";
+import {
+  useCourselistQuery,
+  useCertificatelistQuery,
+} from "../../services/userAuthApi";
 
 import Badge from "@mui/material/Badge";
 import { styled } from "@mui/material/styles";
@@ -40,12 +44,17 @@ const Nav = () => {
   const { access_token } = useSelector((state) => state.auth);
   const [isOpen, setIsOpen] = useState(false);
   const [isPathOpen, setIsPathOpen] = useState(false);
-  const [isWidgetsOpen, setIsWidgetsOpen] = useState(false); // State for new side navigation
+  const [isWidgetsOpen, setIsWidgetsOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
+  const [selectedCourse, setSelectedCourse] = useState("");
+  const [filteredCertificates, setFilteredCertificates] = useState([]);
   const [openDrawer, setOpenDrawer] = useState(false);
   const [selectedPathway, setSelectedPathway] = useState(null);
+  const [expandedCourse, setExpandedCourse] = useState(null);
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const { data: courseData } = useCourselistQuery();
+  const { data: certificateData } = useCertificatelistQuery();
 
   const redirects = [
     {
@@ -160,6 +169,22 @@ const Nav = () => {
     setAnchorEl(null);
   };
 
+  useEffect(() => {
+    if (selectedCourse) {
+      const filtered = certificateData.filter(
+        (cert) => cert.courses === parseInt(selectedCourse)
+      );
+      setFilteredCertificates(filtered);
+    } else {
+      setFilteredCertificates([]);
+    }
+  }, [selectedCourse, certificateData]);
+
+  const handleCourseChange = (courseId) => {
+    setSelectedCourse(courseId);
+    setExpandedCourse(courseId); // Expand the course when its certificates are loaded
+  };
+
   const handleLogout = () => {
     dispatch(unsetUserInfo({ name: "", email: "" }));
     dispatch(unSetUserToken({ access_token: null }));
@@ -264,34 +289,42 @@ const Nav = () => {
                     onClick={() => toggleDrawer(false)}
                   >
                     <List>
-                      {course.pathway.map((item, index) => (
-                        <div key={index}>
-                          <ListItem disablePadding>
-                            <ListItemButton onClick={() => openPath(item)}>
-                              <ListItemText primary={item.title} />
-                            </ListItemButton>
-                          </ListItem>
-                          {selectedPathway &&
-                            selectedPathway.title === item.title && (
-                              <List>
-                                {selectedPathway.certificates.map(
-                                  (certificate, index) => (
-                                    <ListItem key={index} disablePadding>
-                                      <ListItemButton
-                                        component={NavLink}
-                                        to={certificate.link}
-                                      >
+                      {courseData &&
+                        courseData.map((item, index) => (
+                          <div key={index}>
+                            <ListItem disablePadding>
+                              <ListItemButton
+                                onClick={() => {
+                                  openPath(item);
+                                  handleCourseChange(item.id);
+                                }}
+                              >
+                                <ListItemText primary={item.title} />
+                              </ListItemButton>
+                            </ListItem>
+                            <div className="inner_list">
+                              {expandedCourse === item.id && (
+                                <List>
+                                  {filteredCertificates.map((certificate) => (
+                                    <ListItem
+                                      key={certificate.id}
+                                      disablePadding
+                                    >
+                                      <ListItemButton component={NavLink}
+                                        to={certificate.link}>
                                         <ListItemText
-                                          primary={certificate.title}
+                                          primary={
+                                            certificate.certificate_title
+                                          }
                                         />
                                       </ListItemButton>
                                     </ListItem>
-                                  )
-                                )}
-                              </List>
-                            )}
-                        </div>
-                      ))}
+                                  ))}
+                                </List>
+                              )}
+                            </div>
+                          </div>
+                        ))}
                     </List>
                   </Box>
                 </div>

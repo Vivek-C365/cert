@@ -100,8 +100,6 @@ function ProfileForm() {
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
-      // Handle successful response
-      console.log('Training data submitted successfully');
       // Reset form fields if needed
       setCourse("");
       setCertificate("");
@@ -113,7 +111,7 @@ function ProfileForm() {
       setEndDate(null);
     })
     .catch(error => {
-      console.error('There was a problem with the fetch operation:', error);
+      console.error( error);
     });
   };
 

@@ -1,13 +1,39 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Footer from "../Footer/Footer";
-import course from "../../course.json";
 import { NavLink } from "react-router-dom";
+import {
+  useCourselistQuery,
+  useCertificatelistQuery,
+} from "../../services/userAuthApi";
 
 function CourseContent({ title }) {
-  // Find the pathway object with the matching title
-  const pathway = course.pathway.find((path) => path.title === title);
+  const [selectedCourse, setSelectedCourse] = useState("");
+  const [filteredCertificates, setFilteredCertificates] = useState([]);
+  const { data: courseData } = useCourselistQuery();
+  const { data: certificateData } = useCertificatelistQuery();
 
+  useEffect(() => {
+    if (selectedCourse) {
+      const filtered = certificateData.filter(
+        (cert) => cert.courses === parseInt(selectedCourse)
+      );
+      setFilteredCertificates(filtered);
+    } else {
+      setFilteredCertificates([]);
+    }
+  }, [selectedCourse, certificateData]);
 
+  const pathway = courseData.find((path) => path.title === title);
+  console.log("Pathway:", pathway);
+
+  const certificatelist = certificateData.filter(
+    (cert) => cert.courses === pathway?.id
+  );
+  
+
+  const handleCourseChange = (courseId) => {
+    setSelectedCourse(courseId);
+  };
   return (
     <>
       <section className="p-relative w-100 spacer page-hero">
@@ -31,7 +57,7 @@ function CourseContent({ title }) {
                     className="full-image nope catagory-icon lazyautosizes ls-is-cached lazyloaded"
                     loading="lazy"
                     sizes="80px"
-                    src={pathway.Courses_image}
+                    src={pathway.image}
                   />
                 </figure>
                 <h1 className="fw-900 text-primary-active term-title">
@@ -62,36 +88,33 @@ function CourseContent({ title }) {
           </div>
           <hr className="transparent" />
         </div>
-        
+
         <div
           className="align-center container-ipad padding-rl channel-bottom view view-td-courses view-id-td_courses view-display-id-course_term js-view-dom-id-fdc70fdc21a8d8f0bf0a772db1930959e3733c70014eee52591231f21920be13"
           data-once="ajax-pager"
         >
           <div className="view-content">
             <div className="align-center course-items-list">
-              <ol className="list-unstyled course-items flex-column">
-                {/* Render certificates links */}
-                {pathway.certificates.map((certificate, index) => (
-                  <>
-                    <li
-                      className="p-relative card translateY-hover single-course"
-                      key={index}
-                    >
-                      <h3 className="text-navy course-title">
-                        {certificate.title}
-                      </h3>
-                      <div className="text-steel course-summary">
-                        <p>{certificate.description}</p>
-                      </div>
-                      <NavLink to={certificate.link}>
-                        <button className="button button--main-soft button--small">
-                          Explore options
-                        </button>
-                      </NavLink>
-                    </li>
-                  </>
+              <ul className="list-unstyled course-items flex-column">
+                {certificatelist.map((certificate, index) => (
+                  <li
+                    className="p-relative card translateY-hover single-course"
+                    key={index}
+                  >
+                    <h3 className="text-navy course-title">
+                      {certificate.certificate_title}
+                    </h3>
+                    <div className="text-steel course-summary">
+                      <p>{certificate.description}</p>
+                    </div>
+                    <NavLink to={certificate.link}>
+                      <button className="button button--main-soft button--small">
+                        Explore options
+                      </button>
+                    </NavLink>
+                  </li>
                 ))}
-              </ol>
+              </ul>
             </div>
           </div>
         </div>
