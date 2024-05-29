@@ -1589,7 +1589,7 @@ aside h3 span {
 
 
 
-.inner_list span{
+.inner_list span {
     color: gray;
     font-size: 14px;
     margin-left: 15px;
@@ -2382,7 +2382,11 @@ aside h3 span {
 }
 
 
-
+.delete_btn_Certificate{
+    position: relative;
+    width: -webkit-fill-available;
+    margin-bottom: 5px !important;
+}
 
 
 #taxonomy-term-1 {
@@ -2413,7 +2417,9 @@ aside h3 span {
     align-items: center;
 
 }
-
+.add_course_certificate{
+    margin-bottom: 40px;
+}
 .course-items-list ul {
     display: flex;
     align-items: center;
@@ -2445,17 +2451,43 @@ aside h3 span {
     color: #1a3ba5;
 }
 
+.css-q8hpuo-MuiFormControl-root {
+    max-width: 43vh;
 
+}
 
+.css-sghohy-MuiButtonBase-root-MuiButton-root {
+    position: relative;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
 
+.css-1f773le-MuiButtonBase-root-MuiAccordionSummary-root {
+    border: 1px solid lightgray !important;
+}
 
+.upload_image span {
+    position: relative;
+    width: max-content;
+}
 
+.css-q8hpuo-MuiFormControl-root {
+    margin-right: 33px !important;
+}
 
-
-
-
-
-
+.css-1nwgsx-MuiButtonBase-root-MuiFab-root[type="submit"] {
+    margin-top: 15px !important;
+}
+.upload_image{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 35vh;
+}
 /* training Calender css */
 
 .calender_heading {

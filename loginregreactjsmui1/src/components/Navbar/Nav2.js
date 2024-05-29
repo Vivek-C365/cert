@@ -39,9 +39,9 @@ import Badge from "@mui/material/Badge";
 import { styled } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-
+import { getToken } from '../../services/LocalStorageService';
 const Nav = () => {
-  const { access_token } = useSelector((state) => state.auth);
+  const { access_token } = getToken();
   const [isOpen, setIsOpen] = useState(false);
   const [isPathOpen, setIsPathOpen] = useState(false);
   const [isWidgetsOpen, setIsWidgetsOpen] = useState(false);
@@ -103,19 +103,19 @@ const Nav = () => {
       link: "business",
     },
   ];
-  // New set of data for Widgets side navigation
+
   const widgetsData = [
     {
       title: "CONTENT MANAGEMENT",
       items: [
         {
-          title: "ADD COURSE",
-          link: "ADD-Course",
+          title: "Add Course",
+          link: "add-course",
         },
         {
-          title: "ADD RESOURCES",
-          link: "/resources",
-        },
+          title: "Add Certificate Detail",
+          link: "/add-Certificate_detail",
+        }
       ],
     },
     {
@@ -131,7 +131,6 @@ const Nav = () => {
         },
       ],
     },
-    // Add more widgets as needed
   ];
 
   const openNav = () => {
@@ -142,7 +141,7 @@ const Nav = () => {
   const closeNav = () => {
     setIsOpen(false);
     setIsPathOpen(false);
-    setIsWidgetsOpen(false); // Close Widgets side navigation
+    setIsWidgetsOpen(false);
     document.getElementById("backdrop").style.display = "none";
   };
 
@@ -153,7 +152,7 @@ const Nav = () => {
   };
 
   const openWidgets = () => {
-    setIsWidgetsOpen(true); // Open Widgets side navigation
+    setIsWidgetsOpen(true);
     document.getElementById("backdrop").style.display = "block";
   };
 
@@ -182,7 +181,7 @@ const Nav = () => {
 
   const handleCourseChange = (courseId) => {
     setSelectedCourse(courseId);
-    setExpandedCourse(courseId); // Expand the course when its certificates are loaded
+    setExpandedCourse(courseId);
   };
 
   const handleLogout = () => {
@@ -193,11 +192,11 @@ const Nav = () => {
   };
 
   const profile = () => {
-    navigate("/dashboard/profile");
+    navigate("profile");
   };
 
   const Account_setting = () => {
-    navigate("/dashboard/Account_setting");
+    navigate("/account_setting");
   };
 
   const StyledBadge = styled(Badge)(({ theme }) => ({
@@ -336,7 +335,7 @@ const Nav = () => {
             {access_token ? (
               <>
                 <img className="search_icon" alt="Button search" src={Search} />
-                <NavLink to="/dashboard/Checkout">
+                <NavLink to="/training-calendar/checkout">
                   <IconButton aria-label="cart">
                     <StyledBadge badgeContent={4} color="secondary">
                       <ShoppingCartIcon />
@@ -344,7 +343,6 @@ const Nav = () => {
                   </IconButton>
                 </NavLink>
                 <WidgetsIcon onClick={openWidgets} />{" "}
-                {/* New icon for Widgets */}
                 <div>
                   <Button
                     id="basic-button"

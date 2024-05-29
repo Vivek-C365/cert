@@ -197,7 +197,7 @@ function Training() {
                     <span className="price">${trainingItem.price}</span>
                   </div>
                   <div className="enroll_btn">
-                  <NavLink to="/dashboard/Checkout">
+                  <NavLink to="/training-calendar/checkout">
 
                     <button onClick={() => handleAddToCart(trainingItem)}>Enroll Now</button>
                   </NavLink>
