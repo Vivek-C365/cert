@@ -1,13 +1,24 @@
+// Training.js
 import React, { useEffect, useState } from "react";
-import { getTimezone } from "countries-and-timezones"; // Import countries-and-timezones
+import { getTimezone } from "countries-and-timezones";
 import "../../Assets/CSS/Pages.css";
 import { useTrainingCalenderQuery } from "../../services/userAuthApi";
+import { useSelector, useDispatch } from "react-redux";
+import { addToCart } from "../../features/cartSlice";
+import { NavLink } from "react-router-dom";
+import { getToken } from "../../services/LocalStorageService";
 
 function Training() {
+  const { access_token } = getToken();
   const [trainingData, setTrainingData] = useState(null);
   const { data: calenderData, error, isLoading } = useTrainingCalenderQuery();
   const [liveOnlineCount, setLiveOnlineCount] = useState(0);
   const [locationCounts, setLocationCounts] = useState({});
+  const [courseCounts, setCourseCounts] = useState({});
+  const [certificateCounts, setCertificateCounts] = useState({});
+  const [startDateCounts, setStartDateCounts] = useState({});
+  const [searchQuery, setSearchQuery] = useState("");
+  const dispatch = useDispatch();
 
   useEffect(() => {
     if (calenderData) {
@@ -23,10 +34,35 @@ function Training() {
       const locationCountsObj = calenderData.reduce((acc, trainingItem) => {
         const timeZone = trainingItem.time_zone;
         const country = getTimezoneCountry(timeZone);
-        acc[country] = (acc[timeZone] || 0) + 1;
+        acc[country] = (acc[country] || 0) + 1;
         return acc;
       }, {});
       setLocationCounts(locationCountsObj);
+
+      const courseCountsObj = calenderData.reduce((acc, trainingItem) => {
+        const courseName = trainingItem.courses.title;
+        acc[courseName] = (acc[courseName] || 0) + 1;
+        return acc;
+      }, {});
+      setCourseCounts(courseCountsObj);
+
+      const certificateCountsObj = calenderData.reduce((acc, trainingItem) => {
+        const certificateName = trainingItem.certificate.certificate_title;
+        acc[certificateName] = (acc[certificateName] || 0) + 1;
+        return acc;
+      }, {});
+      setCertificateCounts(certificateCountsObj);
+
+      const startDateCountsObj = calenderData.reduce((acc, trainingItem) => {
+        const startDate = new Date(trainingItem.start_date);
+        const month = startDate.toLocaleString("default", { month: "long" });
+        const day = startDate.getDate();
+        const year = startDate.getFullYear();
+        const formattedDate = `${month} ${day}, ${year}`;
+        acc[formattedDate] = (acc[formattedDate] || 0) + 1;
+        return acc;
+      }, {});
+      setStartDateCounts(startDateCountsObj);
     }
   }, [calenderData]);
 
@@ -40,6 +76,26 @@ function Training() {
     return timeZone;
   };
 
+  const handleAddToCart = (trainingItem) => {
+    dispatch(addToCart(trainingItem));
+  };
+
+  const filteredTrainingData = trainingData
+    ? trainingData.filter(
+        (trainingItem) =>
+          trainingItem.courses.title
+            .toLowerCase()
+            .includes(searchQuery.toLowerCase()) ||
+          trainingItem.certificate.certificate_title
+            .toLowerCase()
+            .includes(searchQuery.toLowerCase())
+      )
+    : [];
+
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
   return (
     <>
       <section className="calender_heading">
@@ -48,7 +104,14 @@ function Training() {
             <h1>Training Calendar</h1>
           </div>
           <div className="calender_search">
-            <input type="search" name="" id="" />
+            <input
+              type="search"
+              placeholder="Find something to learn today..."
+              name=""
+              id=""
+              value={searchQuery} // Controlled input for search
+              onChange={handleSearchChange} // Handle search query change
+            />
             <button>Search</button>
           </div>
         </div>
@@ -62,7 +125,7 @@ function Training() {
                 Live Online <span>{liveOnlineCount}</span>
               </p>
             </div>
-            <div className="filter_location">
+            <div className="filter_location border_divider">
               <h3>Location</h3>
               {Object.entries(locationCounts).map(([country, count]) => (
                 <p key={country}>
@@ -70,14 +133,38 @@ function Training() {
                 </p>
               ))}
             </div>
+            <div className="filter_location border_divider">
+              <h3>Course</h3>
+              {Object.entries(courseCounts).map(([course, count]) => (
+                <p key={course}>
+                  {course} <span>{count}</span>
+                </p>
+              ))}
+            </div>
+            <div className="filter_location border_divider">
+              <h3>Certificate</h3>
+              {Object.entries(certificateCounts).map(([certificate, count]) => (
+                <p key={certificate}>
+                  {certificate} <span>{count}</span>
+                </p>
+              ))}
+            </div>
+            <div className="filter_location border_divider">
+              <h3>Starts</h3>
+              {Object.entries(startDateCounts).map(([date, count]) => (
+                <p key={date}>
+                  {date} <span>{count}</span>
+                </p>
+              ))}
+            </div>
           </div>
         </div>
 
-        {trainingData && (
+        {filteredTrainingData.length > 0 ? (
           <div className="certificate_sold">
-            {trainingData.map((trainingItem) => (
+            {filteredTrainingData.map((trainingItem) => (
               <div className="certificate_card" key={trainingItem.id}>
-                <div className="title_content">
+                <div className="title_content border-bottom">
                   <div className="img">
                     <img
                       src={`http://127.0.0.1:8000/${trainingItem.courses.image}`}
@@ -89,10 +176,10 @@ function Training() {
                     <h2>{trainingItem.certificate.certificate_title}</h2>
                   </div>
                 </div>
-                <div className="description_content">
-                  {/* Render other details */}
+                <div className="description_content border-bottom">
                   <p>
-                    Delivery <span>{trainingItem.delivery}</span>
+                    Delivery{" "}
+                    <span className="live_online">{trainingItem.delivery}</span>
                   </p>
                   <p>
                     Starts on <span>{trainingItem.start_date}</span>
@@ -106,16 +193,21 @@ function Training() {
                 </div>
                 <div className="price_enroll">
                   <div className="certificate_price">
-                    <span>{trainingItem.MRP}</span>
-                    <span>{trainingItem.price}</span>
+                    <span className="mrp_price">${trainingItem.MRP}</span>
+                    <span className="price">${trainingItem.price}</span>
                   </div>
                   <div className="enroll_btn">
-                    <button>Enroll Now</button>
+                  <NavLink to="/training-calendar/checkout">
+
+                    <button onClick={() => handleAddToCart(trainingItem)}>Enroll Now</button>
+                  </NavLink>
                   </div>
                 </div>
               </div>
             ))}
           </div>
+        ) : (
+          <div>No training found</div>
         )}
       </section>
     </>

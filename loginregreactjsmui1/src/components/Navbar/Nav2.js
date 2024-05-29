@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import "../../Assets/CSS/Nav.css";
@@ -30,22 +30,31 @@ import { removeToken } from "../../services/LocalStorageService";
 import { unSetUserToken } from "../../features/authSlice";
 import { unsetUserInfo } from "../../features/userSlice";
 import course from "../../course.json";
+import {
+  useCourselistQuery,
+  useCertificatelistQuery,
+} from "../../services/userAuthApi";
 
 import Badge from "@mui/material/Badge";
 import { styled } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-
+import { getToken } from '../../services/LocalStorageService';
 const Nav = () => {
-  const { access_token } = useSelector((state) => state.auth);
+  const { access_token } = getToken();
   const [isOpen, setIsOpen] = useState(false);
   const [isPathOpen, setIsPathOpen] = useState(false);
+  const [isWidgetsOpen, setIsWidgetsOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
+  const [selectedCourse, setSelectedCourse] = useState("");
+  const [filteredCertificates, setFilteredCertificates] = useState([]);
   const [openDrawer, setOpenDrawer] = useState(false);
   const [selectedPathway, setSelectedPathway] = useState(null);
-
+  const [expandedCourse, setExpandedCourse] = useState(null);
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const { data: courseData } = useCourselistQuery();
+  const { data: certificateData } = useCertificatelistQuery();
 
   const redirects = [
     {
@@ -95,6 +104,35 @@ const Nav = () => {
     },
   ];
 
+  const widgetsData = [
+    {
+      title: "CONTENT MANAGEMENT",
+      items: [
+        {
+          title: "Add Course",
+          link: "add-course",
+        },
+        {
+          title: "Add Certificate Detail",
+          link: "/add-Certificate_detail",
+        }
+      ],
+    },
+    {
+      title: "TRAINING SCHEDULES",
+      items: [
+        {
+          title: "Live-Online schedules",
+          link: "Live-Online-schedules",
+        },
+        {
+          title: "Add Live online",
+          link: "create/live-online",
+        },
+      ],
+    },
+  ];
+
   const openNav = () => {
     setIsOpen(true);
     document.getElementById("backdrop").style.display = "block";
@@ -103,12 +141,18 @@ const Nav = () => {
   const closeNav = () => {
     setIsOpen(false);
     setIsPathOpen(false);
+    setIsWidgetsOpen(false);
     document.getElementById("backdrop").style.display = "none";
   };
 
   const openPath = (selectedPathway) => {
     setIsPathOpen(true);
     setSelectedPathway(selectedPathway);
+    document.getElementById("backdrop").style.display = "block";
+  };
+
+  const openWidgets = () => {
+    setIsWidgetsOpen(true);
     document.getElementById("backdrop").style.display = "block";
   };
 
@@ -124,6 +168,22 @@ const Nav = () => {
     setAnchorEl(null);
   };
 
+  useEffect(() => {
+    if (selectedCourse) {
+      const filtered = certificateData.filter(
+        (cert) => cert.courses === parseInt(selectedCourse)
+      );
+      setFilteredCertificates(filtered);
+    } else {
+      setFilteredCertificates([]);
+    }
+  }, [selectedCourse, certificateData]);
+
+  const handleCourseChange = (courseId) => {
+    setSelectedCourse(courseId);
+    setExpandedCourse(courseId);
+  };
+
   const handleLogout = () => {
     dispatch(unsetUserInfo({ name: "", email: "" }));
     dispatch(unSetUserToken({ access_token: null }));
@@ -132,11 +192,11 @@ const Nav = () => {
   };
 
   const profile = () => {
-    navigate("/dashboard/profile");
+    navigate("profile");
   };
 
   const Account_setting = () => {
-    navigate("/dashboard/Account_setting");
+    navigate("/account_setting");
   };
 
   const StyledBadge = styled(Badge)(({ theme }) => ({
@@ -222,41 +282,48 @@ const Nav = () => {
                 </div>
 
                 <div className="side_bar_tabs">
-                  {/* Render PathwayList */}
                   <Box
                     sx={{ width: 250 }}
                     role="presentation"
                     onClick={() => toggleDrawer(false)}
                   >
                     <List>
-                      {course.pathway.map((item, index) => (
-                        <div key={index}>
-                          <ListItem disablePadding>
-                            <ListItemButton onClick={() => openPath(item)}>
-                              <ListItemText primary={item.title} />
-                            </ListItemButton>
-                          </ListItem>
-                          {selectedPathway &&
-                            selectedPathway.title === item.title && (
-                              <List>
-                                {selectedPathway.certificates.map(
-                                  (certificate, index) => (
-                                    <ListItem key={index} disablePadding>
-                                      <ListItemButton
-                                        component={NavLink}
-                                        to={certificate.link}
-                                      >
+                      {courseData &&
+                        courseData.map((item, index) => (
+                          <div key={index}>
+                            <ListItem disablePadding>
+                              <ListItemButton
+                                onClick={() => {
+                                  openPath(item);
+                                  handleCourseChange(item.id);
+                                }}
+                              >
+                                <ListItemText primary={item.title} />
+                              </ListItemButton>
+                            </ListItem>
+                            <div className="inner_list">
+                              {expandedCourse === item.id && (
+                                <List>
+                                  {filteredCertificates.map((certificate) => (
+                                    <ListItem
+                                      key={certificate.id}
+                                      disablePadding
+                                    >
+                                      <ListItemButton component={NavLink}
+                                        to={certificate.link}>
                                         <ListItemText
-                                          primary={certificate.title}
+                                          primary={
+                                            certificate.certificate_title
+                                          }
                                         />
                                       </ListItemButton>
                                     </ListItem>
-                                  )
-                                )}
-                              </List>
-                            )}
-                        </div>
-                      ))}
+                                  ))}
+                                </List>
+                              )}
+                            </div>
+                          </div>
+                        ))}
                     </List>
                   </Box>
                 </div>
@@ -268,12 +335,14 @@ const Nav = () => {
             {access_token ? (
               <>
                 <img className="search_icon" alt="Button search" src={Search} />
-                <IconButton aria-label="cart">
-                  <StyledBadge badgeContent={4} color="secondary">
-                    <ShoppingCartIcon />
-                  </StyledBadge>
-                </IconButton>
-                <WidgetsIcon />
+                <NavLink to="/training-calendar/checkout">
+                  <IconButton aria-label="cart">
+                    <StyledBadge badgeContent={4} color="secondary">
+                      <ShoppingCartIcon />
+                    </StyledBadge>
+                  </IconButton>
+                </NavLink>
+                <WidgetsIcon onClick={openWidgets} />{" "}
                 <div>
                   <Button
                     id="basic-button"
@@ -327,6 +396,42 @@ const Nav = () => {
               </>
             )}
           </div>
+        </div>
+      </div>
+
+      <div
+        id="widgetsSidenav"
+        className={`sidenav ${isWidgetsOpen ? "open" : ""}`}
+      >
+        <div className="div-flex_sidebar">
+          <NavLink to="/">
+            <img className="side_logo" alt="Link" src={logo} />
+          </NavLink>
+        </div>
+
+        <div className="side_bar_tabs">
+          <Box
+            sx={{ width: 250 }}
+            role="presentation"
+            onClick={() => toggleDrawer(false)}
+          >
+            <List>
+              {widgetsData.map((category, index) => (
+                <div key={index}>
+                  <ListItem disablePadding>
+                    <ListItemText primary={category.title} />
+                  </ListItem>
+                  {category.items.map((item, subIndex) => (
+                    <ListItem key={subIndex} disablePadding>
+                      <ListItemButton component={NavLink} to={item.link}>
+                        <ListItemText primary={item.title} />
+                      </ListItemButton>
+                    </ListItem>
+                  ))}
+                </div>
+              ))}
+            </List>
+          </Box>
         </div>
       </div>
     </>

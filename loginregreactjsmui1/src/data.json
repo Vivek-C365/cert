@@ -549,7 +549,6 @@
         "Title": "Roles in Scrum",
         "list": [
           "Scrum Master roles and challenges",
-          "Product Owner roles and responsibilities",
           "Product Owner roles and responsibilities"
         ]
       },
@@ -2749,7 +2748,6 @@
       {
         "description": [
           "A holistic approach to the facilitation of co-creation of value with customers and other stakeholders in the form of products and services",
-          "The guiding principles of ITIL 4",
           "The four dimensions of Service Management",
           "Key concepts from Lean, Agile, DevOps, and why these are important to deliver business value",
           "How ITIL practices described in ITIL 4 will maintain the value and importance provided by the current ITIL processes, whilst at the same time expand to be integrated to different areas of service mana"

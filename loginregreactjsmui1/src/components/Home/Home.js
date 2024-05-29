@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Typewriter from "typewriter-effect";
 import TextField from "@mui/material/TextField";
 import CheckBoxTwoToneIcon from "@mui/icons-material/CheckBoxTwoTone";
@@ -17,6 +17,10 @@ import teaching from "../../Assets/PNG/teaching.png";
 import Resources from "../../Assets/PNG/Resources/Resources.png";
 import course from "../../course.json";
 import { NavLink } from "react-router-dom";
+import {
+  useCourselistQuery
+} from "../../services/userAuthApi";
+
 
 const achieveData = [
   {
@@ -79,6 +83,15 @@ const services_data = [
 ];
 
 function Home() {
+
+  const { data: courseData, error: courseError } = useCourselistQuery();
+  useEffect(() => {
+    if (courseError) {
+      // Handle error, maybe show a message to the user
+      console.error("Error fetching course data:", courseError);
+    }
+  }, [courseError]);
+
   return (
     <>
       <section className="main_home_content">
@@ -163,13 +176,14 @@ function Home() {
           </div>
         </div>
         <div className="Courses_img">
-          {course.pathway.map(
+          {courseData &&
+            courseData.map(
             (heading, index) =>
               // Check if heading.link is defined before rendering NavLink
               heading.link && (
                 <NavLink to={heading.link} key={index}>
                   <div className="Course_wrapper">
-                    <img src={heading.Courses_image} alt="" />
+                    <img src={heading.image} alt="" />
                     <h3 className="achieve_title">{heading.title}</h3>
                   </div>
                 </NavLink>

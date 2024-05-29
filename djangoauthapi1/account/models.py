@@ -84,6 +84,7 @@ class ProfileImage(models.Model):
 class course (models.Model):
     id = models.AutoField(primary_key=True)  # a unique
     title = models.CharField(max_length=255, default="")
+    link = models.CharField(max_length=255, default="")
     description = models.TextField(default="")
     image = models.ImageField(upload_to="course/images" , default="")
     
@@ -94,12 +95,29 @@ class course (models.Model):
 class certificate (models.Model):
     id = models.AutoField(primary_key=True)  
     certificate_title = models.CharField(max_length=255)
+    link = models.CharField(max_length=255, default="")
     description = models.TextField()
     courses = models.ForeignKey(course, on_delete=models.CASCADE)
     
     def __str__(self):
         return self.certificate_title
-    
+
+
+class TestModel(models.Model):
+    id = models.AutoField(primary_key=True)
+    certificate = models.ForeignKey(certificate, on_delete=models.CASCADE) 
+    certification_overview = models.JSONField(null=True , blank=True)
+    Delivery_Methods = models.JSONField(null=True , blank=True)
+    steps = models.JSONField(null=True , blank=True)
+    Enterprise_Solutions = models.JSONField(null=True , blank=True)
+    faqs = models.JSONField(null=True , blank=True)
+    learning_outcomes = models.JSONField(null=True , blank=True)
+    certificationSteps = models.JSONField(null=True , blank=True)
+    resources_data = models.JSONField(null=True , blank=True)
+
+
+
+
 
 class TrainingCalendar(models.Model):
     id = models.AutoField(primary_key=True)  
@@ -120,7 +138,7 @@ class TrainingCalendar(models.Model):
     )
     start_date = models.DateField(default="")
     end_date = models.DateField(default="")
-    time_zone = models.CharField(default="Asia/Kolkata" , max_length=255)
+    time_zone = models.CharField(default="" , max_length=255)
     MRP = models.DecimalField(max_digits=8, decimal_places=2, default=0)
     price = models.DecimalField(max_digits=8, decimal_places=2, default=0)
 

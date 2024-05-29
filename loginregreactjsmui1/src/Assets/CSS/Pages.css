@@ -464,7 +464,7 @@ aside h3 span {
 
 }
 
-.Courses_img a{
+.Courses_img a {
     text-decoration: none;
 }
 
@@ -1589,6 +1589,13 @@ aside h3 span {
 
 
 
+.inner_list span {
+    color: gray;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+
 
 /* Add your styles here */
 
@@ -2375,7 +2382,11 @@ aside h3 span {
 }
 
 
-
+.delete_btn_Certificate{
+    position: relative;
+    width: -webkit-fill-available;
+    margin-bottom: 5px !important;
+}
 
 
 #taxonomy-term-1 {
@@ -2406,13 +2417,19 @@ aside h3 span {
     align-items: center;
 
 }
-.course-items-list ol {
+.add_course_certificate{
+    margin-bottom: 40px;
+}
+.course-items-list ul {
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
-.page-bottom spacer .text-primary-active{
+
+.page-bottom spacer .text-primary-active {
     color: #1a3ba5;
 }
+
 .course-items-list li {
     padding: 2rem;
     margin-bottom: 2rem;
@@ -2420,13 +2437,13 @@ aside h3 span {
     border: 1px solid #d9e2ef;
 }
 
-.course-items-list li p{
+.course-items-list li p {
     font-size: 14px;
     color: #506690;
 
 }
 
-.course-items-list li button{
+.course-items-list li button {
     margin: 0;
     border-radius: 4px;
     background-color: rgba(53, 106, 230, 0.15);
@@ -2434,18 +2451,59 @@ aside h3 span {
     color: #1a3ba5;
 }
 
+.css-q8hpuo-MuiFormControl-root {
+    max-width: 43vh;
 
+}
+
+.css-sghohy-MuiButtonBase-root-MuiButton-root {
+    position: relative;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.css-1f773le-MuiButtonBase-root-MuiAccordionSummary-root {
+    border: 1px solid lightgray !important;
+}
+
+.upload_image span {
+    position: relative;
+    width: max-content;
+}
+
+.css-q8hpuo-MuiFormControl-root {
+    margin-right: 33px !important;
+}
+
+.css-1nwgsx-MuiButtonBase-root-MuiFab-root[type="submit"] {
+    margin-top: 15px !important;
+}
+.upload_image{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 35vh;
+}
 /* training Calender css */
 
-.calender_heading{
+.calender_heading {
     padding: 5rem 10rem 2rem 10rem;
 }
 
-.calender_search input{
+.calender_search input {
     position: relative;
     width: -webkit-fill-available;
+    border: 1px solid #D9E2EF;
+    padding: 20px;
+    border-radius: 4px;
+    outline: none;
 }
-.calender_main_content{
+
+.calender_main_content {
     padding: 2rem 5rem 2rem 5rem;
     display: flex;
     justify-content: space-around;
@@ -2453,33 +2511,50 @@ aside h3 span {
     justify-content: space-evenly;
 }
 
-.calender_search{
+.calender_search {
     display: flex;
     flex-direction: row;
 }
 
-.filter_section{
-    position: relative;
-    padding: 1rem 5rem;
-    border-right: 1px solid;
+.calender_search button {
+    width: 20vh;
+    border: none;
+    margin-left: 15px;
+    background-color: #754FFE;
+    color: white;
+    border-radius: 5px;
 }
 
-.certificate_sold{
+.filter_section {
+    position: relative;
+    padding: 1rem 5rem 0rem 0rem;
+    border-right: 1px solid #D9E2EF;
+}
+
+.certificate_sold {
     padding: 15px 0px;
     border-radius: 3px;
     width: 100vh;
     display: flex;
     flex-direction: column;
+    height: 90vh;
+    overflow-y: scroll;
+
 
 }
 
-.certificate_sold .certificate_card{
-    border: 1px solid gray;
+.certificate_sold::-webkit-scrollbar {
+    display: none;
+}
+
+.certificate_sold .certificate_card {
+    border: 1px solid #D9E2EF;
+    border-radius: 4px;
     padding: 15px 0px;
     margin-bottom: 5rem;
 }
 
-.title_content{
+.title_content {
     display: flex;
     padding: 0px 15px 10px 15px;
     border-bottom: 1px solid gray;
@@ -2488,20 +2563,26 @@ aside h3 span {
 
 }
 
-.card_main_title h3{
-    font-size: 0.8rem ;
+.card_main_title h3 {
+    font-size: 0.8rem;
+    color: #D8002F;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
-.card_main_title h2{
+.card_main_title h2 {
     font-size: 1.2rem;
+    color: #356AE6;
+    margin: 0;
+
 }
 
-.title_content .img img{
+.title_content .img img {
     width: 10vh;
     padding: 5px;
 }
 
-.certificate_card .description_content{
+.certificate_card .description_content {
     padding: 15px 20px;
     margin: 0;
     display: flex;
@@ -2509,15 +2590,21 @@ aside h3 span {
     border-bottom: 1px solid gray;
 }
 
-.certificate_card .description_content p{
+.certificate_card .description_content p {
     font-size: 14px;
     display: flex;
-    width: 30vh;
+    width: 35vh;
     justify-content: space-between;
     margin-bottom: 10px;
+    color: #21325A;
 
 }
-.price_enroll{
+
+.certificate_card .description_content span {
+    width: 20vh;
+}
+
+.price_enroll {
     display: flex;
     padding: 15px;
     padding-bottom: 0px;
@@ -2525,9 +2612,109 @@ aside h3 span {
     justify-content: space-between;
 }
 
-.certificate_price{
-    width: 20vh;
+.certificate_price {
+    width: 25vh;
     display: flex;
     justify-content: space-around;
 
+}
+
+
+.heading_content_calender .top_heading {
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D9E2EF;
+}
+
+.filter_content {
+    width: 40vh;
+}
+
+.filter_content h3 {
+    color: #4545A2;
+    font-size: 15px;
+}
+
+.filter_content p {
+    color: #506690;
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.filter_content p span {
+    color: #356AE6;
+}
+
+
+.border_divider {
+    border-top: 1px solid #D9E2EF;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+
+.border-bottom {
+    border-bottom: 1px solid #D9E2EF !important;
+}
+
+.live_online {
+    color: #754FFE;
+    font-weight: 500;
+
+}
+
+.mrp_price {
+    color: #506690;
+    text-decoration: line-through;
+}
+
+.price {
+    color: #4545A2;
+}
+
+.price_enroll .enroll_btn button {
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 3px;
+    background-image: linear-gradient(128deg, #AC32E4, #E833B0);
+    color: white;
+    font-weight: 400;
+}
+
+
+.live_class_back {
+    background-color: white;
+}
+
+.live_class_container {
+    position: relative;
+    width: 80%;
+}
+
+
+
+/* schedule classes */
+
+.MuiTableHead-root .MuiTableCell-head,
+.css-1nslmh4-MuiTableCell-root.MuiTableCell-head {
+    /* background-color: #000; */
+    color: #356ae6 !important;
+    background-color: #f7f9fc !important;
+}
+
+.css-1enotpu-MuiTableRow-root:nth-of-type(odd) {
+    background-color: white !important;
+}
+
+.css-132a6sb-MuiTableCell-root.MuiTableCell-body {
+    font-size: 14px;
+    color: #566378 !important;
+}
+
+.css-132a6sb-MuiTableCell-root {
+
+    border-bottom: 1px solid #d9e2ef !important;
 }

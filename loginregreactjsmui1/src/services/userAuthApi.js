@@ -34,6 +34,45 @@ export const userAuthApi = createApi({
         },
       }),
     }),
+
+    courselist: builder.query({
+      query: () => ({
+        url: "Courses/",
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }),
+    }),
+    certificatedetailedlist: builder.query({
+      query: () => ({
+        url: "csList/",
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }),
+    }),
+    certificatelist: builder.query({
+      query: () => ({
+        url: "Certificate/",
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }),
+    }),
+    traininglist: builder.query({
+      query: (actualData) => ({
+        url: "training_calender/",
+        method: "POST",
+        body : actualData,
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }),
+    }),
+
     
     loginUser: builder.mutation({
       query: (user) => ({
@@ -96,4 +135,8 @@ export const {
   useResetPasswordMutation,
   useUpdateProfileMutation,
   useTrainingCalenderQuery,
+  useCourselistQuery,
+  useCertificatedetailedlistQuery,
+  useCertificatelistQuery,
+  useTraininglistQuery
 } = userAuthApi;
